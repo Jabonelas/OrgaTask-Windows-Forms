@@ -25,6 +25,11 @@ namespace WindowsForms.Forms
             InitializeComponent();
         }
 
+        private void uc_EditarTarefa_Load(object sender, EventArgs e)
+        {
+            txtTitulo.Focus();
+        }
+
         public async Task SetParametroAdicionalAsync(frmHome _frmHome, int _idTarefa, string _statusPassado)
         {
             frmHome = _frmHome;
@@ -51,7 +56,7 @@ namespace WindowsForms.Forms
 
             if (ResultadoOperacao.Mensagem != null)
             {
-                MensagensDoSistema.MensagemAlertaSistema(ResultadoOperacao);
+                MensagensAlertaSistema.MensagemAlertaSistema(ResultadoOperacao);
             }
             else
             {
@@ -70,7 +75,7 @@ namespace WindowsForms.Forms
 
         private async Task CancelarEdicaoTarefaAsync()
         {
-            var dialogResult = MensagensDoSistema.MensagemAtencaoYesNo("Tem certeza que deseja cancelar a edição da tarefa?");
+            var dialogResult = MensagensAlertaSistema.MensagemAtencaoYesNo("Tem certeza que deseja cancelar a edição da tarefa?");
 
             if (dialogResult == DialogResult.Yes)
             {
@@ -134,7 +139,7 @@ namespace WindowsForms.Forms
             }
             else
             {
-                MensagensDoSistema.MensagemAlertaSistema(resultadoOperacao);
+                MensagensAlertaSistema.MensagemAlertaSistema(resultadoOperacao);
 
                 if (resultadoOperacao.Mensagem.Contains("Token"))
                 {
@@ -172,7 +177,7 @@ namespace WindowsForms.Forms
                     Mensagem = "Alguns campos não foram preenchidos ou contêm informações inválidas"
                 };
 
-                MensagensDoSistema.MensagemAlertaSistema(mensagem);
+                MensagensAlertaSistema.MensagemAlertaSistema(mensagem);
 
                 return false;
             }

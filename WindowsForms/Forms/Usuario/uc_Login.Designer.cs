@@ -83,7 +83,7 @@
             // 
             // txtUsuario
             // 
-            this.txtUsuario.EditValue = "string";
+            this.txtUsuario.EditValue = "";
             this.txtUsuario.Location = new System.Drawing.Point(605, 292);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -91,7 +91,7 @@
             this.txtUsuario.Properties.ContextImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("txtUsuario.Properties.ContextImageOptions.SvgImage")));
             this.txtUsuario.Properties.ContextImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
             this.txtUsuario.Size = new System.Drawing.Size(297, 24);
-            this.txtUsuario.TabIndex = 2;
+            this.txtUsuario.TabIndex = 1;
             // 
             // labelControl2
             // 
@@ -129,7 +129,7 @@
             this.btnEntrar.Location = new System.Drawing.Point(605, 402);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(297, 34);
-            this.btnEntrar.TabIndex = 5;
+            this.btnEntrar.TabIndex = 3;
             this.btnEntrar.Text = "Entrar";
             this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
             // 
@@ -147,13 +147,13 @@
             this.btnCriarConta.Location = new System.Drawing.Point(605, 449);
             this.btnCriarConta.Name = "btnCriarConta";
             this.btnCriarConta.Size = new System.Drawing.Size(297, 34);
-            this.btnCriarConta.TabIndex = 6;
+            this.btnCriarConta.TabIndex = 4;
             this.btnCriarConta.Text = "Criar uma conta";
             this.btnCriarConta.Click += new System.EventHandler(this.btnCriarConta_Click);
             // 
             // txtSenha
             // 
-            this.txtSenha.EditValue = "string";
+            this.txtSenha.EditValue = "";
             this.txtSenha.Location = new System.Drawing.Point(605, 355);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -162,7 +162,7 @@
             this.txtSenha.Properties.ContextImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
             this.txtSenha.Properties.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(297, 24);
-            this.txtSenha.TabIndex = 7;
+            this.txtSenha.TabIndex = 2;
             // 
             // diagramPanAndZoomControl1
             // 
@@ -310,6 +310,7 @@
             this.Controls.Add(this.panelControl1);
             this.Name = "uc_Login";
             this.Size = new System.Drawing.Size(986, 670);
+            this.Load += new System.EventHandler(this.uc_Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.svgImageBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtUsuario.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSenha.Properties)).EndInit();

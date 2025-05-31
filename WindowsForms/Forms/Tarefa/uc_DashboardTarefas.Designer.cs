@@ -78,7 +78,7 @@
             this.lblPendente.Appearance.Options.UseBackColor = true;
             this.lblPendente.Appearance.Options.UseFont = true;
             this.lblPendente.ImageOptions.Alignment = System.Drawing.ContentAlignment.TopCenter;
-            this.lblPendente.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("labelControl2.ImageOptions.SvgImage")));
+            this.lblPendente.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("lblPendente.ImageOptions.SvgImage")));
             this.lblPendente.ImageOptions.SvgImageSize = new System.Drawing.Size(30, 30);
             this.lblPendente.Location = new System.Drawing.Point(112, 74);
             this.lblPendente.Name = "lblPendente";
@@ -101,7 +101,7 @@
             this.lblEmProgresso.Appearance.Options.UseBackColor = true;
             this.lblEmProgresso.Appearance.Options.UseFont = true;
             this.lblEmProgresso.ImageOptions.Alignment = System.Drawing.ContentAlignment.TopCenter;
-            this.lblEmProgresso.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("labelControl3.ImageOptions.SvgImage")));
+            this.lblEmProgresso.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("lblEmProgresso.ImageOptions.SvgImage")));
             this.lblEmProgresso.ImageOptions.SvgImageSize = new System.Drawing.Size(30, 30);
             this.lblEmProgresso.Location = new System.Drawing.Point(330, 74);
             this.lblEmProgresso.Name = "lblEmProgresso";
@@ -117,7 +117,7 @@
             this.lblConcluidas.Appearance.Options.UseBackColor = true;
             this.lblConcluidas.Appearance.Options.UseFont = true;
             this.lblConcluidas.ImageOptions.Alignment = System.Drawing.ContentAlignment.TopCenter;
-            this.lblConcluidas.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("labelControl4.ImageOptions.SvgImage")));
+            this.lblConcluidas.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("lblConcluidas.ImageOptions.SvgImage")));
             this.lblConcluidas.ImageOptions.SvgImageSize = new System.Drawing.Size(30, 30);
             this.lblConcluidas.Location = new System.Drawing.Point(565, 74);
             this.lblConcluidas.Name = "lblConcluidas";
@@ -239,7 +239,7 @@
             this.btnQtdTarefasEmProgresso.Location = new System.Drawing.Point(269, 72);
             this.btnQtdTarefasEmProgresso.Name = "btnQtdTarefasEmProgresso";
             this.btnQtdTarefasEmProgresso.Size = new System.Drawing.Size(200, 100);
-            this.btnQtdTarefasEmProgresso.TabIndex = 14;
+            this.btnQtdTarefasEmProgresso.TabIndex = 2;
             this.btnQtdTarefasEmProgresso.Text = "\r\n0";
             this.btnQtdTarefasEmProgresso.Click += new System.EventHandler(this.btnQtdTarefasEmProgresso_Click);
             // 
@@ -252,7 +252,7 @@
             this.btnQtdTarefasPendentes.Location = new System.Drawing.Point(41, 72);
             this.btnQtdTarefasPendentes.Name = "btnQtdTarefasPendentes";
             this.btnQtdTarefasPendentes.Size = new System.Drawing.Size(200, 100);
-            this.btnQtdTarefasPendentes.TabIndex = 15;
+            this.btnQtdTarefasPendentes.TabIndex = 1;
             this.btnQtdTarefasPendentes.Text = "\r\n0";
             this.btnQtdTarefasPendentes.Click += new System.EventHandler(this.btnQtdTarefasPendentes_Click);
             // 
@@ -267,7 +267,7 @@
             this.btnQtdTarefasConcluida.Location = new System.Drawing.Point(497, 72);
             this.btnQtdTarefasConcluida.Name = "btnQtdTarefasConcluida";
             this.btnQtdTarefasConcluida.Size = new System.Drawing.Size(200, 100);
-            this.btnQtdTarefasConcluida.TabIndex = 16;
+            this.btnQtdTarefasConcluida.TabIndex = 3;
             this.btnQtdTarefasConcluida.Text = "\r\n0";
             this.btnQtdTarefasConcluida.Click += new System.EventHandler(this.btnQtdTarefasConcluida_Click);
             // 

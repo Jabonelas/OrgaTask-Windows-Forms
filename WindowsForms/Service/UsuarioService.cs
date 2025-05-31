@@ -67,41 +67,6 @@ namespace WindowsForms.Service
         {
             try
             {
-                //var json = JsonConvert.SerializeObject(_dadosUsuario);
-                //var content = new StringContent(json, Encoding.UTF8, "application/json");
-
-                //var endpoint = SetandoEndPoint("api/usuarios");
-
-                //using (var request = new HttpRequestMessage(HttpMethod.Post, endpoint))
-                //{
-                //    request.Content = content;
-
-                //    var response = await httpClient.SendAsync(request);
-
-                //    var responseContent = await response.Content.ReadAsStringAsync();
-
-                //    Console.WriteLine("StatusCode: " + response.StatusCode);
-                //    Console.WriteLine("Response: " + responseContent);
-
-                //    if (response.IsSuccessStatusCode)
-                //    {
-                //        var result = JsonConvert.DeserializeObject<UserToken>(responseContent);
-
-                //        //    // Armazenando o token
-                //        ConfigurationManager.AppSettings["authToken"] = result.Token;
-
-                //        return ResultadoOperacao.Ok();
-                //    }
-
-                //    var errorResponse = JsonConvert.DeserializeObject<ErrorResponse>(responseContent);
-
-                //    TipoErro tipoErro = SelecionarTipoErro(response);
-
-                //    return ResultadoOperacao.Falha(errorResponse?.message ?? "Erro desconhecido", tipoErro);
-                //}
-
-                //-----------------------------------------------------
-
                 var json = JsonConvert.SerializeObject(_dadosUsuario);
                 var content = new StringContent(json, Encoding.UTF8, "application/json");
 
@@ -143,7 +108,6 @@ namespace WindowsForms.Service
             return $"{_endpont}";
 
 #else
-            return $"{_endpont}";
             return $"https://blazor-api.onrender.com/{_endpont}";
 
 #endif

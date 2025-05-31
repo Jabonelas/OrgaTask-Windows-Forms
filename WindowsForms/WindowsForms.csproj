@@ -135,9 +135,9 @@
     <Reference Include="DevExpress.Printing.v23.2.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\MensagensDoSistema.cs" />
-    <Compile Include="Classes\ResultadoOperacao.cs" />
-    <Compile Include="Classes\TelaCarregamento.cs" />
+    <Compile Include="Core\MensagensAlertaSistema.cs" />
+    <Compile Include="Core\ResultadoOperacao.cs" />
+    <Compile Include="Core\TelaCarregamento.cs" />
     <Compile Include="DTOs\ErrorResponse.cs" />
     <Compile Include="DTOs\Tarefa\TarefaAlterarDTO.cs" />
     <Compile Include="DTOs\Tarefa\TarefaConsultaDTO.cs" />
@@ -152,73 +152,73 @@
     <Compile Include="Forms\frmHome.Designer.cs">
       <DependentUpon>frmHome.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\uc_CardTarefaPrioridade.cs">
+    <Compile Include="Forms\Tarefa\uc_CardTarefa.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\uc_CardTarefaPrioridade.Designer.cs">
-      <DependentUpon>uc_CardTarefaPrioridade.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\uc_EditarTarefa.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\uc_EditarTarefa.Designer.cs">
-      <DependentUpon>uc_EditarTarefa.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\uc_CadastrarTarefa.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\uc_CadastrarTarefa.Designer.cs">
-      <DependentUpon>uc_CadastrarTarefa.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\uc_CadastroUsuario.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\uc_CadastroUsuario.Designer.cs">
-      <DependentUpon>uc_CadastroUsuario.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\uc_CardTarefa.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\uc_CardTarefa.Designer.cs">
+    <Compile Include="Forms\Tarefa\uc_CardTarefa.Designer.cs">
       <DependentUpon>uc_CardTarefa.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\uc_DashboardTarefas.cs">
+    <Compile Include="Forms\Tarefa\uc_CardTarefaPrioridade.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\uc_DashboardTarefas.Designer.cs">
+    <Compile Include="Forms\Tarefa\uc_CardTarefaPrioridade.Designer.cs">
+      <DependentUpon>uc_CardTarefaPrioridade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tarefa\uc_EditarTarefa.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Tarefa\uc_EditarTarefa.Designer.cs">
+      <DependentUpon>uc_EditarTarefa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tarefa\uc_CadastrarTarefa.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Tarefa\uc_CadastrarTarefa.Designer.cs">
+      <DependentUpon>uc_CadastrarTarefa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Usuario\uc_CadastroUsuario.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Usuario\uc_CadastroUsuario.Designer.cs">
+      <DependentUpon>uc_CadastroUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tarefa\uc_DashboardTarefas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Tarefa\uc_DashboardTarefas.Designer.cs">
       <DependentUpon>uc_DashboardTarefas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\uc_ExibirTarefas.cs">
+    <Compile Include="Forms\Tarefa\uc_ExibirTarefas.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\uc_ExibirTarefas.Designer.cs">
+    <Compile Include="Forms\Tarefa\uc_ExibirTarefas.Designer.cs">
       <DependentUpon>uc_ExibirTarefas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\uc_Login.cs">
+    <Compile Include="Forms\Usuario\uc_Login.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\uc_Login.Designer.cs">
+    <Compile Include="Forms\Usuario\uc_Login.Designer.cs">
       <DependentUpon>uc_Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\uc_MensagemConfirmacao.cs">
+    <Compile Include="Forms\Mensagens\uc_MensagemConfirmacao.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\uc_MensagemConfirmacao.Designer.cs">
+    <Compile Include="Forms\Mensagens\uc_MensagemConfirmacao.Designer.cs">
       <DependentUpon>uc_MensagemConfirmacao.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\uc_MensagemExclusao.cs">
+    <Compile Include="Forms\Mensagens\uc_MensagemExclusao.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\uc_MensagemExclusao.Designer.cs">
+    <Compile Include="Forms\Mensagens\uc_MensagemExclusao.Designer.cs">
       <DependentUpon>uc_MensagemExclusao.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\uc_VisualizarTarefa.cs">
+    <Compile Include="Forms\Tarefa\uc_VisualizarTarefa.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\uc_VisualizarTarefa.Designer.cs">
+    <Compile Include="Forms\Tarefa\uc_VisualizarTarefa.Designer.cs">
       <DependentUpon>uc_VisualizarTarefa.cs</DependentUpon>
     </Compile>
-    <Compile Include="InjecaoDependencia.cs" />
+    <Compile Include="Extensions\InjecaoDependencia.cs" />
     <Compile Include="Interface\ITarefaService.cs" />
     <Compile Include="Interface\IUsuarioService.cs" />
     <Compile Include="Program.cs" />
@@ -229,41 +229,41 @@
       <DependentUpon>frmHome.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\uc_CardTarefaPrioridade.resx">
-      <DependentUpon>uc_CardTarefaPrioridade.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\uc_EditarTarefa.resx">
-      <DependentUpon>uc_EditarTarefa.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\uc_CadastrarTarefa.resx">
-      <DependentUpon>uc_CadastrarTarefa.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\uc_CadastroUsuario.resx">
-      <DependentUpon>uc_CadastroUsuario.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\uc_CardTarefa.resx">
+    <EmbeddedResource Include="Forms\Tarefa\uc_CardTarefa.resx">
       <DependentUpon>uc_CardTarefa.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\uc_DashboardTarefas.resx">
+    <EmbeddedResource Include="Forms\Tarefa\uc_CardTarefaPrioridade.resx">
+      <DependentUpon>uc_CardTarefaPrioridade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tarefa\uc_EditarTarefa.resx">
+      <DependentUpon>uc_EditarTarefa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tarefa\uc_CadastrarTarefa.resx">
+      <DependentUpon>uc_CadastrarTarefa.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Usuario\uc_CadastroUsuario.resx">
+      <DependentUpon>uc_CadastroUsuario.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tarefa\uc_DashboardTarefas.resx">
       <DependentUpon>uc_DashboardTarefas.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\uc_ExibirTarefas.resx">
+    <EmbeddedResource Include="Forms\Tarefa\uc_ExibirTarefas.resx">
       <DependentUpon>uc_ExibirTarefas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\uc_Login.resx">
+    <EmbeddedResource Include="Forms\Usuario\uc_Login.resx">
       <DependentUpon>uc_Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\uc_MensagemConfirmacao.resx">
+    <EmbeddedResource Include="Forms\Mensagens\uc_MensagemConfirmacao.resx">
       <DependentUpon>uc_MensagemConfirmacao.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\uc_MensagemExclusao.resx">
+    <EmbeddedResource Include="Forms\Mensagens\uc_MensagemExclusao.resx">
       <DependentUpon>uc_MensagemExclusao.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\uc_VisualizarTarefa.resx">
+    <EmbeddedResource Include="Forms\Tarefa\uc_VisualizarTarefa.resx">
       <DependentUpon>uc_VisualizarTarefa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
@@ -275,6 +275,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -302,6 +303,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\IconeOrgaTask.svg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

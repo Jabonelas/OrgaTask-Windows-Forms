@@ -1,6 +1,6 @@
 ﻿namespace WindowsForms.Forms
 {
-    partial class uc_VisualizarTarefa
+    partial class uc_CadastrarTarefa
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(uc_VisualizarTarefa));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(uc_CadastrarTarefa));
             this.panel1 = new System.Windows.Forms.Panel();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
@@ -39,12 +39,13 @@
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
-            this.txtPrioridade = new DevExpress.XtraEditors.TextEdit();
-            this.txtStatus = new DevExpress.XtraEditors.TextEdit();
+            this.cmbStatus = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.cmbPrioridade = new DevExpress.XtraEditors.ComboBoxEdit();
             this.txtDescricao = new DevExpress.XtraEditors.MemoEdit();
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
-            this.btnVoltar = new DevExpress.XtraEditors.SimpleButton();
+            this.btnSalvarTarefa = new DevExpress.XtraEditors.SimpleButton();
+            this.btnCancelar = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.txtTitulo = new DevExpress.XtraEditors.TextEdit();
@@ -56,8 +57,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.svgImageBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtPrioridade.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtStatus.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbStatus.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbPrioridade.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDescricao.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTitulo.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPrazo.Properties)).BeginInit();
@@ -77,7 +78,7 @@
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(369, 660);
-            this.panel1.TabIndex = 24;
+            this.panel1.TabIndex = 23;
             // 
             // labelControl8
             // 
@@ -87,9 +88,9 @@
             this.labelControl8.Appearance.Options.UseForeColor = true;
             this.labelControl8.Location = new System.Drawing.Point(83, 458);
             this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(152, 15);
+            this.labelControl8.Size = new System.Drawing.Size(230, 15);
             this.labelControl8.TabIndex = 19;
-            this.labelControl8.Text = "Prazo e descrição detalhados";
+            this.labelControl8.Text = "Mantenha seu fluxo de trabalho organizado";
             // 
             // labelControl7
             // 
@@ -99,9 +100,9 @@
             this.labelControl7.Appearance.Options.UseForeColor = true;
             this.labelControl7.Location = new System.Drawing.Point(83, 415);
             this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(131, 15);
+            this.labelControl7.Size = new System.Drawing.Size(222, 15);
             this.labelControl7.TabIndex = 18;
-            this.labelControl7.Text = "Prioridade e status claros";
+            this.labelControl7.Text = "Defina prazos e acompanhe seu progresso";
             // 
             // svgImageBox5
             // 
@@ -141,9 +142,9 @@
             this.labelControl6.Appearance.Options.UseForeColor = true;
             this.labelControl6.Location = new System.Drawing.Point(79, 373);
             this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(153, 15);
+            this.labelControl6.Size = new System.Drawing.Size(207, 15);
             this.labelControl6.TabIndex = 14;
-            this.labelControl6.Text = "Detalhes completos da tarefa";
+            this.labelControl6.Text = "Organize suas atividades por prioridade";
             // 
             // labelControl5
             // 
@@ -153,9 +154,10 @@
             this.labelControl5.Appearance.Options.UseForeColor = true;
             this.labelControl5.Location = new System.Drawing.Point(43, 305);
             this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(236, 17);
+            this.labelControl5.Size = new System.Drawing.Size(292, 34);
             this.labelControl5.TabIndex = 13;
-            this.labelControl5.Text = "Visualize todos os detalhes desta tarefa.";
+            this.labelControl5.Text = "Preencha os campos ao lado para criar uma nova \r\ntarefa e organizar seu trabalho." +
+    "";
             // 
             // labelControl4
             // 
@@ -167,62 +169,69 @@
             this.labelControl4.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("labelControl4.ImageOptions.SvgImage")));
             this.labelControl4.Location = new System.Drawing.Point(42, 204);
             this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(285, 40);
+            this.labelControl4.Size = new System.Drawing.Size(203, 40);
             this.labelControl4.TabIndex = 12;
-            this.labelControl4.Text = "      Detalhes da Tarefa";
+            this.labelControl4.Text = "      Nova Tarefa";
             // 
             // panelControl1
             // 
-            this.panelControl1.Controls.Add(this.txtPrioridade);
-            this.panelControl1.Controls.Add(this.txtStatus);
+            this.panelControl1.Controls.Add(this.cmbStatus);
+            this.panelControl1.Controls.Add(this.cmbPrioridade);
             this.panelControl1.Controls.Add(this.txtDescricao);
             this.panelControl1.Controls.Add(this.labelControl10);
             this.panelControl1.Controls.Add(this.labelControl9);
-            this.panelControl1.Controls.Add(this.btnVoltar);
+            this.panelControl1.Controls.Add(this.btnSalvarTarefa);
+            this.panelControl1.Controls.Add(this.btnCancelar);
             this.panelControl1.Controls.Add(this.labelControl1);
             this.panelControl1.Controls.Add(this.labelControl2);
             this.panelControl1.Controls.Add(this.txtTitulo);
             this.panelControl1.Controls.Add(this.txtPrazo);
             this.panelControl1.Controls.Add(this.labelControl3);
-            this.panelControl1.Location = new System.Drawing.Point(395, 151);
+            this.panelControl1.Location = new System.Drawing.Point(394, 144);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(321, 380);
-            this.panelControl1.TabIndex = 27;
+            this.panelControl1.Size = new System.Drawing.Size(321, 391);
+            this.panelControl1.TabIndex = 26;
             // 
-            // txtPrioridade
+            // cmbStatus
             // 
-            this.txtPrioridade.Enabled = false;
-            this.txtPrioridade.Location = new System.Drawing.Point(12, 97);
-            this.txtPrioridade.Name = "txtPrioridade";
-            this.txtPrioridade.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrioridade.Properties.Appearance.Options.UseFont = true;
-            this.txtPrioridade.Properties.ContextImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
-            this.txtPrioridade.Properties.MaskSettings.Set("mask", "\\d{0,5}");
-            this.txtPrioridade.Size = new System.Drawing.Size(172, 22);
-            this.txtPrioridade.TabIndex = 41;
+            this.cmbStatus.Location = new System.Drawing.Point(12, 292);
+            this.cmbStatus.Name = "cmbStatus";
+            this.cmbStatus.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbStatus.Properties.Appearance.Options.UseFont = true;
+            this.cmbStatus.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbStatus.Properties.Items.AddRange(new object[] {
+            "Pendente",
+            "Em Progresso",
+            "Concluído"});
+            this.cmbStatus.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.cmbStatus.Size = new System.Drawing.Size(297, 22);
+            this.cmbStatus.TabIndex = 5;
             // 
-            // txtStatus
+            // cmbPrioridade
             // 
-            this.txtStatus.Enabled = false;
-            this.txtStatus.Location = new System.Drawing.Point(12, 292);
-            this.txtStatus.Name = "txtStatus";
-            this.txtStatus.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtStatus.Properties.Appearance.Options.UseFont = true;
-            this.txtStatus.Properties.ContextImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
-            this.txtStatus.Properties.MaskSettings.Set("mask", "\\d{0,5}");
-            this.txtStatus.Size = new System.Drawing.Size(297, 22);
-            this.txtStatus.TabIndex = 40;
+            this.cmbPrioridade.Location = new System.Drawing.Point(12, 97);
+            this.cmbPrioridade.Name = "cmbPrioridade";
+            this.cmbPrioridade.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbPrioridade.Properties.Appearance.Options.UseFont = true;
+            this.cmbPrioridade.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbPrioridade.Properties.Items.AddRange(new object[] {
+            "Alta",
+            "Média",
+            "Baixa"});
+            this.cmbPrioridade.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.cmbPrioridade.Size = new System.Drawing.Size(172, 22);
+            this.cmbPrioridade.TabIndex = 2;
             // 
             // txtDescricao
             // 
-            this.txtDescricao.Enabled = false;
             this.txtDescricao.Location = new System.Drawing.Point(12, 157);
             this.txtDescricao.Name = "txtDescricao";
             this.txtDescricao.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDescricao.Properties.Appearance.Options.UseFont = true;
-            this.txtDescricao.Properties.ReadOnly = true;
             this.txtDescricao.Size = new System.Drawing.Size(297, 96);
-            this.txtDescricao.TabIndex = 38;
+            this.txtDescricao.TabIndex = 4;
             // 
             // labelControl10
             // 
@@ -245,26 +254,42 @@
             this.labelControl9.Location = new System.Drawing.Point(12, 271);
             this.labelControl9.Name = "labelControl9";
             this.labelControl9.Size = new System.Drawing.Size(35, 15);
-            this.labelControl9.TabIndex = 37;
+            this.labelControl9.TabIndex = 36;
             this.labelControl9.Text = "Status";
             // 
-            // btnVoltar
+            // btnSalvarTarefa
             // 
-            this.btnVoltar.Appearance.BackColor = System.Drawing.Color.White;
-            this.btnVoltar.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVoltar.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(109)))), ((int)(((byte)(117)))));
-            this.btnVoltar.Appearance.Options.UseBackColor = true;
-            this.btnVoltar.Appearance.Options.UseFont = true;
-            this.btnVoltar.Appearance.Options.UseForeColor = true;
-            this.btnVoltar.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnVoltar.ImageOptions.SvgImage")));
-            this.btnVoltar.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
-            this.btnVoltar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnVoltar.Location = new System.Drawing.Point(190, 328);
-            this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(119, 34);
-            this.btnVoltar.TabIndex = 34;
-            this.btnVoltar.Text = "Voltar";
-            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click_1);
+            this.btnSalvarTarefa.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(110)))), ((int)(((byte)(194)))));
+            this.btnSalvarTarefa.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalvarTarefa.Appearance.Options.UseBackColor = true;
+            this.btnSalvarTarefa.Appearance.Options.UseFont = true;
+            this.btnSalvarTarefa.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnSalvarTarefa.ImageOptions.SvgImage")));
+            this.btnSalvarTarefa.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
+            this.btnSalvarTarefa.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnSalvarTarefa.Location = new System.Drawing.Point(190, 336);
+            this.btnSalvarTarefa.Name = "btnSalvarTarefa";
+            this.btnSalvarTarefa.Size = new System.Drawing.Size(119, 34);
+            this.btnSalvarTarefa.TabIndex = 6;
+            this.btnSalvarTarefa.Text = "Salvar Tarefa";
+            this.btnSalvarTarefa.Click += new System.EventHandler(this.btnSalvarTarefa_Click_1);
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Appearance.BackColor = System.Drawing.Color.White;
+            this.btnCancelar.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(109)))), ((int)(((byte)(117)))));
+            this.btnCancelar.Appearance.Options.UseBackColor = true;
+            this.btnCancelar.Appearance.Options.UseFont = true;
+            this.btnCancelar.Appearance.Options.UseForeColor = true;
+            this.btnCancelar.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnCancelar.ImageOptions.SvgImage")));
+            this.btnCancelar.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
+            this.btnCancelar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnCancelar.Location = new System.Drawing.Point(12, 336);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(119, 34);
+            this.btnCancelar.TabIndex = 7;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click_1);
             // 
             // labelControl1
             // 
@@ -275,7 +300,7 @@
             this.labelControl1.Location = new System.Drawing.Point(12, 136);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(54, 15);
-            this.labelControl1.TabIndex = 36;
+            this.labelControl1.TabIndex = 35;
             this.labelControl1.Text = "Descrição";
             // 
             // labelControl2
@@ -287,23 +312,21 @@
             this.labelControl2.Location = new System.Drawing.Point(12, 19);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(32, 15);
-            this.labelControl2.TabIndex = 32;
+            this.labelControl2.TabIndex = 30;
             this.labelControl2.Text = "Título";
             // 
             // txtTitulo
             // 
-            this.txtTitulo.Enabled = false;
             this.txtTitulo.Location = new System.Drawing.Point(12, 40);
             this.txtTitulo.Name = "txtTitulo";
             this.txtTitulo.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTitulo.Properties.Appearance.Options.UseFont = true;
             this.txtTitulo.Properties.ContextImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
             this.txtTitulo.Size = new System.Drawing.Size(297, 22);
-            this.txtTitulo.TabIndex = 31;
+            this.txtTitulo.TabIndex = 1;
             // 
             // txtPrazo
             // 
-            this.txtPrazo.Enabled = false;
             this.txtPrazo.Location = new System.Drawing.Point(190, 97);
             this.txtPrazo.Name = "txtPrazo";
             this.txtPrazo.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -312,7 +335,7 @@
             this.txtPrazo.Properties.MaskSettings.Set("mask", "\\d+");
             this.txtPrazo.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
             this.txtPrazo.Size = new System.Drawing.Size(119, 22);
-            this.txtPrazo.TabIndex = 35;
+            this.txtPrazo.TabIndex = 3;
             // 
             // labelControl3
             // 
@@ -323,17 +346,20 @@
             this.labelControl3.Location = new System.Drawing.Point(12, 76);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(57, 15);
-            this.labelControl3.TabIndex = 33;
+            this.labelControl3.TabIndex = 31;
             this.labelControl3.Text = "Prioridade";
             // 
-            // uc_VisualizarTarefa
+            // uc_CadastrarTarefa
             // 
+            this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
+            this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panelControl1);
             this.Controls.Add(this.panel1);
-            this.Name = "uc_VisualizarTarefa";
+            this.Name = "uc_CadastrarTarefa";
             this.Size = new System.Drawing.Size(729, 666);
+            this.Load += new System.EventHandler(this.uc_CadastrarTarefa_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.svgImageBox5)).EndInit();
@@ -342,8 +368,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.panelControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtPrioridade.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtStatus.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbStatus.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbPrioridade.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDescricao.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTitulo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPrazo.Properties)).EndInit();
@@ -363,12 +389,13 @@
         private DevExpress.XtraEditors.LabelControl labelControl5;
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.PanelControl panelControl1;
-        private DevExpress.XtraEditors.TextEdit txtPrioridade;
-        private DevExpress.XtraEditors.TextEdit txtStatus;
+        private DevExpress.XtraEditors.ComboBoxEdit cmbStatus;
+        private DevExpress.XtraEditors.ComboBoxEdit cmbPrioridade;
         private DevExpress.XtraEditors.MemoEdit txtDescricao;
         private DevExpress.XtraEditors.LabelControl labelControl10;
         private DevExpress.XtraEditors.LabelControl labelControl9;
-        private DevExpress.XtraEditors.SimpleButton btnVoltar;
+        private DevExpress.XtraEditors.SimpleButton btnSalvarTarefa;
+        private DevExpress.XtraEditors.SimpleButton btnCancelar;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.TextEdit txtTitulo;

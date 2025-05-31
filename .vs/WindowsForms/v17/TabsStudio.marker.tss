@@ -1,10 +1,2 @@
 <?xml version="1.0"?>
-<ArrayOfTabHighlightState xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <TabHighlightState>
-    <extensions>
-      <string>WindowsForms\Forms\uc_VisualizarTarefa.cs</string>
-      <string>WindowsForms\Forms\uc_VisualizarTarefa.Designer.cs</string>
-    </extensions>
-    <highlightIndex>1</highlightIndex>
-  </TabHighlightState>
-</ArrayOfTabHighlightState>
+<ArrayOfTabHighlightState xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />

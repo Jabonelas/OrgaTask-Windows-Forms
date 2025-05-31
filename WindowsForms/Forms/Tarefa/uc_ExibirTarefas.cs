@@ -28,6 +28,11 @@ namespace WindowsForms.Forms
             InitializeComponent();
         }
 
+        private void uc_ExibirTarefas_Load(object sender, EventArgs e)
+        {
+            btnProximo.Focus();
+        }
+
         public async Task SetParametroAdicionalAsync(frmHome _frmHome, string _tarefas)
         {
             frmHome = _frmHome;
@@ -67,7 +72,7 @@ namespace WindowsForms.Forms
 
             if (ResultadoOperacao.Sucesso == false)
             {
-                MensagensDoSistema.MensagemAlertaSistema(ResultadoOperacao);
+                MensagensAlertaSistema.MensagemAlertaSistema(ResultadoOperacao);
 
                 return;
             }

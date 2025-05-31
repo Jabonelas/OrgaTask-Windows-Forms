@@ -44,7 +44,7 @@ namespace WindowsForms.Forms
                 return;
             }
 
-            MensagensDoSistema.MensagemAlertaSistema(ResultadoOperacao);
+            MensagensAlertaSistema.MensagemAlertaSistema(ResultadoOperacao);
         }
 
         private void PreencherBarraTarefasConcluidas(TarefaQtdStatusDTO _TarefaQtdStatus)
@@ -148,7 +148,7 @@ namespace WindowsForms.Forms
                 return;
             }
 
-            MensagensDoSistema.MensagemAlertaSistema(ResultadoOperacao);
+            MensagensAlertaSistema.MensagemAlertaSistema(ResultadoOperacao);
         }
     }
 }

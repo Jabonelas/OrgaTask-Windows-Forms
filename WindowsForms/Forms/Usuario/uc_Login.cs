@@ -21,6 +21,11 @@ namespace WindowsForms.Forms
             InitializeComponent();
         }
 
+        private void uc_Login_Load(object sender, EventArgs e)
+        {
+            txtUsuario.Focus();
+        }
+
         public void SetParametroAdicional(frmHome _frmHome)
         {
             frmHome = _frmHome;
@@ -84,7 +89,7 @@ namespace WindowsForms.Forms
             }
             else
             {
-                MensagensDoSistema.MensagemAlertaSistema(resultadoOperacao);
+                MensagensAlertaSistema.MensagemAlertaSistema(resultadoOperacao);
             }
         }
 
@@ -112,7 +117,7 @@ namespace WindowsForms.Forms
                     Mensagem = "Alguns campos não foram preenchidos ou contêm informações inválidas"
                 };
 
-                MensagensDoSistema.MensagemAlertaSistema(mensagem);
+                MensagensAlertaSistema.MensagemAlertaSistema(mensagem);
 
                 return false;
             }

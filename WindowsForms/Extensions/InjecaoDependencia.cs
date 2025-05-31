@@ -23,7 +23,6 @@ namespace WindowsForms
 #if DEBUG
                 client.BaseAddress = new Uri("https://localhost:7091/");
 #else
-                client.BaseAddress = new Uri("https://localhost:7091/");
                 //client.BaseAddress = new Uri("https://blazor-api.onrender.com");
 #endif
 

@@ -407,7 +407,6 @@ namespace WindowsForms.Service
             return $"{_endpont}";
 
 #else
-            return $"{_endpont}";
             return $"https://blazor-api.onrender.com/{_endpont}";
 
 #endif

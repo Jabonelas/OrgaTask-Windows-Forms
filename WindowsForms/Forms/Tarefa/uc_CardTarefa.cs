@@ -96,7 +96,7 @@ namespace WindowsForms.Forms
 
         private async Task ExcluirTarefaAsync()
         {
-            var dialogResult = MensagensDoSistema.MensagemAtencaoYesNo("Tem certeza que deseja excluir essa tarefa?");
+            var dialogResult = MensagensAlertaSistema.MensagemAtencaoYesNo("Tem certeza que deseja excluir essa tarefa?");
 
             if (dialogResult == DialogResult.Yes)
             {
@@ -114,7 +114,7 @@ namespace WindowsForms.Forms
                     }
                     else
                     {
-                        MensagensDoSistema.MensagemAlertaSistema(resultadoOperacao);
+                        MensagensAlertaSistema.MensagemAlertaSistema(resultadoOperacao);
                     }
                 }
                 finally

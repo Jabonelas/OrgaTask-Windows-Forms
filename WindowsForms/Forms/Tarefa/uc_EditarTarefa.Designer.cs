@@ -1,6 +1,6 @@
 ﻿namespace WindowsForms.Forms
 {
-    partial class uc_CadastrarTarefa
+    partial class uc_EditarTarefa
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(uc_CadastrarTarefa));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(uc_EditarTarefa));
             this.panel1 = new System.Windows.Forms.Panel();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
@@ -44,7 +44,7 @@
             this.txtDescricao = new DevExpress.XtraEditors.MemoEdit();
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
-            this.btnSalvarTarefa = new DevExpress.XtraEditors.SimpleButton();
+            this.btnSalvarAlteracao = new DevExpress.XtraEditors.SimpleButton();
             this.btnCancelar = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
@@ -78,7 +78,7 @@
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(369, 660);
-            this.panel1.TabIndex = 23;
+            this.panel1.TabIndex = 25;
             // 
             // labelControl8
             // 
@@ -88,9 +88,9 @@
             this.labelControl8.Appearance.Options.UseForeColor = true;
             this.labelControl8.Location = new System.Drawing.Point(83, 458);
             this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(230, 15);
+            this.labelControl8.Size = new System.Drawing.Size(223, 15);
             this.labelControl8.TabIndex = 19;
-            this.labelControl8.Text = "Mantenha seu fluxo de trabalho organizado";
+            this.labelControl8.Text = "Matenha seu fluxo de trabalho organizado";
             // 
             // labelControl7
             // 
@@ -100,9 +100,9 @@
             this.labelControl7.Appearance.Options.UseForeColor = true;
             this.labelControl7.Location = new System.Drawing.Point(83, 415);
             this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(222, 15);
+            this.labelControl7.Size = new System.Drawing.Size(171, 15);
             this.labelControl7.TabIndex = 18;
-            this.labelControl7.Text = "Defina prazos e acompanhe seu progresso";
+            this.labelControl7.Text = "Acompanhe prazos e progressos";
             // 
             // svgImageBox5
             // 
@@ -142,9 +142,9 @@
             this.labelControl6.Appearance.Options.UseForeColor = true;
             this.labelControl6.Location = new System.Drawing.Point(79, 373);
             this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(207, 15);
+            this.labelControl6.Size = new System.Drawing.Size(234, 15);
             this.labelControl6.TabIndex = 14;
-            this.labelControl6.Text = "Organize suas atividades por prioridade";
+            this.labelControl6.Text = "Organize suas prioridades de forma eficiente";
             // 
             // labelControl5
             // 
@@ -154,10 +154,9 @@
             this.labelControl5.Appearance.Options.UseForeColor = true;
             this.labelControl5.Location = new System.Drawing.Point(43, 305);
             this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(292, 34);
+            this.labelControl5.Size = new System.Drawing.Size(273, 34);
             this.labelControl5.TabIndex = 13;
-            this.labelControl5.Text = "Preencha os campos ao lado para criar uma nova \r\ntarefa e organizar seu trabalho." +
-    "";
+            this.labelControl5.Text = "Atualize os detalhes da sua tarefa para manter \r\nsua produtividade em dia.";
             // 
             // labelControl4
             // 
@@ -169,9 +168,9 @@
             this.labelControl4.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("labelControl4.ImageOptions.SvgImage")));
             this.labelControl4.Location = new System.Drawing.Point(42, 204);
             this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(203, 40);
+            this.labelControl4.Size = new System.Drawing.Size(209, 40);
             this.labelControl4.TabIndex = 12;
-            this.labelControl4.Text = "      Nova Tarefa";
+            this.labelControl4.Text = "      Editar Tarefa";
             // 
             // panelControl1
             // 
@@ -180,17 +179,17 @@
             this.panelControl1.Controls.Add(this.txtDescricao);
             this.panelControl1.Controls.Add(this.labelControl10);
             this.panelControl1.Controls.Add(this.labelControl9);
-            this.panelControl1.Controls.Add(this.btnSalvarTarefa);
+            this.panelControl1.Controls.Add(this.btnSalvarAlteracao);
             this.panelControl1.Controls.Add(this.btnCancelar);
             this.panelControl1.Controls.Add(this.labelControl1);
             this.panelControl1.Controls.Add(this.labelControl2);
             this.panelControl1.Controls.Add(this.txtTitulo);
             this.panelControl1.Controls.Add(this.txtPrazo);
             this.panelControl1.Controls.Add(this.labelControl3);
-            this.panelControl1.Location = new System.Drawing.Point(394, 144);
+            this.panelControl1.Location = new System.Drawing.Point(391, 157);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(321, 391);
-            this.panelControl1.TabIndex = 26;
+            this.panelControl1.Size = new System.Drawing.Size(321, 380);
+            this.panelControl1.TabIndex = 27;
             // 
             // cmbStatus
             // 
@@ -206,7 +205,7 @@
             "Concluído"});
             this.cmbStatus.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.cmbStatus.Size = new System.Drawing.Size(297, 22);
-            this.cmbStatus.TabIndex = 40;
+            this.cmbStatus.TabIndex = 5;
             // 
             // cmbPrioridade
             // 
@@ -222,7 +221,7 @@
             "Baixa"});
             this.cmbPrioridade.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.cmbPrioridade.Size = new System.Drawing.Size(172, 22);
-            this.cmbPrioridade.TabIndex = 37;
+            this.cmbPrioridade.TabIndex = 2;
             // 
             // txtDescricao
             // 
@@ -231,7 +230,7 @@
             this.txtDescricao.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDescricao.Properties.Appearance.Options.UseFont = true;
             this.txtDescricao.Size = new System.Drawing.Size(297, 96);
-            this.txtDescricao.TabIndex = 38;
+            this.txtDescricao.TabIndex = 4;
             // 
             // labelControl10
             // 
@@ -257,21 +256,21 @@
             this.labelControl9.TabIndex = 36;
             this.labelControl9.Text = "Status";
             // 
-            // btnSalvarTarefa
+            // btnSalvarAlteracao
             // 
-            this.btnSalvarTarefa.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(110)))), ((int)(((byte)(194)))));
-            this.btnSalvarTarefa.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalvarTarefa.Appearance.Options.UseBackColor = true;
-            this.btnSalvarTarefa.Appearance.Options.UseFont = true;
-            this.btnSalvarTarefa.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnSalvarTarefa.ImageOptions.SvgImage")));
-            this.btnSalvarTarefa.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
-            this.btnSalvarTarefa.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnSalvarTarefa.Location = new System.Drawing.Point(190, 336);
-            this.btnSalvarTarefa.Name = "btnSalvarTarefa";
-            this.btnSalvarTarefa.Size = new System.Drawing.Size(119, 34);
-            this.btnSalvarTarefa.TabIndex = 32;
-            this.btnSalvarTarefa.Text = "Salvar Tarefa";
-            this.btnSalvarTarefa.Click += new System.EventHandler(this.btnSalvarTarefa_Click_1);
+            this.btnSalvarAlteracao.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(110)))), ((int)(((byte)(194)))));
+            this.btnSalvarAlteracao.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalvarAlteracao.Appearance.Options.UseBackColor = true;
+            this.btnSalvarAlteracao.Appearance.Options.UseFont = true;
+            this.btnSalvarAlteracao.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnSalvarAlteracao.ImageOptions.SvgImage")));
+            this.btnSalvarAlteracao.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
+            this.btnSalvarAlteracao.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnSalvarAlteracao.Location = new System.Drawing.Point(190, 328);
+            this.btnSalvarAlteracao.Name = "btnSalvarAlteracao";
+            this.btnSalvarAlteracao.Size = new System.Drawing.Size(119, 34);
+            this.btnSalvarAlteracao.TabIndex = 6;
+            this.btnSalvarAlteracao.Text = "Salvar Alterações";
+            this.btnSalvarAlteracao.Click += new System.EventHandler(this.btnSalvarAlteracao_Click_1);
             // 
             // btnCancelar
             // 
@@ -284,10 +283,10 @@
             this.btnCancelar.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnCancelar.ImageOptions.SvgImage")));
             this.btnCancelar.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
             this.btnCancelar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnCancelar.Location = new System.Drawing.Point(12, 336);
+            this.btnCancelar.Location = new System.Drawing.Point(12, 328);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(119, 34);
-            this.btnCancelar.TabIndex = 33;
+            this.btnCancelar.TabIndex = 7;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click_1);
             // 
@@ -323,7 +322,7 @@
             this.txtTitulo.Properties.Appearance.Options.UseFont = true;
             this.txtTitulo.Properties.ContextImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
             this.txtTitulo.Size = new System.Drawing.Size(297, 22);
-            this.txtTitulo.TabIndex = 29;
+            this.txtTitulo.TabIndex = 1;
             // 
             // txtPrazo
             // 
@@ -335,7 +334,7 @@
             this.txtPrazo.Properties.MaskSettings.Set("mask", "\\d+");
             this.txtPrazo.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
             this.txtPrazo.Size = new System.Drawing.Size(119, 22);
-            this.txtPrazo.TabIndex = 34;
+            this.txtPrazo.TabIndex = 3;
             // 
             // labelControl3
             // 
@@ -349,16 +348,15 @@
             this.labelControl3.TabIndex = 31;
             this.labelControl3.Text = "Prioridade";
             // 
-            // uc_CadastrarTarefa
+            // uc_EditarTarefa
             // 
-            this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
-            this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panelControl1);
             this.Controls.Add(this.panel1);
-            this.Name = "uc_CadastrarTarefa";
+            this.Name = "uc_EditarTarefa";
             this.Size = new System.Drawing.Size(729, 666);
+            this.Load += new System.EventHandler(this.uc_EditarTarefa_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.svgImageBox5)).EndInit();
@@ -393,7 +391,7 @@
         private DevExpress.XtraEditors.MemoEdit txtDescricao;
         private DevExpress.XtraEditors.LabelControl labelControl10;
         private DevExpress.XtraEditors.LabelControl labelControl9;
-        private DevExpress.XtraEditors.SimpleButton btnSalvarTarefa;
+        private DevExpress.XtraEditors.SimpleButton btnSalvarAlteracao;
         private DevExpress.XtraEditors.SimpleButton btnCancelar;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.LabelControl labelControl2;

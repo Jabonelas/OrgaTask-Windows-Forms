@@ -193,10 +193,11 @@
             this.txtConfirmaSenha.Name = "txtConfirmaSenha";
             this.txtConfirmaSenha.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtConfirmaSenha.Properties.Appearance.Options.UseFont = true;
+            this.txtConfirmaSenha.Properties.ContextImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("txtConfirmaSenha.Properties.ContextImageOptions.SvgImage")));
             this.txtConfirmaSenha.Properties.ContextImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
             this.txtConfirmaSenha.Properties.PasswordChar = '*';
-            this.txtConfirmaSenha.Size = new System.Drawing.Size(297, 22);
-            this.txtConfirmaSenha.TabIndex = 33;
+            this.txtConfirmaSenha.Size = new System.Drawing.Size(297, 24);
+            this.txtConfirmaSenha.TabIndex = 4;
             // 
             // labelControl9
             // 
@@ -222,7 +223,7 @@
             this.btnCadastarUsuario.Location = new System.Drawing.Point(190, 267);
             this.btnCadastarUsuario.Name = "btnCadastarUsuario";
             this.btnCadastarUsuario.Size = new System.Drawing.Size(119, 34);
-            this.btnCadastarUsuario.TabIndex = 27;
+            this.btnCadastarUsuario.TabIndex = 5;
             this.btnCadastarUsuario.Text = "Cadastrar";
             this.btnCadastarUsuario.Click += new System.EventHandler(this.btnCadastarUsuario_Click_1);
             // 
@@ -240,7 +241,7 @@
             this.btnCancelar.Location = new System.Drawing.Point(12, 267);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(119, 34);
-            this.btnCancelar.TabIndex = 28;
+            this.btnCancelar.TabIndex = 6;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click_1);
             // 
@@ -250,10 +251,11 @@
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSenha.Properties.Appearance.Options.UseFont = true;
+            this.txtSenha.Properties.ContextImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("txtSenha.Properties.ContextImageOptions.SvgImage")));
             this.txtSenha.Properties.ContextImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
             this.txtSenha.Properties.PasswordChar = '*';
-            this.txtSenha.Size = new System.Drawing.Size(297, 22);
-            this.txtSenha.TabIndex = 31;
+            this.txtSenha.Size = new System.Drawing.Size(297, 24);
+            this.txtSenha.TabIndex = 3;
             // 
             // labelControl1
             // 
@@ -287,7 +289,7 @@
             this.txtNomeCompleto.Properties.Appearance.Options.UseFont = true;
             this.txtNomeCompleto.Properties.ContextImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
             this.txtNomeCompleto.Size = new System.Drawing.Size(297, 22);
-            this.txtNomeCompleto.TabIndex = 24;
+            this.txtNomeCompleto.TabIndex = 1;
             // 
             // txtLogin
             // 
@@ -295,9 +297,10 @@
             this.txtLogin.Name = "txtLogin";
             this.txtLogin.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLogin.Properties.Appearance.Options.UseFont = true;
+            this.txtLogin.Properties.ContextImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("txtLogin.Properties.ContextImageOptions.SvgImage")));
             this.txtLogin.Properties.ContextImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
-            this.txtLogin.Size = new System.Drawing.Size(297, 22);
-            this.txtLogin.TabIndex = 29;
+            this.txtLogin.Size = new System.Drawing.Size(297, 24);
+            this.txtLogin.TabIndex = 2;
             // 
             // labelControl3
             // 
@@ -321,6 +324,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "uc_CadastroUsuario";
             this.Size = new System.Drawing.Size(986, 670);
+            this.Load += new System.EventHandler(this.uc_CadastroUsuario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.svgImageBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.svgImageBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.svgImageBox3)).EndInit();

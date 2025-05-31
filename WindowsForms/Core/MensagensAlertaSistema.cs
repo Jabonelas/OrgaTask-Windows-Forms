@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 namespace WindowsForms.Classes
 {
-    internal class MensagensDoSistema
+    internal class MensagensAlertaSistema
     {
         public static DialogResult MensagemAtencaoYesNo(string _mensagem)
         {
@@ -52,31 +52,5 @@ namespace WindowsForms.Classes
 
             return (icone, titulo);
         }
-
-        //private string SelecionarTitulo(string _titulo)
-        //{
-        //    string titulo;
-
-        //    switch (_titulo)
-        //    {
-        //        case TipoErro.Autenticacao:
-        //            titulo = "Credenciais Inválidas";
-        //            break;
-
-        //        case TipoErro.Servidor:
-        //            titulo = "Erro no Servidor";
-        //            break;
-
-        //        case TipoErro.Rede:
-        //            titulo = "Problema de Rede";
-        //            break;
-
-        //        default:
-        //            titulo = "Erro Inesperado";
-        //            break;
-        //    }
-
-        //    return titulo;
-        //}
     }
 }

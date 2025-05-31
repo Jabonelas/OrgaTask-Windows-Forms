@@ -53,7 +53,7 @@
             this.btnAnteriro.Location = new System.Drawing.Point(260, 626);
             this.btnAnteriro.Name = "btnAnteriro";
             this.btnAnteriro.Size = new System.Drawing.Size(78, 26);
-            this.btnAnteriro.TabIndex = 1;
+            this.btnAnteriro.TabIndex = 2;
             this.btnAnteriro.Text = "Anterior";
             this.btnAnteriro.Click += new System.EventHandler(this.btnAnteriro_Click);
             // 
@@ -69,7 +69,7 @@
             this.btnProximo.Location = new System.Drawing.Point(396, 626);
             this.btnProximo.Name = "btnProximo";
             this.btnProximo.Size = new System.Drawing.Size(78, 26);
-            this.btnProximo.TabIndex = 2;
+            this.btnProximo.TabIndex = 1;
             this.btnProximo.Text = "Próxima";
             this.btnProximo.Click += new System.EventHandler(this.btnProximo_Click);
             // 
@@ -106,7 +106,7 @@
             this.btnNovaTarefa.Location = new System.Drawing.Point(610, 13);
             this.btnNovaTarefa.Name = "btnNovaTarefa";
             this.btnNovaTarefa.Size = new System.Drawing.Size(119, 34);
-            this.btnNovaTarefa.TabIndex = 18;
+            this.btnNovaTarefa.TabIndex = 3;
             this.btnNovaTarefa.Text = "Nova Tarefa";
             this.btnNovaTarefa.Click += new System.EventHandler(this.btnNovaTarefa_Click);
             // 
@@ -153,6 +153,7 @@
             this.Controls.Add(this.pnlListaTarefas);
             this.Name = "uc_ExibirTarefas";
             this.Size = new System.Drawing.Size(735, 666);
+            this.Load += new System.EventHandler(this.uc_ExibirTarefas_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

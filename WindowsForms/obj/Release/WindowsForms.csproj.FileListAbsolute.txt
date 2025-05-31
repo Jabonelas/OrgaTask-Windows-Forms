@@ -8,6 +8,7 @@ C:\Users\israe\source\repos\WindowsForms\WindowsForms\bin\Release\DevExpress.Dra
 C:\Users\israe\source\repos\WindowsForms\WindowsForms\bin\Release\DevExpress.Pdf.v24.1.Core.dll
 C:\Users\israe\source\repos\WindowsForms\WindowsForms\bin\Release\DevExpress.Printing.v24.1.Core.dll
 C:\Users\israe\source\repos\WindowsForms\WindowsForms\bin\Release\DevExpress.Utils.v24.1.dll
+C:\Users\israe\source\repos\WindowsForms\WindowsForms\bin\Release\DevExpress.Xpo.v24.1.dll
 C:\Users\israe\source\repos\WindowsForms\WindowsForms\bin\Release\DevExpress.XtraBars.v24.1.dll
 C:\Users\israe\source\repos\WindowsForms\WindowsForms\bin\Release\DevExpress.XtraDiagram.v24.1.dll
 C:\Users\israe\source\repos\WindowsForms\WindowsForms\bin\Release\DevExpress.XtraEditors.v24.1.dll
@@ -44,6 +45,7 @@ C:\Users\israe\source\repos\WindowsForms\WindowsForms\bin\Release\DevExpress.Dra
 C:\Users\israe\source\repos\WindowsForms\WindowsForms\bin\Release\DevExpress.Pdf.v24.1.Core.xml
 C:\Users\israe\source\repos\WindowsForms\WindowsForms\bin\Release\DevExpress.Printing.v24.1.Core.xml
 C:\Users\israe\source\repos\WindowsForms\WindowsForms\bin\Release\DevExpress.Utils.v24.1.xml
+C:\Users\israe\source\repos\WindowsForms\WindowsForms\bin\Release\DevExpress.Xpo.v24.1.xml
 C:\Users\israe\source\repos\WindowsForms\WindowsForms\bin\Release\DevExpress.XtraBars.v24.1.xml
 C:\Users\israe\source\repos\WindowsForms\WindowsForms\bin\Release\DevExpress.XtraDiagram.v24.1.xml
 C:\Users\israe\source\repos\WindowsForms\WindowsForms\bin\Release\DevExpress.XtraEditors.v24.1.xml
@@ -74,14 +76,16 @@ C:\Users\israe\source\repos\WindowsForms\WindowsForms\bin\Release\DevExpress.Xtr
 C:\Users\israe\source\repos\WindowsForms\WindowsForms\bin\Release\DevExpress.Office.v24.1.Core.xml
 C:\Users\israe\source\repos\WindowsForms\WindowsForms\obj\Release\WindowsForms.csproj.AssemblyReference.cache
 C:\Users\israe\source\repos\WindowsForms\WindowsForms\obj\Release\WindowsForms.frmHome.resources
+C:\Users\israe\source\repos\WindowsForms\WindowsForms\obj\Release\WindowsForms.Forms.uc_CardTarefa.resources
+C:\Users\israe\source\repos\WindowsForms\WindowsForms\obj\Release\WindowsForms.Forms.uc_CardTarefaPrioridade.resources
 C:\Users\israe\source\repos\WindowsForms\WindowsForms\obj\Release\WindowsForms.Forms.uc_EditarTarefa.resources
 C:\Users\israe\source\repos\WindowsForms\WindowsForms\obj\Release\WindowsForms.Forms.uc_CadastrarTarefa.resources
 C:\Users\israe\source\repos\WindowsForms\WindowsForms\obj\Release\WindowsForms.Forms.uc_CadastroUsuario.resources
-C:\Users\israe\source\repos\WindowsForms\WindowsForms\obj\Release\WindowsForms.Forms.uc_CardTarefa.resources
 C:\Users\israe\source\repos\WindowsForms\WindowsForms\obj\Release\WindowsForms.Forms.uc_DashboardTarefas.resources
 C:\Users\israe\source\repos\WindowsForms\WindowsForms\obj\Release\WindowsForms.Forms.uc_ExibirTarefas.resources
 C:\Users\israe\source\repos\WindowsForms\WindowsForms\obj\Release\WindowsForms.Forms.uc_Login.resources
 C:\Users\israe\source\repos\WindowsForms\WindowsForms\obj\Release\WindowsForms.Forms.uc_MensagemConfirmacao.resources
+C:\Users\israe\source\repos\WindowsForms\WindowsForms\obj\Release\WindowsForms.Forms.uc_MensagemExclusao.resources
 C:\Users\israe\source\repos\WindowsForms\WindowsForms\obj\Release\WindowsForms.Forms.uc_VisualizarTarefa.resources
 C:\Users\israe\source\repos\WindowsForms\WindowsForms\obj\Release\WindowsForms.Properties.Resources.resources
 C:\Users\israe\source\repos\WindowsForms\WindowsForms\obj\Release\WindowsForms.csproj.GenerateResource.cache
@@ -90,7 +94,3 @@ C:\Users\israe\source\repos\WindowsForms\WindowsForms\obj\Release\WindowsForms.c
 C:\Users\israe\source\repos\WindowsForms\WindowsForms\obj\Release\WindowsF.AEBE025B.Up2Date
 C:\Users\israe\source\repos\WindowsForms\WindowsForms\obj\Release\WindowsForms.exe
 C:\Users\israe\source\repos\WindowsForms\WindowsForms\obj\Release\WindowsForms.pdb
-C:\Users\israe\source\repos\WindowsForms\WindowsForms\obj\Release\WindowsForms.Forms.uc_CardTarefaPrioridade.resources
-C:\Users\israe\source\repos\WindowsForms\WindowsForms\bin\Release\DevExpress.Xpo.v24.1.dll
-C:\Users\israe\source\repos\WindowsForms\WindowsForms\bin\Release\DevExpress.Xpo.v24.1.xml
-C:\Users\israe\source\repos\WindowsForms\WindowsForms\obj\Release\WindowsForms.Forms.uc_MensagemExclusao.resources

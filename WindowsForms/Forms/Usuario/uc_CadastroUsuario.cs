@@ -20,6 +20,11 @@ namespace WindowsForms.Forms
             InitializeComponent();
         }
 
+        private void uc_CadastroUsuario_Load(object sender, EventArgs e)
+        {
+            txtNomeCompleto.Focus();
+        }
+
         public void SetParametroAdicional(frmHome _frmHome)
         {
             frmHome = _frmHome;
@@ -73,7 +78,7 @@ namespace WindowsForms.Forms
                 return;
             }
 
-            MensagensDoSistema.MensagemAlertaSistema(resultadoOperacao);
+            MensagensAlertaSistema.MensagemAlertaSistema(resultadoOperacao);
         }
 
         private async Task ExibirTelaDashboardTarefasAsync()
@@ -103,7 +108,7 @@ namespace WindowsForms.Forms
                     Mensagem = "Alguns campos não foram preenchidos ou contêm informações inválidas"
                 };
 
-                MensagensDoSistema.MensagemAlertaSistema(mensagem);
+                MensagensAlertaSistema.MensagemAlertaSistema(mensagem);
 
                 return false;
             }
@@ -121,7 +126,7 @@ namespace WindowsForms.Forms
                     Mensagem = "As senhas digitadas não são iguais. Por favor, verifique."
                 };
 
-                MensagensDoSistema.MensagemAlertaSistema(mensagem);
+                MensagensAlertaSistema.MensagemAlertaSistema(mensagem);
 
                 return false;
             }
@@ -131,7 +136,7 @@ namespace WindowsForms.Forms
 
         private void Cancelar()
         {
-            var dialogResult = MensagensDoSistema.MensagemAtencaoYesNo("Tem certeza que deseja cancelar o cadastro de usuário?");
+            var dialogResult = MensagensAlertaSistema.MensagemAtencaoYesNo("Tem certeza que deseja cancelar o cadastro de usuário?");
 
             if (dialogResult == DialogResult.Yes)
             {
@@ -170,7 +175,7 @@ namespace WindowsForms.Forms
                 return;
             }
 
-            MensagensDoSistema.MensagemAlertaSistema(resultadoOperacao);
+            MensagensAlertaSistema.MensagemAlertaSistema(resultadoOperacao);
         }
 
         private UsuarioCadastrarDTO PreencherDadosUsuario()

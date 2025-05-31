@@ -24,6 +24,11 @@ namespace WindowsForms.Forms
             InitializeComponent();
         }
 
+        private void uc_VisualizarTarefa_Load(object sender, EventArgs e)
+        {
+            btnVoltar.Focus();
+        }
+
         public async Task SetParametroAdicionalAsync(frmHome _frmHome, int _idTarefa, string _statusPassado)
         {
             frmHome = _frmHome;
@@ -50,7 +55,7 @@ namespace WindowsForms.Forms
 
             if (ResultadoOperacao.Mensagem != null)
             {
-                MensagensDoSistema.MensagemAlertaSistema(ResultadoOperacao);
+                MensagensAlertaSistema.MensagemAlertaSistema(ResultadoOperacao);
             }
             else
             {

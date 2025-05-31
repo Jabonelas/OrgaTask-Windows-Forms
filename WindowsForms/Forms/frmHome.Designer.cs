@@ -178,11 +178,12 @@
             this.Controls.Add(this.BarraMenuLateral);
             this.Controls.Add(this.fluentDesignFormControl1);
             this.FluentDesignFormControl = this.fluentDesignFormControl1;
+            this.IconOptions.SvgImage = global::WindowsForms.Properties.Resources.IconeOrgaTask;
             this.MaximizeBox = false;
             this.Name = "frmHome";
             this.NavigationControl = this.BarraMenuLateral;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "OrgTask";
+            this.Text = "OrgaTask";
             this.Load += new System.EventHandler(this.frmHome_Load);
             ((System.ComponentModel.ISupportInitialize)(this.BarraMenuLateral)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).EndInit();

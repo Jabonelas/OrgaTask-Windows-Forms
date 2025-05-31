@@ -2,49 +2,53 @@
 <ArrayOfArrayOfArrayOfString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ArrayOfArrayOfString>
     <ArrayOfString>
-      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Forms\uc_CardTarefa.cs</string>
-      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Forms\uc_CardTarefa.cs</string>
+      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Core\ResultadoOperacao.cs</string>
     </ArrayOfString>
     <ArrayOfString>
-      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Forms\uc_ExibirTarefas.cs</string>
-      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Forms\uc_ExibirTarefas.cs</string>
+      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Core\MensagensAlertaSistema.cs</string>
     </ArrayOfString>
     <ArrayOfString>
-      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Forms\uc_DashboardTarefas.cs</string>
-      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Forms\uc_DashboardTarefas.cs</string>
+      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\DTOs\ErrorResponse.cs</string>
     </ArrayOfString>
     <ArrayOfString>
-      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Forms\uc_MensagemExclusao.cs</string>
-      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Forms\uc_MensagemExclusao.cs</string>
+      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\DTOs\UserToken.cs</string>
     </ArrayOfString>
     <ArrayOfString>
-      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Forms\uc_CardTarefaPrioridade.cs</string>
-      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Forms\uc_CardTarefaPrioridade.cs</string>
-    </ArrayOfString>
-    <ArrayOfString>
-      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Forms\uc_VisualizarTarefa.cs</string>
-      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Forms\uc_VisualizarTarefa.Designer.cs</string>
-    </ArrayOfString>
-    <ArrayOfString>
-      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Forms\uc_MensagemConfirmacao.cs</string>
-    </ArrayOfString>
-    <ArrayOfString>
-      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Forms\uc_Login.cs</string>
-    </ArrayOfString>
-    <ArrayOfString>
-      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Forms\uc_EditarTarefa.cs</string>
-      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Forms\uc_EditarTarefa.Designer.cs</string>
-    </ArrayOfString>
-    <ArrayOfString>
-      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Forms\uc_CadastroUsuario.cs</string>
-    </ArrayOfString>
-    <ArrayOfString>
-      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Forms\uc_CadastrarTarefa.cs</string>
-      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Forms\uc_CadastrarTarefa.Designer.cs</string>
+      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Service\TarefaService.cs</string>
     </ArrayOfString>
     <ArrayOfString>
       <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Forms\frmHome.cs</string>
-      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Forms\frmHome.Designer.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Forms\Usuario\uc_Login.cs</string>
+      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Forms\Usuario\uc_Login.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Forms\Usuario\uc_CadastroUsuario.cs</string>
+      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Forms\Usuario\uc_CadastroUsuario.cs</string>
+      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Forms\Usuario\uc_CadastroUsuario.Designer.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Forms\Tarefa\uc_VisualizarTarefa.cs</string>
+      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Forms\Tarefa\uc_VisualizarTarefa.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Forms\Tarefa\uc_ExibirTarefas.cs</string>
+      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Forms\Tarefa\uc_ExibirTarefas.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Forms\Tarefa\uc_EditarTarefa.cs</string>
+      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Forms\Tarefa\uc_EditarTarefa.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Forms\Tarefa\uc_DashboardTarefas.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Forms\Tarefa\uc_CardTarefaPrioridade.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Forms\Tarefa\uc_CadastrarTarefa.cs</string>
+      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Forms\Tarefa\uc_CadastrarTarefa.cs</string>
     </ArrayOfString>
   </ArrayOfArrayOfString>
 </ArrayOfArrayOfArrayOfString>

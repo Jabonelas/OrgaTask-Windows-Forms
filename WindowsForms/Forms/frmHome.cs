@@ -120,7 +120,7 @@ namespace WindowsForms
 
         private void FinalizarAplicacao()
         {
-            var dialogResult = MensagensDoSistema.MensagemAtencaoYesNo("Tem certeza que deseja finalizar o OrgTask?");
+            var dialogResult = MensagensAlertaSistema.MensagemAtencaoYesNo("Tem certeza que deseja finalizar o OrgTask?");
 
             if (dialogResult == DialogResult.Yes)
             {
@@ -135,7 +135,7 @@ namespace WindowsForms
 
         private void RealizarTrocaUsuario()
         {
-            var dialogResult = MensagensDoSistema.MensagemAtencaoYesNo("Tem certeza que deseja trocar de usuário?");
+            var dialogResult = MensagensAlertaSistema.MensagemAtencaoYesNo("Tem certeza que deseja trocar de usuário?");
 
             if (dialogResult == DialogResult.Yes)
             {
