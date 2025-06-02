@@ -30,6 +30,7 @@ Outros frontends do sistema:
 - **UI Framework**: DevExpress 24.1 
 - **Autenticação**: JWT Bearer Tokens
 - **Consumo de API**: REST (HttpClient)
+- **Controle de Erros**: Sistema de logging customizado em arquivos de log (pasta /OrgaTask_Logs)
 - **Padrões Arquiteturais**:
   - **Service Layer**: Separação clara entre controllers e lógica de negócio
   - **Injeção de Dependência**: Nativa do .NET (IServiceCollection)
