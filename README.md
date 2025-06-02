@@ -4,6 +4,15 @@
 ![Windows Forms](https://img.shields.io/badge/Windows%20Forms-Desktop%20App-%230078D7)
 ![DevExpress](https://img.shields.io/badge/DevExpress-24.1-%23FF7200)
 
+
+## 💻 **Sobre o OrgaTask**  
+**Aplicativo desktop** para gestão de tarefas, onde usuários podem:  
+- Criar/gerenciar tarefas com prioridades e status  
+- Experiência tradicional para usuários Windows  
+- Ter dados sincronizados em tempo real  
+ 
+
+
 > Frontend desktop do ecossistema OrgaTask - Aplicação Windows Forms para gerenciamento de tarefas
 
 ![image](https://github.com/user-attachments/assets/f8180a35-adb8-494b-a425-94f4c47a148b)
