@@ -25,6 +25,9 @@ Esta aplicação consome:
 Outros frontends do sistema:
 - [OrgaTask Blazor WebAssembly](https://github.com/Jabonelas/OrgaTask-Blazor-WebAssembly) (Versão Web)
 
+![OrganizacaoOrgaTask](https://github.com/user-attachments/assets/7d98c3e9-d337-4252-a8a0-5cf424a7d374)
+
+
 ## 🛠 Tecnologias
 - **Plataforma**: Windows Forms (.NET Framework 4.8)
 - **UI Framework**: DevExpress 24.1 
