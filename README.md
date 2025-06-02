@@ -34,7 +34,11 @@ Esta aplicação consome:
 Outros frontends do sistema:
 - [OrgaTask Blazor WebAssembly](https://github.com/Jabonelas/OrgaTask-Blazor-WebAssembly) (Versão Web)
 
-![OrganizacaoOrgaTask](https://github.com/user-attachments/assets/7d98c3e9-d337-4252-a8a0-5cf424a7d374)
+- 📊 Arquitetura do Sistema
+
+![OrganizacaoOrgaTask](https://github.com/user-attachments/assets/bae20b56-ace7-4ef0-8d14-7fe13f1d9d31)
+Figura 1: Visão geral da integração entre os componentes do OrgaTask.
+A API central (Backend) serve dados para os frontends Web e Desktop.
 
 
 ## 🛠 Tecnologias
