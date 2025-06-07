@@ -111,6 +111,7 @@
             this.btnLogin.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.btnTrocarUsuario,
             this.btnSair});
+            this.btnLogin.Expanded = true;
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Text = "Login";
             // 
@@ -184,6 +185,7 @@
             this.NavigationControl = this.BarraMenuLateral;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "OrgaTask";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmHome_FormClosing);
             this.Load += new System.EventHandler(this.frmHome_Load);
             ((System.ComponentModel.ISupportInitialize)(this.BarraMenuLateral)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).EndInit();

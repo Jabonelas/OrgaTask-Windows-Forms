@@ -8,6 +8,7 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 using WindowsForms.Classes;
+using WindowsForms.Core;
 using WindowsForms.DTOs;
 using WindowsForms.DTOs.Tarefa;
 using WindowsForms.Interface;
@@ -76,10 +77,14 @@ namespace WindowsForms.Service
             }
             catch (HttpRequestException ex)
             {
+                LogErros.GravarLogErros(ex.Message);
+
                 return ResultadoOperacao.Falha("Sem conexão com a internet", TipoErro.Rede);
             }
             catch (Exception ex)
             {
+                LogErros.GravarLogErros(ex.Message);
+
                 return ResultadoOperacao.Falha(ex.Message, TipoErro.Desconhecido);
             }
         }
@@ -127,10 +132,14 @@ namespace WindowsForms.Service
             }
             catch (HttpRequestException ex)
             {
+                LogErros.GravarLogErros(ex.Message);
+
                 return (ResultadoOperacao.Falha("Sem conexão com a internet", TipoErro.Rede), null, 0);
             }
             catch (Exception ex)
             {
+                LogErros.GravarLogErros(ex.Message);
+
                 return (ResultadoOperacao.Falha(ex.Message, TipoErro.Desconhecido), null, 0);
             }
         }
@@ -178,10 +187,14 @@ namespace WindowsForms.Service
             }
             catch (HttpRequestException ex)
             {
+                LogErros.GravarLogErros(ex.Message);
+
                 return (ResultadoOperacao.Falha("Sem conexão com a internet", TipoErro.Rede), null);
             }
             catch (Exception ex)
             {
+                LogErros.GravarLogErros(ex.Message);
+
                 return (ResultadoOperacao.Falha(ex.Message, TipoErro.Desconhecido), null);
             }
         }
@@ -230,10 +243,14 @@ namespace WindowsForms.Service
             }
             catch (HttpRequestException ex)
             {
+                LogErros.GravarLogErros(ex.Message);
+
                 return (ResultadoOperacao.Falha("Sem conexão com a internet", TipoErro.Rede));
             }
             catch (Exception ex)
             {
+                LogErros.GravarLogErros(ex.Message);
+
                 return (ResultadoOperacao.Falha(ex.Message, TipoErro.Desconhecido));
             }
         }
@@ -278,10 +295,14 @@ namespace WindowsForms.Service
             }
             catch (HttpRequestException ex)
             {
+                LogErros.GravarLogErros(ex.Message);
+
                 return ResultadoOperacao.Falha("Sem conexão com a internet", TipoErro.Rede);
             }
             catch (Exception ex)
             {
+                LogErros.GravarLogErros(ex.Message);
+
                 return ResultadoOperacao.Falha(ex.Message, TipoErro.Desconhecido);
             }
         }
@@ -329,10 +350,14 @@ namespace WindowsForms.Service
             }
             catch (HttpRequestException ex)
             {
+                LogErros.GravarLogErros(ex.Message);
+
                 return (ResultadoOperacao.Falha("Sem conexão com a internet", TipoErro.Rede), null);
             }
             catch (Exception ex)
             {
+                LogErros.GravarLogErros(ex.Message);
+
                 return (ResultadoOperacao.Falha(ex.Message, TipoErro.Desconhecido), null);
             }
         }
@@ -380,10 +405,14 @@ namespace WindowsForms.Service
             }
             catch (HttpRequestException ex)
             {
+                LogErros.GravarLogErros(ex.Message);
+
                 return (ResultadoOperacao.Falha("Sem conexão com a internet", TipoErro.Rede), null);
             }
             catch (Exception ex)
             {
+                LogErros.GravarLogErros(ex.Message);
+
                 return (ResultadoOperacao.Falha(ex.Message, TipoErro.Desconhecido), null);
             }
         }

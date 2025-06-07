@@ -1,10 +1,8 @@
-﻿using System.Threading.Tasks;
-using System;
-using WindowsForms.Classes;
+﻿using DevExpress.LookAndFeel;
 using Microsoft.Extensions.DependencyInjection;
-using DevExpress.XtraEditors;
-using System.Drawing;
-using DevExpress.LookAndFeel;
+using System;
+using System.Threading.Tasks;
+using WindowsForms.Classes;
 
 namespace WindowsForms.Forms
 {

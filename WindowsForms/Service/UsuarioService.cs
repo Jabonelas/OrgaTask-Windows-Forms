@@ -3,14 +3,13 @@ using System;
 using System.Configuration;
 using System.Net;
 using System.Net.Http;
-using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 using WindowsForms.Classes;
+using WindowsForms.Core;
 using WindowsForms.DTOs;
 using WindowsForms.DTOs.Usuario;
 using WindowsForms.Interface;
-using static System.Net.WebRequestMethods;
 
 namespace WindowsForms.Service
 {
@@ -32,33 +31,40 @@ namespace WindowsForms.Service
 
                 var endpoint = SetandoEndPoint("api/usuarios/login");
 
-                var response = await httpClient.PostAsync(endpoint, content);
-
-                var responseContent = await response.Content.ReadAsStringAsync();
-
-                if (response.IsSuccessStatusCode)
+                using (var response = await httpClient.PostAsync(endpoint, content))
                 {
-                    var result = JsonConvert.DeserializeObject<UserToken>(responseContent);
+                    var responseContent = await response.Content.ReadAsStringAsync();
 
-                    // Armazena token (usando ConfigurationManager)
-                    ConfigurationManager.AppSettings["authToken"] = result.Token;
-                    ConfigurationManager.AppSettings["usuario"] = _dadosLogin.login;
+                    if (response.IsSuccessStatusCode)
+                    {
+                        var result = JsonConvert.DeserializeObject<UserToken>(responseContent);
 
-                    return ResultadoOperacao.Ok();
+                        Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+                        config.AppSettings.Settings["authToken"].Value = result.Token;
+                        config.AppSettings.Settings["usuarioLogado"].Value = _dadosLogin.login;
+                        config.Save(ConfigurationSaveMode.Modified);
+                        ConfigurationManager.RefreshSection("appSettings");
+
+                        return ResultadoOperacao.Ok();
+                    }
+
+                    var errorResponse = JsonConvert.DeserializeObject<ErrorResponse>(responseContent);
+
+                    TipoErro tipoErro = SelecionarTipoErro(response);
+
+                    return ResultadoOperacao.Falha(errorResponse?.message ?? "Erro desconhecido", tipoErro);
                 }
-
-                var errorResponse = JsonConvert.DeserializeObject<ErrorResponse>(responseContent);
-
-                TipoErro tipoErro = SelecionarTipoErro(response);
-
-                return ResultadoOperacao.Falha(errorResponse?.message ?? "Erro desconhecido", tipoErro);
             }
             catch (HttpRequestException ex)
             {
+                LogErros.GravarLogErros(ex.Message);
+
                 return ResultadoOperacao.Falha("Sem conexão com a internet", TipoErro.Rede);
             }
             catch (Exception ex)
             {
+                LogErros.GravarLogErros(ex.Message);
+
                 return ResultadoOperacao.Falha(ex.Message, TipoErro.Desconhecido);
             }
         }
@@ -72,29 +78,32 @@ namespace WindowsForms.Service
 
                 var endpoint = SetandoEndPoint("api/usuarios");
 
-                var response = await httpClient.PostAsync(endpoint, content);
-
-                var responseContent = await response.Content.ReadAsStringAsync();
-
-                if (response.IsSuccessStatusCode)
+                using (var response = await httpClient.PostAsync(endpoint, content))
                 {
-                    //var result = JsonConvert.DeserializeObject<UserToken>(responseContent);
+                    var responseContent = await response.Content.ReadAsStringAsync();
 
-                    return ResultadoOperacao.Ok();
+                    if (response.IsSuccessStatusCode)
+                    {
+                        return ResultadoOperacao.Ok();
+                    }
+
+                    var errorResponse = JsonConvert.DeserializeObject<ErrorResponse>(responseContent);
+
+                    TipoErro tipoErro = SelecionarTipoErro(response);
+
+                    return ResultadoOperacao.Falha(errorResponse?.message ?? "Erro desconhecido", tipoErro);
                 }
-
-                var errorResponse = JsonConvert.DeserializeObject<ErrorResponse>(responseContent);
-
-                TipoErro tipoErro = SelecionarTipoErro(response);
-
-                return ResultadoOperacao.Falha(errorResponse?.message ?? "Erro desconhecido", tipoErro);
             }
             catch (HttpRequestException ex)
             {
+                LogErros.GravarLogErros(ex.Message);
+
                 return ResultadoOperacao.Falha("Sem conexão com a internet", TipoErro.Rede);
             }
             catch (Exception ex)
             {
+                LogErros.GravarLogErros(ex.Message);
+
                 return ResultadoOperacao.Falha(ex.Message, TipoErro.Desconhecido);
             }
         }

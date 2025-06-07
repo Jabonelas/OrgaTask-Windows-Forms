@@ -1,6 +1,6 @@
-﻿using DevExpress.XtraBars.Navigation;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
 using System;
+using System.Configuration;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsForms.Classes;
@@ -124,8 +124,20 @@ namespace WindowsForms
 
             if (dialogResult == DialogResult.Yes)
             {
+                LimparCacheToken();
+
                 Application.Exit();
             }
+        }
+
+        private void LimparCacheToken()
+        {
+            ConfigurationManager.AppSettings["authToken"] = null;
+
+            Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+            config.AppSettings.Settings.Remove("authToken");
+            config.Save(ConfigurationSaveMode.Modified);
+            ConfigurationManager.RefreshSection("appSettings");
         }
 
         private void btnTrocarUsuario_Click(object sender, EventArgs e)
@@ -146,6 +158,11 @@ namespace WindowsForms
 
                 ExibirTelaLogin();
             }
+        }
+
+        private void frmHome_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            LimparCacheToken();
         }
     }
 }

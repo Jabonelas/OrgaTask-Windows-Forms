@@ -1,10 +1,11 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using System;
-using System.Drawing;
+using System.Configuration;
 using System.Threading.Tasks;
 using WindowsForms.Classes;
 using WindowsForms.DTOs.Usuario;
 using WindowsForms.Interface;
+using WindowsForms.Properties;
 
 namespace WindowsForms.Forms
 {
@@ -19,11 +20,32 @@ namespace WindowsForms.Forms
             usuarioService = _usuarioService;
 
             InitializeComponent();
+
+            SetandoPropriedadeSenha();
+
+            PegandoUltimoUsuarioLogado();
         }
 
         private void uc_Login_Load(object sender, EventArgs e)
         {
             txtUsuario.Focus();
+        }
+
+        private void PegandoUltimoUsuarioLogado()
+        {
+            string ultimoUsuairoLogado = ConfigurationManager.AppSettings["usuarioLogado"];
+
+            if (ultimoUsuairoLogado != null)
+            {
+                txtUsuario.Text = ultimoUsuairoLogado;
+            }
+        }
+
+        private void SetandoPropriedadeSenha()
+        {
+            txtSenha.Properties.UseSystemPasswordChar = true;
+
+            btnExibirSenha.ImageOptions.Image = Resources.olho_fechado_20;
         }
 
         public void SetParametroAdicional(frmHome _frmHome)
@@ -123,6 +145,22 @@ namespace WindowsForms.Forms
             }
 
             return true;
+        }
+
+        private void btnExibirSenha_Click(object sender, EventArgs e)
+        {
+            if (txtSenha.Properties.UseSystemPasswordChar)
+            {
+                txtSenha.Properties.UseSystemPasswordChar = false;
+
+                btnExibirSenha.ImageOptions.Image = Resources.olho_aberto_20;
+            }
+            else
+            {
+                txtSenha.Properties.UseSystemPasswordChar = true;
+
+                btnExibirSenha.ImageOptions.Image = Resources.olho_fechado_20;
+            }
         }
     }
 }

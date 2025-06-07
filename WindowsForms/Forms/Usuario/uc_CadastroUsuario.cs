@@ -5,6 +5,7 @@ using System.Windows.Forms;
 using WindowsForms.Classes;
 using WindowsForms.DTOs.Usuario;
 using WindowsForms.Interface;
+using WindowsForms.Properties;
 
 namespace WindowsForms.Forms
 {
@@ -18,11 +19,22 @@ namespace WindowsForms.Forms
             usuarioService = _usuarioService;
 
             InitializeComponent();
+
+            SetandoPropriedadeSenha();
         }
 
         private void uc_CadastroUsuario_Load(object sender, EventArgs e)
         {
             txtNomeCompleto.Focus();
+        }
+
+        private void SetandoPropriedadeSenha()
+        {
+            txtSenha.Properties.UseSystemPasswordChar = true;
+            btnExibirSenha.ImageOptions.Image = Resources.olho_fechado_20;
+
+            txtConfirmaSenha.Properties.UseSystemPasswordChar = true;
+            btnExibirConfirmarSenha.ImageOptions.Image = Resources.olho_fechado_20;
         }
 
         public void SetParametroAdicional(frmHome _frmHome)
@@ -189,6 +201,38 @@ namespace WindowsForms.Forms
             };
 
             return dadosUsuario;
+        }
+
+        private void btnExibirSenha_Click(object sender, EventArgs e)
+        {
+            if (txtSenha.Properties.UseSystemPasswordChar)
+            {
+                txtSenha.Properties.UseSystemPasswordChar = false;
+
+                btnExibirSenha.ImageOptions.Image = Resources.olho_aberto_20;
+            }
+            else
+            {
+                txtSenha.Properties.UseSystemPasswordChar = true;
+
+                btnExibirSenha.ImageOptions.Image = Resources.olho_fechado_20;
+            }
+        }
+
+        private void btnExibirConfirmarSenha_Click(object sender, EventArgs e)
+        {
+            if (txtConfirmaSenha.Properties.UseSystemPasswordChar)
+            {
+                txtConfirmaSenha.Properties.UseSystemPasswordChar = false;
+
+                btnExibirConfirmarSenha.ImageOptions.Image = Resources.olho_aberto_20;
+            }
+            else
+            {
+                txtConfirmaSenha.Properties.UseSystemPasswordChar = true;
+
+                btnExibirConfirmarSenha.ImageOptions.Image = Resources.olho_fechado_20;
+            }
         }
     }
 }

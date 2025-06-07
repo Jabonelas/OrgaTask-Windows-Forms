@@ -230,6 +230,7 @@
             this.txtDescricao.Name = "txtDescricao";
             this.txtDescricao.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDescricao.Properties.Appearance.Options.UseFont = true;
+            this.txtDescricao.Properties.MaxLength = 200;
             this.txtDescricao.Size = new System.Drawing.Size(297, 96);
             this.txtDescricao.TabIndex = 4;
             // 
@@ -322,6 +323,10 @@
             this.txtTitulo.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTitulo.Properties.Appearance.Options.UseFont = true;
             this.txtTitulo.Properties.ContextImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
+            this.txtTitulo.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
+            this.txtTitulo.Properties.MaskSettings.Set("MaskManagerSignature", "isOptimistic=False");
+            this.txtTitulo.Properties.MaskSettings.Set("mask", ".+");
+            this.txtTitulo.Properties.MaxLength = 50;
             this.txtTitulo.Size = new System.Drawing.Size(297, 22);
             this.txtTitulo.TabIndex = 1;
             // 
@@ -334,6 +339,7 @@
             this.txtPrazo.Properties.ContextImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
             this.txtPrazo.Properties.MaskSettings.Set("mask", "\\d+");
             this.txtPrazo.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
+            this.txtPrazo.Properties.MaxLength = 4;
             this.txtPrazo.Size = new System.Drawing.Size(119, 22);
             this.txtPrazo.TabIndex = 3;
             // 

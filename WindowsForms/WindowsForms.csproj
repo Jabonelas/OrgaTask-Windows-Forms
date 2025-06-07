@@ -135,6 +135,7 @@
     <Reference Include="DevExpress.Printing.v23.2.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Core\LogErros.cs" />
     <Compile Include="Core\MensagensAlertaSistema.cs" />
     <Compile Include="Core\ResultadoOperacao.cs" />
     <Compile Include="Core\TelaCarregamento.cs" />
@@ -223,6 +224,11 @@
     <Compile Include="Interface\IUsuarioService.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Service\TarefaService.cs" />
     <Compile Include="Service\UsuarioService.cs" />
     <EmbeddedResource Include="Forms\frmHome.resx">
@@ -269,14 +275,9 @@
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

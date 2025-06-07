@@ -94,3 +94,4 @@ C:\Users\israe\source\repos\WindowsForms\WindowsForms\obj\Debug\WindowsForms.csp
 C:\Users\israe\source\repos\WindowsForms\WindowsForms\obj\Debug\WindowsF.AEBE025B.Up2Date
 C:\Users\israe\source\repos\WindowsForms\WindowsForms\obj\Debug\WindowsForms.exe
 C:\Users\israe\source\repos\WindowsForms\WindowsForms\obj\Debug\WindowsForms.pdb
+C:\Users\israe\source\repos\WindowsForms\WindowsForms\obj\Debug\WindowsForms.exe.config

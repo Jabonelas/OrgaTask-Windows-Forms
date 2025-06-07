@@ -30,13 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(uc_Login));
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.svgImageBox1 = new DevExpress.XtraEditors.SvgImageBox();
-            this.txtUsuario = new DevExpress.XtraEditors.TextEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.btnEntrar = new DevExpress.XtraEditors.SimpleButton();
             this.btnCriarConta = new DevExpress.XtraEditors.SimpleButton();
-            this.txtSenha = new DevExpress.XtraEditors.TextEdit();
             this.diagramPanAndZoomControl1 = new DevExpress.XtraDiagram.DiagramPanAndZoomControl();
             this.panel1 = new System.Windows.Forms.Panel();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
@@ -48,15 +45,20 @@
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
-            ((System.ComponentModel.ISupportInitialize)(this.svgImageBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtUsuario.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtSenha.Properties)).BeginInit();
+            this.btnExibirSenha = new DevExpress.XtraEditors.SimpleButton();
+            this.txtSenha = new DevExpress.XtraEditors.TextEdit();
+            this.txtUsuario = new DevExpress.XtraEditors.TextEdit();
+            this.svgImageBox1 = new DevExpress.XtraEditors.SvgImageBox();
             ((System.ComponentModel.ISupportInitialize)(this.diagramPanAndZoomControl1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.svgImageBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.svgImageBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.svgImageBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
+            this.panelControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSenha.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtUsuario.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.svgImageBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // labelControl1
@@ -70,28 +72,6 @@
             this.labelControl1.Size = new System.Drawing.Size(143, 25);
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "Acesse sua conta";
-            // 
-            // svgImageBox1
-            // 
-            this.svgImageBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
-            this.svgImageBox1.Location = new System.Drawing.Point(651, 221);
-            this.svgImageBox1.Name = "svgImageBox1";
-            this.svgImageBox1.Size = new System.Drawing.Size(55, 45);
-            this.svgImageBox1.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("svgImageBox1.SvgImage")));
-            this.svgImageBox1.TabIndex = 1;
-            this.svgImageBox1.Text = "svgImageBox1";
-            // 
-            // txtUsuario
-            // 
-            this.txtUsuario.EditValue = "";
-            this.txtUsuario.Location = new System.Drawing.Point(605, 292);
-            this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsuario.Properties.Appearance.Options.UseFont = true;
-            this.txtUsuario.Properties.ContextImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("txtUsuario.Properties.ContextImageOptions.SvgImage")));
-            this.txtUsuario.Properties.ContextImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
-            this.txtUsuario.Size = new System.Drawing.Size(297, 24);
-            this.txtUsuario.TabIndex = 1;
             // 
             // labelControl2
             // 
@@ -129,7 +109,7 @@
             this.btnEntrar.Location = new System.Drawing.Point(605, 402);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(297, 34);
-            this.btnEntrar.TabIndex = 3;
+            this.btnEntrar.TabIndex = 4;
             this.btnEntrar.Text = "Entrar";
             this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
             // 
@@ -147,22 +127,9 @@
             this.btnCriarConta.Location = new System.Drawing.Point(605, 449);
             this.btnCriarConta.Name = "btnCriarConta";
             this.btnCriarConta.Size = new System.Drawing.Size(297, 34);
-            this.btnCriarConta.TabIndex = 4;
+            this.btnCriarConta.TabIndex = 5;
             this.btnCriarConta.Text = "Criar uma conta";
             this.btnCriarConta.Click += new System.EventHandler(this.btnCriarConta_Click);
-            // 
-            // txtSenha
-            // 
-            this.txtSenha.EditValue = "";
-            this.txtSenha.Location = new System.Drawing.Point(605, 355);
-            this.txtSenha.Name = "txtSenha";
-            this.txtSenha.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSenha.Properties.Appearance.Options.UseFont = true;
-            this.txtSenha.Properties.ContextImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("txtSenha.Properties.ContextImageOptions.SvgImage")));
-            this.txtSenha.Properties.ContextImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
-            this.txtSenha.Properties.PasswordChar = '*';
-            this.txtSenha.Size = new System.Drawing.Size(297, 24);
-            this.txtSenha.TabIndex = 2;
             // 
             // diagramPanAndZoomControl1
             // 
@@ -286,10 +253,62 @@
             // 
             this.panelControl1.Appearance.BackColor = System.Drawing.Color.White;
             this.panelControl1.Appearance.Options.UseBackColor = true;
+            this.panelControl1.Controls.Add(this.btnExibirSenha);
             this.panelControl1.Location = new System.Drawing.Point(593, 197);
             this.panelControl1.Name = "panelControl1";
             this.panelControl1.Size = new System.Drawing.Size(321, 322);
             this.panelControl1.TabIndex = 21;
+            // 
+            // btnExibirSenha
+            // 
+            this.btnExibirSenha.Appearance.BackColor = System.Drawing.Color.White;
+            this.btnExibirSenha.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExibirSenha.Appearance.Options.UseBackColor = true;
+            this.btnExibirSenha.Appearance.Options.UseFont = true;
+            this.btnExibirSenha.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
+            this.btnExibirSenha.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
+            this.btnExibirSenha.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnExibirSenha.Location = new System.Drawing.Point(280, 158);
+            this.btnExibirSenha.Name = "btnExibirSenha";
+            this.btnExibirSenha.Size = new System.Drawing.Size(29, 32);
+            this.btnExibirSenha.TabIndex = 3;
+            this.btnExibirSenha.Click += new System.EventHandler(this.btnExibirSenha_Click);
+            // 
+            // txtSenha
+            // 
+            this.txtSenha.EditValue = "";
+            this.txtSenha.Location = new System.Drawing.Point(605, 355);
+            this.txtSenha.Name = "txtSenha";
+            this.txtSenha.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSenha.Properties.Appearance.Options.UseFont = true;
+            this.txtSenha.Properties.ContextImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("txtSenha.Properties.ContextImageOptions.SvgImage")));
+            this.txtSenha.Properties.ContextImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
+            this.txtSenha.Properties.MaxLength = 50;
+            this.txtSenha.Size = new System.Drawing.Size(262, 24);
+            this.txtSenha.TabIndex = 2;
+            // 
+            // txtUsuario
+            // 
+            this.txtUsuario.EditValue = "";
+            this.txtUsuario.Location = new System.Drawing.Point(605, 292);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsuario.Properties.Appearance.Options.UseFont = true;
+            this.txtUsuario.Properties.ContextImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("txtUsuario.Properties.ContextImageOptions.SvgImage")));
+            this.txtUsuario.Properties.ContextImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
+            this.txtUsuario.Properties.MaxLength = 50;
+            this.txtUsuario.Size = new System.Drawing.Size(297, 24);
+            this.txtUsuario.TabIndex = 1;
+            // 
+            // svgImageBox1
+            // 
+            this.svgImageBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
+            this.svgImageBox1.Location = new System.Drawing.Point(651, 221);
+            this.svgImageBox1.Name = "svgImageBox1";
+            this.svgImageBox1.Size = new System.Drawing.Size(55, 45);
+            this.svgImageBox1.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("svgImageBox1.SvgImage")));
+            this.svgImageBox1.TabIndex = 1;
+            this.svgImageBox1.Text = "svgImageBox1";
             // 
             // uc_Login
             // 
@@ -311,9 +330,6 @@
             this.Name = "uc_Login";
             this.Size = new System.Drawing.Size(986, 670);
             this.Load += new System.EventHandler(this.uc_Login_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.svgImageBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtUsuario.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtSenha.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.diagramPanAndZoomControl1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -321,6 +337,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.svgImageBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.svgImageBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
+            this.panelControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.txtSenha.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtUsuario.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.svgImageBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -347,5 +367,6 @@
         private DevExpress.XtraEditors.SvgImageBox svgImageBox3;
         private DevExpress.XtraEditors.LabelControl labelControl6;
         private DevExpress.XtraEditors.PanelControl panelControl1;
+        private DevExpress.XtraEditors.SimpleButton btnExibirSenha;
     }
 }
