@@ -7,7 +7,7 @@ namespace WindowsForms.Interface
 {
     public interface ITarefaService
     {
-        //Task<(bool success, string errorMessage, List<TarefaConsultaDTO>)> ObterTarefasAsync();
+    
 
         Task<(ResultadoOperacao ResultadoOperacao, List<TarefaConsultaDTO> ListaTarefa, int TotalCount)> ObterTarefasPaginadasAsync(int _pageNumber, int _pageSize, string _status);
 

@@ -7,6 +7,7 @@ using WindowsForms.DTOs.Usuario;
 using WindowsForms.Interface;
 using WindowsForms.Properties;
 
+
 namespace WindowsForms.Forms
 {
     public partial class uc_Login : DevExpress.XtraEditors.XtraUserControl
@@ -24,12 +25,26 @@ namespace WindowsForms.Forms
             SetandoPropriedadeSenha();
 
             PegandoUltimoUsuarioLogado();
+
+
         }
 
         private void uc_Login_Load(object sender, EventArgs e)
         {
             txtUsuario.Focus();
+
+            PlaceholderCampos();
         }
+
+        private void PlaceholderCampos()
+        {
+            txtUsuario.Properties.NullText = "Digite seu usuário";
+            txtUsuario.EditValue = null;
+
+            txtSenha.Properties.NullText = "Digite sua senha";
+            txtSenha.EditValue = null;
+        }
+
 
         private void PegandoUltimoUsuarioLogado()
         {

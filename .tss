@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<ArrayOfArrayOfArrayOfString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ArrayOfArrayOfString>
+    <ArrayOfString>
+      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Forms\Usuario\uc_Login.cs</string>
+      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Forms\Usuario\uc_Login.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Forms\Usuario\uc_CadastroUsuario.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Forms\Tarefa\uc_VisualizarTarefa.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Forms\Tarefa\uc_ExibirTarefas.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Forms\Tarefa\uc_EditarTarefa.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Forms\Tarefa\uc_DashboardTarefas.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Forms\Tarefa\uc_CardTarefaPrioridade.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Forms\Tarefa\uc_CardTarefa.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Forms\Tarefa\uc_CadastrarTarefa.cs</string>
+    </ArrayOfString>
+  </ArrayOfArrayOfString>
+</ArrayOfArrayOfArrayOfString>
