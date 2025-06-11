@@ -103,7 +103,7 @@
             this.btnNovaTarefa.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnNovaTarefa.ImageOptions.SvgImage")));
             this.btnNovaTarefa.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
             this.btnNovaTarefa.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnNovaTarefa.Location = new System.Drawing.Point(610, 13);
+            this.btnNovaTarefa.Location = new System.Drawing.Point(602, 13);
             this.btnNovaTarefa.Name = "btnNovaTarefa";
             this.btnNovaTarefa.Size = new System.Drawing.Size(119, 34);
             this.btnNovaTarefa.TabIndex = 3;

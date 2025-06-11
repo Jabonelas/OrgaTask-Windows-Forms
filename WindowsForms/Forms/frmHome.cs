@@ -11,13 +11,11 @@ namespace WindowsForms
 {
     public partial class frmHome : DevExpress.XtraBars.FluentDesignSystem.FluentDesignForm
     {
-        private readonly ITarefaService tarefaService;
-        private readonly IUsuarioService usuarioService;
+     
 
-        public frmHome(ITarefaService _tarefaService, IUsuarioService _usuarioService)
+        public frmHome()
         {
-            tarefaService = _tarefaService;
-            usuarioService = _usuarioService;
+
 
             InitializeComponent();
         }

@@ -310,6 +310,56 @@
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\alerta.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alerta %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alerta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aviso.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\atencao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marca.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reclamar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\verificado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aviso %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\relogio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\atualizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baixar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ponto-de-exclamacao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seta-para-baixo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\girar.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

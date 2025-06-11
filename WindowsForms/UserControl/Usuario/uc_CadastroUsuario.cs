@@ -31,10 +31,10 @@ namespace WindowsForms.Forms
         private void SetandoPropriedadeSenha()
         {
             txtSenha.Properties.UseSystemPasswordChar = true;
-            btnExibirSenha.ImageOptions.Image = Resources.olho_fechado_20;
+            btnExibirSenha.ImageOptions.Image = Resources.olho_aberto_20;
 
             txtConfirmaSenha.Properties.UseSystemPasswordChar = true;
-            btnExibirConfirmarSenha.ImageOptions.Image = Resources.olho_fechado_20;
+            btnExibirConfirmarSenha.ImageOptions.Image = Resources.olho_aberto_20;
         }
 
         public void SetParametroAdicional(frmHome _frmHome)
@@ -209,13 +209,13 @@ namespace WindowsForms.Forms
             {
                 txtSenha.Properties.UseSystemPasswordChar = false;
 
-                btnExibirSenha.ImageOptions.Image = Resources.olho_aberto_20;
+                btnExibirSenha.ImageOptions.Image = Resources.olho_fechado_20;
             }
             else
             {
                 txtSenha.Properties.UseSystemPasswordChar = true;
 
-                btnExibirSenha.ImageOptions.Image = Resources.olho_fechado_20;
+                btnExibirSenha.ImageOptions.Image = Resources.olho_aberto_20;
             }
         }
 
@@ -225,13 +225,13 @@ namespace WindowsForms.Forms
             {
                 txtConfirmaSenha.Properties.UseSystemPasswordChar = false;
 
-                btnExibirConfirmarSenha.ImageOptions.Image = Resources.olho_aberto_20;
+                btnExibirConfirmarSenha.ImageOptions.Image = Resources.olho_fechado_20;
             }
             else
             {
                 txtConfirmaSenha.Properties.UseSystemPasswordChar = true;
 
-                btnExibirConfirmarSenha.ImageOptions.Image = Resources.olho_fechado_20;
+                btnExibirConfirmarSenha.ImageOptions.Image = Resources.olho_aberto_20;
             }
         }
     }

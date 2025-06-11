@@ -128,9 +128,15 @@
             // btnVisualizarTarefa
             // 
             this.btnVisualizarTarefa.Appearance.BackColor = System.Drawing.Color.White;
+            this.btnVisualizarTarefa.Appearance.BorderColor = System.Drawing.Color.Gray;
             this.btnVisualizarTarefa.Appearance.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVisualizarTarefa.Appearance.Options.UseBackColor = true;
+            this.btnVisualizarTarefa.Appearance.Options.UseBorderColor = true;
             this.btnVisualizarTarefa.Appearance.Options.UseFont = true;
+            this.btnVisualizarTarefa.Appearance.Options.UseForeColor = true;
+            this.btnVisualizarTarefa.AppearanceDisabled.Options.UseBorderColor = true;
+            this.btnVisualizarTarefa.AppearanceHovered.Options.UseBorderColor = true;
+            this.btnVisualizarTarefa.AppearancePressed.Options.UseBorderColor = true;
             this.btnVisualizarTarefa.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
             this.btnVisualizarTarefa.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnVisualizarTarefa.ImageOptions.SvgImage")));
             this.btnVisualizarTarefa.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
@@ -173,12 +179,11 @@
             this.lblStatus.Appearance.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStatus.Appearance.Options.UseBackColor = true;
             this.lblStatus.Appearance.Options.UseFont = true;
-            this.lblStatus.Enabled = false;
             this.lblStatus.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
             this.lblStatus.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblStatus.Location = new System.Drawing.Point(259, 3);
+            this.lblStatus.Location = new System.Drawing.Point(231, 3);
             this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(91, 29);
+            this.lblStatus.Size = new System.Drawing.Size(119, 29);
             this.lblStatus.TabIndex = 19;
             this.lblStatus.Text = "Status";
             // 
@@ -186,9 +191,10 @@
             // 
             this.lblPrioridade.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(110)))), ((int)(((byte)(194)))));
             this.lblPrioridade.Appearance.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrioridade.Appearance.ForeColor = System.Drawing.Color.White;
             this.lblPrioridade.Appearance.Options.UseBackColor = true;
             this.lblPrioridade.Appearance.Options.UseFont = true;
-            this.lblPrioridade.Enabled = false;
+            this.lblPrioridade.Appearance.Options.UseForeColor = true;
             this.lblPrioridade.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
             this.lblPrioridade.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.lblPrioridade.Location = new System.Drawing.Point(7, 3);

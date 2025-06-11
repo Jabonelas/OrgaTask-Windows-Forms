@@ -1,10 +1,14 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using DevExpress.XtraEditors;
+using DevExpress.XtraEditors.Controls;
+using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsForms.Classes;
 using WindowsForms.Interface;
+using WindowsForms.Properties;
 
 namespace WindowsForms.Forms
 {
@@ -21,7 +25,11 @@ namespace WindowsForms.Forms
         public string statusPassado = "";
 
         public Color corlblPrioridade { get => lblPrioridade.Appearance.BackColor; set => lblPrioridade.Appearance.BackColor = value; }
+
+        public Image imagemlblPrioridade { get => lblPrioridade.ImageOptions.Image; set => lblPrioridade.ImageOptions.Image = value; }
+
         public Color corlblStatus { get => lblStatus.Appearance.BackColor; set => lblStatus.Appearance.BackColor = value; }
+        public Image imagemlblStatus { get => lblStatus.ImageOptions.Image; set => lblStatus.ImageOptions.Image = value; }
         public Color corpnlFundo { get => pnlFundo.BackColor; set => pnlFundo.BackColor = value; }
 
         private frmHome frmHome = null;
@@ -33,7 +41,134 @@ namespace WindowsForms.Forms
             tarefaService = _tarefaService;
 
             InitializeComponent();
+
+            btnVisualizarTarefa.Paint += btnVisualizarTarefa_Paint;
+
+            btnEditarTarefa.Paint += btnEditarTarefa_Paint;
+
+            btnExcluirTarefa.Paint += btnExcluirTarefa_Paint;
+
+
+            //this.Paint += uc_CardTarefa_Paint;
+            //this.Resize += (s, e) => this.Invalidate(); 
+
+
         }
+
+
+        private void btnEditarTarefa_Paint(object sender, PaintEventArgs e)
+        {
+            SimpleButton btn = sender as SimpleButton;
+            int borderRadius = 8; 
+           Color borderColor = Color.FromArgb(242, 157, 74);
+
+            int borderSize = 1;
+
+            using (GraphicsPath path = new GraphicsPath())
+            {
+                Rectangle rect = new Rectangle(0, 0, btn.Width - 1, btn.Height - 1);
+                int r = borderRadius;
+
+                path.AddArc(rect.X, rect.Y, r, r, 180, 90);
+                path.AddArc(rect.Right - r, rect.Y, r, r, 270, 90);
+                path.AddArc(rect.Right - r, rect.Bottom - r, r, r, 0, 90);
+                path.AddArc(rect.X, rect.Bottom - r, r, r, 90, 90);
+                path.CloseFigure();
+
+                using (Pen pen = new Pen(borderColor, borderSize))
+                {
+                    e.Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+                    e.Graphics.DrawPath(pen, path);
+                }
+            }
+        }
+
+        private void btnExcluirTarefa_Paint(object sender, PaintEventArgs e)
+        {
+            SimpleButton btn = sender as SimpleButton;
+            int borderRadius = 8;
+            Color borderColor = Color.FromArgb(208, 49, 68);
+
+            int borderSize = 1;
+
+            using (GraphicsPath path = new GraphicsPath())
+            {
+                Rectangle rect = new Rectangle(0, 0, btn.Width - 1, btn.Height - 1);
+                int r = borderRadius;
+
+                path.AddArc(rect.X, rect.Y, r, r, 180, 90);
+                path.AddArc(rect.Right - r, rect.Y, r, r, 270, 90);
+                path.AddArc(rect.Right - r, rect.Bottom - r, r, r, 0, 90);
+                path.AddArc(rect.X, rect.Bottom - r, r, r, 90, 90);
+                path.CloseFigure();
+
+                using (Pen pen = new Pen(borderColor, borderSize))
+                {
+                    e.Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+                    e.Graphics.DrawPath(pen, path);
+                }
+            }
+        }
+
+
+        private void btnVisualizarTarefa_Paint(object sender, PaintEventArgs e)
+        {
+            
+
+            SimpleButton btn = sender as SimpleButton;
+            int borderRadius = 8;
+            Color borderColor = Color.FromArgb(108, 109, 117);
+
+            int borderSize = 1;
+
+            using (GraphicsPath path = new GraphicsPath())
+            {
+                Rectangle rect = new Rectangle(0, 0, btn.Width - 1, btn.Height - 1);
+                int r = borderRadius;
+
+                path.AddArc(rect.X, rect.Y, r, r, 180, 90);
+                path.AddArc(rect.Right - r, rect.Y, r, r, 270, 90);
+                path.AddArc(rect.Right - r, rect.Bottom - r, r, r, 0, 90);
+                path.AddArc(rect.X, rect.Bottom - r, r, r, 90, 90);
+                path.CloseFigure();
+
+                using (Pen pen = new Pen(borderColor, borderSize))
+                {
+                    e.Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+                    e.Graphics.DrawPath(pen, path);
+                }
+            }
+        }
+
+
+        private void uc_CardTarefa_Paint(object sender, PaintEventArgs e)
+        {
+            UserControl btn = sender as UserControl;
+            int borderRadius = 8;
+            Color borderColor = Color.FromArgb(108, 109, 117);
+
+            int borderSize = 1;
+
+            using (GraphicsPath path = new GraphicsPath())
+            {
+                Rectangle rect = new Rectangle(0, 0, btn.Width - 1, btn.Height - 1);
+                int r = borderRadius;
+
+                path.AddArc(rect.X, rect.Y, r, r, 180, 90);
+                path.AddArc(rect.Right - r, rect.Y, r, r, 270, 90);
+                path.AddArc(rect.Right - r, rect.Bottom - r, r, r, 0, 90);
+                path.AddArc(rect.X, rect.Bottom - r, r, r, 90, 90);
+                path.CloseFigure();
+
+                using (Pen pen = new Pen(borderColor, borderSize))
+                {
+                    e.Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+                    e.Graphics.DrawPath(pen, path);
+                }
+            }
+        }
+
+
 
         public void SetParametroAdicional(frmHome _frmHome, string _statusPassado)
         {
@@ -48,6 +183,8 @@ namespace WindowsForms.Forms
 
             await ExibirTelaDetalhesTarefaAsync();
         }
+
+
 
         private async Task ExibirTelaDetalhesTarefaAsync()
         {
@@ -65,6 +202,8 @@ namespace WindowsForms.Forms
                 TelaCarregamento.EsconderCarregamento();
             }
         }
+
+
 
         private async void btnEditarTarefa_Click(object sender, EventArgs e)
         {

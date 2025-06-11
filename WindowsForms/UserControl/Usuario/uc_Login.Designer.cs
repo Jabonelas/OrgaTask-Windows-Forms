@@ -307,7 +307,7 @@
             this.svgImageBox1.Name = "svgImageBox1";
             this.svgImageBox1.Size = new System.Drawing.Size(55, 45);
             this.svgImageBox1.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("svgImageBox1.SvgImage")));
-            this.svgImageBox1.TabIndex = 1;
+            this.svgImageBox1.TabIndex = 99;
             this.svgImageBox1.Text = "svgImageBox1";
             // 
             // uc_Login

@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using DevExpress.Utils;
+using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -6,6 +7,7 @@ using System.Threading.Tasks;
 using WindowsForms.Classes;
 using WindowsForms.DTOs.Tarefa;
 using WindowsForms.Interface;
+using WindowsForms.Properties;
 
 namespace WindowsForms.Forms
 {
@@ -113,10 +115,12 @@ namespace WindowsForms.Forms
                 card.id = item.Id.ToString();
                 card.titulo = item.Titulo;
                 card.descricao = item.Descricao;
-                card.corlblPrioridade = SetarCorPrioride(item.Prioridade);
-                card.corlblStatus = SetarCorStatus(item.Status);
+                card.corlblPrioridade = SetarCorPrioridade(item.Prioridade);
+                card.imagemlblPrioridade = SetarImagemPrioridade(item.Prioridade);
                 card.corpnlFundo = SetarCorFundo(item.Prioridade);
                 card.prioridade = item.Prioridade;
+                card.corlblStatus = SetarCorStatus(item.Status);
+                card.imagemlblStatus = SetarImagemStatus(item.Status);
                 card.status = item.Status;
                 card.data = $"       Criado:{item.Data}";
                 card.prazo = $"       Prazo estipulado: {item.Prazo} dia(s)";
@@ -125,7 +129,7 @@ namespace WindowsForms.Forms
             }
         }
 
-        private Color SetarCorPrioride(string _prioridade)
+        private Color SetarCorPrioridade(string _prioridade)
         {
             switch (_prioridade)
             {
@@ -136,7 +140,7 @@ namespace WindowsForms.Forms
                     return Color.FromArgb(253, 126, 20);
 
                 case "Alta":
-                    return Color.FromArgb(220, 53, 69);
+                    return Color.FromArgb(209, 36, 52);
             }
 
             return Color.Gray;
@@ -167,7 +171,7 @@ namespace WindowsForms.Forms
                     return Color.FromArgb(40, 167, 69);
 
                 case "Em Progresso":
-                    return Color.FromArgb(23, 162, 184);
+                    return Color.FromArgb(9, 140, 204);
 
                 case "Pendente":
                     return Color.FromArgb(108, 117, 125);
@@ -175,6 +179,43 @@ namespace WindowsForms.Forms
 
             return Color.Gray;
         }
+
+
+        private Image SetarImagemPrioridade(string _prioridade)
+        {
+            switch (_prioridade)
+            {
+                case "Baixa":
+                    return Resources.seta_para_baixo;
+
+                case "Média":
+                    return Resources.reclamar;
+
+                case "Alta":
+                    return Resources.aviso__1_;
+            }
+
+            return null;
+        }
+
+
+        private Image SetarImagemStatus(string _status)
+        {
+            switch (_status)
+            {
+                case "Concluído":
+                    return Resources.verificado;
+
+                case "Em Progresso":
+                    return Resources.girar;
+
+                case "Pendente":
+                    return Resources.relogio;
+            }
+
+            return null;
+        }
+
 
         private async void btnAnteriro_Click(object sender, EventArgs e)
         {

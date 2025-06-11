@@ -26,23 +26,24 @@ namespace WindowsForms.Forms
 
             PegandoUltimoUsuarioLogado();
 
+            txtSenha.Text = "string";
+            txtUsuario.Text = "string";
 
         }
 
         private void uc_Login_Load(object sender, EventArgs e)
         {
+        
+            PlaceholderCampos();
+
             txtUsuario.Focus();
 
-            PlaceholderCampos();
         }
 
         private void PlaceholderCampos()
         {
             txtUsuario.Properties.NullText = "Digite seu usuário";
             txtUsuario.EditValue = null;
-
-            txtSenha.Properties.NullText = "Digite sua senha";
-            txtSenha.EditValue = null;
         }
 
 
@@ -60,7 +61,7 @@ namespace WindowsForms.Forms
         {
             txtSenha.Properties.UseSystemPasswordChar = true;
 
-            btnExibirSenha.ImageOptions.Image = Resources.olho_fechado_20;
+            btnExibirSenha.ImageOptions.Image = Resources.olho_aberto_20;
         }
 
         public void SetParametroAdicional(frmHome _frmHome)
@@ -168,13 +169,13 @@ namespace WindowsForms.Forms
             {
                 txtSenha.Properties.UseSystemPasswordChar = false;
 
-                btnExibirSenha.ImageOptions.Image = Resources.olho_aberto_20;
+                btnExibirSenha.ImageOptions.Image = Resources.olho_fechado_20;
             }
             else
             {
                 txtSenha.Properties.UseSystemPasswordChar = true;
 
-                btnExibirSenha.ImageOptions.Image = Resources.olho_fechado_20;
+                btnExibirSenha.ImageOptions.Image = Resources.olho_aberto_20;
             }
         }
     }

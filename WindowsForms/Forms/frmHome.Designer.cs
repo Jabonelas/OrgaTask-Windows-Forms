@@ -69,6 +69,7 @@
             this.BarraMenuLateral.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Touch;
             this.BarraMenuLateral.Size = new System.Drawing.Size(250, 672);
             this.BarraMenuLateral.TabIndex = 1;
+            this.BarraMenuLateral.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
             this.BarraMenuLateral.Visible = false;
             // 
             // btnHome
@@ -179,6 +180,7 @@
             this.Controls.Add(this.BarraMenuLateral);
             this.Controls.Add(this.fluentDesignFormControl1);
             this.FluentDesignFormControl = this.fluentDesignFormControl1;
+            this.FormBorderEffect = DevExpress.XtraEditors.FormBorderEffect.Shadow;
             this.IconOptions.SvgImage = global::WindowsForms.Properties.Resources.IconeOrgaTask;
             this.MaximizeBox = false;
             this.Name = "frmHome";
