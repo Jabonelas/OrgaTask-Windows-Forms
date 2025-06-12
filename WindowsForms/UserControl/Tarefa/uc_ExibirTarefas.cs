@@ -117,12 +117,11 @@ namespace WindowsForms.Forms
                 card.descricao = item.Descricao;
                 card.corlblPrioridade = SetarCorPrioridade(item.Prioridade);
                 card.imagemlblPrioridade = SetarImagemPrioridade(item.Prioridade);
-                card.corpnlFundo = SetarCorFundo(item.Prioridade);
                 card.prioridade = item.Prioridade;
                 card.corlblStatus = SetarCorStatus(item.Status);
                 card.imagemlblStatus = SetarImagemStatus(item.Status);
                 card.status = item.Status;
-                card.data = $"       Criado:{item.Data}";
+                card.data = $"       Criado:{(item.Data)}";
                 card.prazo = $"       Prazo estipulado: {item.Prazo} dia(s)";
 
                 pnlListaTarefas.Controls.Add(card);
@@ -146,22 +145,6 @@ namespace WindowsForms.Forms
             return Color.Gray;
         }
 
-        private Color SetarCorFundo(string _fundo)
-        {
-            switch (_fundo)
-            {
-                case "Baixa":
-                    return Color.FromArgb(244, 251, 246);
-
-                case "Média":
-                    return Color.FromArgb(254, 247, 242);
-
-                case "Alta":
-                    return Color.FromArgb(253, 245, 246);
-            }
-
-            return Color.Gray;
-        }
 
         private Color SetarCorStatus(string _status)
         {

@@ -25,19 +25,13 @@ namespace WindowsForms.Forms
             SetandoPropriedadeSenha();
 
             PegandoUltimoUsuarioLogado();
-
-            txtSenha.Text = "string";
-            txtUsuario.Text = "string";
-
         }
 
         private void uc_Login_Load(object sender, EventArgs e)
         {
-        
-            PlaceholderCampos();
-
             txtUsuario.Focus();
 
+            PlaceholderCampos();
         }
 
         private void PlaceholderCampos()

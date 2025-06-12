@@ -21,16 +21,15 @@ namespace WindowsForms.Forms
         public string status { get => lblStatus.Text; set => lblStatus.Text = value; }
         public string data { get => lblDataCriacao.Text; set => lblDataCriacao.Text = value; }
         public string prazo { get => lblPrazo.Text; set => lblPrazo.Text = value; }
-
+        
         public string statusPassado = "";
-
         public Color corlblPrioridade { get => lblPrioridade.Appearance.BackColor; set => lblPrioridade.Appearance.BackColor = value; }
-
         public Image imagemlblPrioridade { get => lblPrioridade.ImageOptions.Image; set => lblPrioridade.ImageOptions.Image = value; }
-
         public Color corlblStatus { get => lblStatus.Appearance.BackColor; set => lblStatus.Appearance.BackColor = value; }
         public Image imagemlblStatus { get => lblStatus.ImageOptions.Image; set => lblStatus.ImageOptions.Image = value; }
-        public Color corpnlFundo { get => pnlFundo.BackColor; set => pnlFundo.BackColor = value; }
+   
+
+
 
         private frmHome frmHome = null;
 
@@ -41,19 +40,68 @@ namespace WindowsForms.Forms
             tarefaService = _tarefaService;
 
             InitializeComponent();
-
+            
             btnVisualizarTarefa.Paint += btnVisualizarTarefa_Paint;
 
             btnEditarTarefa.Paint += btnEditarTarefa_Paint;
 
             btnExcluirTarefa.Paint += btnExcluirTarefa_Paint;
-
-
-            //this.Paint += uc_CardTarefa_Paint;
-            //this.Resize += (s, e) => this.Invalidate(); 
-
-
+            
         }
+
+
+        protected override void OnResize(EventArgs e)
+        {
+            base.OnResize(e);
+            this.Invalidate(); 
+        }
+
+
+        protected override void OnPaint(PaintEventArgs e)
+        {
+            base.OnPaint(e);
+
+            int radius = 20; // Raio dos cantos
+            Graphics g = e.Graphics;
+            g.SmoothingMode = SmoothingMode.AntiAlias;
+
+            Rectangle bounds = this.ClientRectangle;
+            bounds.Width -= 1;
+            bounds.Height -= 1;
+
+            using (GraphicsPath path = new GraphicsPath())
+            {
+                path.StartFigure();
+                // Canto superior esquerdo
+                path.AddArc(bounds.X, bounds.Y, radius, radius, 180, 90);
+                // Topo
+                path.AddLine(bounds.X + radius, bounds.Y, bounds.Right - radius, bounds.Y);
+                // Canto superior direito
+                path.AddArc(bounds.Right - radius, bounds.Y, radius, radius, 270, 90);
+                // Direita
+                path.AddLine(bounds.Right, bounds.Y + radius, bounds.Right, bounds.Bottom - radius);
+                // Canto inferior direito
+                path.AddArc(bounds.Right - radius, bounds.Bottom - radius, radius, radius, 0, 90);
+                // Inferior
+                path.AddLine(bounds.Right - radius, bounds.Bottom, bounds.X + radius, bounds.Bottom);
+                // Canto inferior esquerdo
+                path.AddArc(bounds.X, bounds.Bottom - radius, radius, radius, 90, 90);
+                // Esquerda
+                path.AddLine(bounds.X, bounds.Bottom - radius, bounds.X, bounds.Y + radius);
+
+                path.CloseFigure();
+
+                // Define a região arredondada
+                this.Region = new Region(path);
+
+                // Desenha a borda
+                using (Pen pen = new Pen(Color.Gray, 2))
+                {
+                    g.DrawPath(pen, path);
+                }
+            }
+        }
+
 
 
         private void btnEditarTarefa_Paint(object sender, PaintEventArgs e)
@@ -141,34 +189,6 @@ namespace WindowsForms.Forms
         }
 
 
-        private void uc_CardTarefa_Paint(object sender, PaintEventArgs e)
-        {
-            UserControl btn = sender as UserControl;
-            int borderRadius = 8;
-            Color borderColor = Color.FromArgb(108, 109, 117);
-
-            int borderSize = 1;
-
-            using (GraphicsPath path = new GraphicsPath())
-            {
-                Rectangle rect = new Rectangle(0, 0, btn.Width - 1, btn.Height - 1);
-                int r = borderRadius;
-
-                path.AddArc(rect.X, rect.Y, r, r, 180, 90);
-                path.AddArc(rect.Right - r, rect.Y, r, r, 270, 90);
-                path.AddArc(rect.Right - r, rect.Bottom - r, r, r, 0, 90);
-                path.AddArc(rect.X, rect.Bottom - r, r, r, 90, 90);
-                path.CloseFigure();
-
-                using (Pen pen = new Pen(borderColor, borderSize))
-                {
-                    e.Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-                    e.Graphics.DrawPath(pen, path);
-                }
-            }
-        }
-
-
 
         public void SetParametroAdicional(frmHome _frmHome, string _statusPassado)
         {
@@ -202,8 +222,6 @@ namespace WindowsForms.Forms
                 TelaCarregamento.EsconderCarregamento();
             }
         }
-
-
 
         private async void btnEditarTarefa_Click(object sender, EventArgs e)
         {
