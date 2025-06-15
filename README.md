@@ -1,62 +1,91 @@
 # OrgaTask Windows Forms
 
-![.NET](https://img.shields.io/badge/.NET%20Framework-4.8-%23512BD4)
-![Windows Forms](https://img.shields.io/badge/Windows%20Forms-Desktop%20App-%230078D7)
-![DevExpress](https://img.shields.io/badge/DevExpress-24.1-%23FF7200)
+## Visão Geral
 
+OrgaTask Windows Forms é uma aplicação desktop que consome a OrgaTask API para gerenciar tarefas. Desenvolvida com Windows Forms e DevExpress, a aplicação oferece uma interface funcional, com foco em usabilidade.
 
-## 💻 **Sobre o OrgaTask**  
-**Aplicativo desktop** para gestão de tarefas, onde usuários podem:  
-- Criar/gerenciar tarefas com prioridades e status  
-- Experiência tradicional para usuários Windows  
-- Ter dados sincronizados em tempo real  
- 
+## Tecnologias Utilizadas
 
+- **Plataforma:** Windows Forms (.NET Framework 4.8)
+- **UI Framework:** DevExpress 24.1
 
-> Frontend desktop do ecossistema OrgaTask - Aplicação Windows Forms para gerenciamento de tarefas
+- **Comunicação:**
 
-![image](https://github.com/user-attachments/assets/f8180a35-adb8-494b-a425-94f4c47a148b)
+  - Consumo de API REST via HttpClient
+  - Autenticação com JWT Bearer Tokens
 
-  <p><em>Interface principal com componentes DevExpress</em></p>
+- **Controle de Erros:** Logging customizado (pasta /OrgaTask_Logs)
 
+- **Padrões Arquiteturais:**
 
-## 📋 Visão Geral
-Aplicação desktop que consome a **OrgaTask API** para:
-- Autenticação segura de usuários via JWT
-- Gerenciamento completo de tarefas (CRUD)
-- Controle de prioridades (Baixa, Média, Alta)
-- Filtros por status (Pendente, Em Progresso, Concluída)
+  - Service Layer: Separação entre UI e lógica de negócio
+  - Injeção de Dependência: Nativa do .NET (IServiceCollection)
 
-## 🌐 Ecossistema OrgaTask
-Esta aplicação consome:
-- [OrgaTask API](https://github.com/Jabonelas/OrgaTask-API) (Backend principal)
+## Funcionalidades
+
+- Autenticação via JWT
+- Gerenciamento de tarefas (listar, criar, editar, excluir)
+- Interface rica com controles DevExpress
+- Sistema de logging para rastreamento de erros
+
+## Pré-requisitos
+
+- .NET Framework 4.8
+- OrgaTask API rodando localmente ou em um servidor
+- Windows 10 ou superior
+- Licença DevExpress (ou use a versão trial)
+
+## Como Executar o Projeto
+
+**1. Clone o repositório:**
+
+```bash
+git clone https://github.com/Jabonelas/OrgaTask-Windows-Forms.git
+cd OrgaTask-Windows-Forms
+```
+
+  **2. Restaure as dependências:**
+
+  - Abra a solução no Visual Studio.
+  - Restaure os pacotes NuGet: Tools > NuGet Package Manager > Restore NuGet Packages.
+
+**3. Configure a URL da API:**
   
-Outros frontends do sistema:
-- [OrgaTask Blazor WebAssembly](https://github.com/Jabonelas/OrgaTask-Blazor-WebAssembly) (Versão Web)
+  - No arquivo InjecaoDependencia.cs, altere a URL da API (por padrão em modo desenvolvimento: https://localhost:7170) para o endpoint desejado (ex.: https://localhost:7091).
 
-- 📊 Arquitetura do Sistema
+**4. Compile e execute:**
 
-![OrganizacaoOrgaTask](https://github.com/user-attachments/assets/bae20b56-ace7-4ef0-8d14-7fe13f1d9d31)
-Figura 1: Visão geral da integração entre os componentes do OrgaTask.
-A API central (Backend) serve dados para os frontends Web e Desktop.
+  - No Visual Studio, pressione F5 ou clique em Run.
+
+**5. Verifique os logs em: OrgaTask_Logs (criada automaticamente).**
+
+## Exemplo de Uso
+
+1. Inicie a aplicação e faça login com credenciais válidas.
+2. Use a interface para visualizar, criar ou editar tarefas.
+3. Consulte os logs em /OrgaTask_Logs para depuração, se necessário.
+
+Capturas de Tela
+
+<p><em>Interface Dashboard</em></p>
+
+![image](https://github.com/user-attachments/assets/db77203f-87c6-455a-a88a-0339de7f9f90)
+> Painel visual com acompanhamento do progresso e status de todas as atividades
+
+<p><em>Interface Tarefas</em></p>
+
+![image](https://github.com/user-attachments/assets/5a61757d-d567-482a-aa1c-f6c96c358e7b)
+> Visualização integrada de todas as tarefas registradas
 
 
-## 🛠 Tecnologias
-- **Plataforma**: Windows Forms (.NET Framework 4.8)
-- **UI Framework**: DevExpress 24.1 
-- **Autenticação**: JWT Bearer Tokens
-- **Consumo de API**: REST (HttpClient)
-- **Controle de Erros**: Sistema de logging customizado em arquivos de log (pasta /OrgaTask_Logs)
-- **Padrões Arquiteturais**:
-  - **Service Layer**: Separação clara entre componentes UI e lógica de negócio
-  - **Injeção de Dependência**: Nativa do .NET (IServiceCollection)
 
-## 🚀 Como Executar
-1. **Pré-requisitos**:
-   - [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48)
-   - [DevExpress Components](https://www.devexpress.com/) (Versão 24.1 ou compatível)
-   - OrgaTask API em execução (siga o [README da API](https://github.com/Jabonelas/OrgaTask-API#-como-executar))
 
-2. **Configuração**:
-   ```bash
-   git clone https://github.com/Jabonelas/OrgaTask-Windows-Forms.git
+
+
+
+
+
+
+Contribuições
+
+Sinta-se à vontade para abrir issues ou enviar pull requests. Sugestões de melhorias são sempre bem-vindas!
