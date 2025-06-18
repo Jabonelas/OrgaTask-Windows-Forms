@@ -41,7 +41,7 @@ namespace WindowsForms.Service
 
                         Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
                         config.AppSettings.Settings["authToken"].Value = result.Token;
-                        config.AppSettings.Settings["usuarioLogado"].Value = _dadosLogin.login;
+                        config.AppSettings.Settings["usuarioLogado"].Value = _dadosLogin.Login;
                         config.Save(ConfigurationSaveMode.Modified);
                         ConfigurationManager.RefreshSection("appSettings");
 

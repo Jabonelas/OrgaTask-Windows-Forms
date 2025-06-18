@@ -21,11 +21,25 @@ namespace WindowsForms.Forms
             InitializeComponent();
 
             SetandoPropriedadeSenha();
+
         }
 
         private void uc_CadastroUsuario_Load(object sender, EventArgs e)
         {
             txtNomeCompleto.Focus();
+
+            PlaceholderCampos();
+        }
+
+
+
+        private void PlaceholderCampos()
+        {
+            txtNomeCompleto.Properties.NullText = "Digite o nome completo...";
+            txtNomeCompleto.EditValue = null;
+
+            txtLogin.Properties.NullText = "Digite a senha...";
+            txtLogin.EditValue = null;
         }
 
         private void SetandoPropriedadeSenha()
@@ -77,8 +91,8 @@ namespace WindowsForms.Forms
         {
             UsuarioLoginDTO dadosUsuario = new UsuarioLoginDTO
             {
-                login = txtLogin.Text,
-                senha = txtSenha.Text
+                Login = txtLogin.Text,
+                Senha = txtSenha.Text
             };
 
             ResultadoOperacao resultadoOperacao = await usuarioService.LoginAsync(dadosUsuario);
@@ -109,10 +123,10 @@ namespace WindowsForms.Forms
 
         private bool IsCamposPreenchidos()
         {
-            if (string.IsNullOrEmpty(txtNomeCompleto.Text) ||
-                string.IsNullOrEmpty(txtLogin.Text) ||
-                string.IsNullOrEmpty(txtSenha.Text) ||
-                string.IsNullOrEmpty(txtConfirmaSenha.Text))
+            if (txtNomeCompleto.EditValue == null ||
+                txtLogin.EditValue == null ||
+                txtSenha.EditValue == null ||
+                txtConfirmaSenha.EditValue == null)
             {
                 ResultadoOperacao mensagem = new ResultadoOperacao()
                 {

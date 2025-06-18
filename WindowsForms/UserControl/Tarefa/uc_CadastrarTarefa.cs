@@ -24,11 +24,35 @@ namespace WindowsForms.Forms
         private void uc_CadastrarTarefa_Load(object sender, EventArgs e)
         {
             txtTitulo.Focus();
+
+ 
+        }
+
+
+        private void PlaceholderCampos()
+        {
+
+            txtTitulo.Properties.NullText = "Digite o titulo...";
+            txtTitulo.EditValue = null;
+
+            cmbPrioridade.Properties.NullText = "Selecione a prioridade...";
+            cmbPrioridade.EditValue = null;
+
+            txtPrazo.Properties.NullText = "Informe um prazo...";
+            txtPrazo.EditValue = null;
+
+            txtDescricao.Properties.NullText = "Digite a descrição da tarefa...";
+            txtDescricao.EditValue = null;
+
+            cmbStatus.Properties.NullText = "Selecione o status...";
+            cmbStatus.EditValue = null;
         }
 
         public void SetParametroAdicional(frmHome _frmHome)
         {
             frmHome = _frmHome;
+
+            PlaceholderCampos();
         }
 
         private async void btnCancelar_Click_1(object sender, EventArgs e)
@@ -103,11 +127,12 @@ namespace WindowsForms.Forms
 
         private bool IsCamposPreenchidos()
         {
-            if (string.IsNullOrEmpty(txtTitulo.Text) ||
-                string.IsNullOrEmpty(cmbPrioridade.Text) ||
-                string.IsNullOrEmpty(txtPrazo.Text) ||
-                string.IsNullOrEmpty(txtDescricao.Text) ||
-                string.IsNullOrEmpty(cmbStatus.Text))
+
+            if (txtTitulo.EditValue == null ||
+                cmbPrioridade.EditValue == null ||
+                txtPrazo.EditValue == null ||
+                txtDescricao.EditValue == null ||
+                cmbStatus.EditValue == null)
             {
                 ResultadoOperacao mensagem = new ResultadoOperacao()
                 {
@@ -116,7 +141,6 @@ namespace WindowsForms.Forms
                 };
 
                 MensagensAlertaSistema.MensagemAlertaSistema(mensagem);
-
                 return false;
             }
 

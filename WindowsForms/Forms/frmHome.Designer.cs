@@ -112,7 +112,6 @@
             this.btnLogin.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.btnTrocarUsuario,
             this.btnSair});
-            this.btnLogin.Expanded = true;
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Text = "Login";
             // 

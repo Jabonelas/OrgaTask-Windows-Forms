@@ -36,7 +36,7 @@ namespace WindowsForms.Forms
 
         private void PlaceholderCampos()
         {
-            txtUsuario.Properties.NullText = "Digite seu usuário";
+            txtUsuario.Properties.NullText = "Digite seu usuário...";
             txtUsuario.EditValue = null;
         }
 
@@ -109,8 +109,8 @@ namespace WindowsForms.Forms
         {
             UsuarioLoginDTO dadosUsuario = new UsuarioLoginDTO
             {
-                login = txtUsuario.Text,
-                senha = txtSenha.Text
+                Login = txtUsuario.Text,
+                Senha = txtSenha.Text
             };
 
             ResultadoOperacao resultadoOperacao = await usuarioService.LoginAsync(dadosUsuario);
@@ -137,11 +137,13 @@ namespace WindowsForms.Forms
             frmHome.lblImagemUsuario.Visible = true;
             frmHome.lblUsuario.Visible = true;
             frmHome.lblUsuario.Text = txtUsuario.Text;
+
+            txtSenha.Text = "";
         }
 
         private bool IsCamposPreenchidos()
         {
-            if (string.IsNullOrEmpty(txtUsuario.Text) || string.IsNullOrEmpty(txtSenha.Text))
+            if (txtUsuario.EditValue == null || txtSenha.EditValue == null)
             {
                 ResultadoOperacao mensagem = new ResultadoOperacao()
                 {

@@ -73,9 +73,9 @@
             this.labelControl8.Appearance.Options.UseForeColor = true;
             this.labelControl8.Location = new System.Drawing.Point(145, 458);
             this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(215, 15);
+            this.labelControl8.Size = new System.Drawing.Size(218, 15);
             this.labelControl8.TabIndex = 19;
-            this.labelControl8.Text = "Acompanhe o progresso das suas tarefas";
+            this.labelControl8.Text = "Acompanhe o progresso das suas tarefas.";
             // 
             // labelControl7
             // 
@@ -85,9 +85,9 @@
             this.labelControl7.Appearance.Options.UseForeColor = true;
             this.labelControl7.Location = new System.Drawing.Point(145, 415);
             this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(205, 15);
+            this.labelControl7.Size = new System.Drawing.Size(208, 15);
             this.labelControl7.TabIndex = 18;
-            this.labelControl7.Text = "Organize suas tarefas de forma simples";
+            this.labelControl7.Text = "Organize suas tarefas de forma simples.";
             // 
             // svgImageBox5
             // 
@@ -127,9 +127,9 @@
             this.labelControl6.Appearance.Options.UseForeColor = true;
             this.labelControl6.Location = new System.Drawing.Point(141, 373);
             this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(190, 15);
+            this.labelControl6.Size = new System.Drawing.Size(193, 15);
             this.labelControl6.TabIndex = 14;
-            this.labelControl6.Text = "Controle de acesso pessoal e seguro";
+            this.labelControl6.Text = "Controle de acesso pessoal e seguro.";
             // 
             // labelControl5
             // 
@@ -242,9 +242,9 @@
             this.labelControl9.Appearance.Options.UseFont = true;
             this.labelControl9.Location = new System.Drawing.Point(12, 200);
             this.labelControl9.Name = "labelControl9";
-            this.labelControl9.Size = new System.Drawing.Size(93, 15);
+            this.labelControl9.Size = new System.Drawing.Size(96, 15);
             this.labelControl9.TabIndex = 32;
-            this.labelControl9.Text = "Confirmar Senha";
+            this.labelControl9.Text = "Confirmar Senha:";
             // 
             // btnCadastarUsuario
             // 
@@ -299,9 +299,9 @@
             this.labelControl1.Appearance.Options.UseFont = true;
             this.labelControl1.Location = new System.Drawing.Point(12, 138);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(34, 15);
+            this.labelControl1.Size = new System.Drawing.Size(37, 15);
             this.labelControl1.TabIndex = 30;
-            this.labelControl1.Text = "Senha";
+            this.labelControl1.Text = "Senha:";
             // 
             // labelControl2
             // 
@@ -311,9 +311,9 @@
             this.labelControl2.Appearance.Options.UseFont = true;
             this.labelControl2.Location = new System.Drawing.Point(12, 21);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(91, 15);
+            this.labelControl2.Size = new System.Drawing.Size(94, 15);
             this.labelControl2.TabIndex = 25;
-            this.labelControl2.Text = "Nome Completo";
+            this.labelControl2.Text = "Nome Completo:";
             // 
             // txtNomeCompleto
             // 
@@ -352,9 +352,9 @@
             this.labelControl3.Appearance.Options.UseFont = true;
             this.labelControl3.Location = new System.Drawing.Point(12, 78);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(96, 15);
+            this.labelControl3.Size = new System.Drawing.Size(99, 15);
             this.labelControl3.TabIndex = 26;
-            this.labelControl3.Text = "Nome de Usuário";
+            this.labelControl3.Text = "Nome de Usuário:";
             // 
             // object_5244f027_2892_4a8d_89ac_97a07ca2af52
             // 

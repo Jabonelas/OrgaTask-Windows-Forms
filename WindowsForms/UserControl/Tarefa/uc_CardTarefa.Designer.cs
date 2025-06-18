@@ -117,6 +117,7 @@
             this.lblPrioridade.Size = new System.Drawing.Size(91, 29);
             this.lblPrioridade.TabIndex = 18;
             this.lblPrioridade.Text = "Prioridade";
+            this.lblPrioridade.Click += new System.EventHandler(this.lblPrioridade_Click);
             // 
             // pnlFundo
             // 
@@ -131,6 +132,7 @@
             this.pnlFundo.Name = "pnlFundo";
             this.pnlFundo.Size = new System.Drawing.Size(345, 130);
             this.pnlFundo.TabIndex = 24;
+            this.pnlFundo.Click += new System.EventHandler(this.pnlFundo_Click);
             // 
             // lblPrazo
             // 
@@ -144,6 +146,7 @@
             this.lblPrazo.Size = new System.Drawing.Size(49, 15);
             this.lblPrazo.TabIndex = 26;
             this.lblPrazo.Text = "       Prazo";
+            this.lblPrazo.Click += new System.EventHandler(this.lblPrazo_Click);
             // 
             // lblStatus
             // 
@@ -158,6 +161,7 @@
             this.lblStatus.Size = new System.Drawing.Size(119, 29);
             this.lblStatus.TabIndex = 25;
             this.lblStatus.Text = "Status";
+            this.lblStatus.Click += new System.EventHandler(this.lblStatus_Click);
             // 
             // lblIdTarefa
             // 
@@ -182,6 +186,7 @@
             this.lblDataCriacao.Size = new System.Drawing.Size(86, 15);
             this.lblDataCriacao.TabIndex = 27;
             this.lblDataCriacao.Text = "       Data Criação";
+            this.lblDataCriacao.Click += new System.EventHandler(this.lblDataCriacao_Click);
             // 
             // lblDescricao
             // 
@@ -192,6 +197,7 @@
             this.lblDescricao.Size = new System.Drawing.Size(49, 13);
             this.lblDescricao.TabIndex = 23;
             this.lblDescricao.Text = "Descricao";
+            this.lblDescricao.Click += new System.EventHandler(this.lblDescricao_Click);
             // 
             // lblTitulo
             // 
@@ -202,6 +208,7 @@
             this.lblTitulo.Size = new System.Drawing.Size(37, 17);
             this.lblTitulo.TabIndex = 24;
             this.lblTitulo.Text = "Titulo";
+            this.lblTitulo.Click += new System.EventHandler(this.lblTitulo_Click);
             // 
             // uc_CardTarefa
             // 
@@ -215,6 +222,7 @@
             this.Controls.Add(this.pnlFundo);
             this.Name = "uc_CardTarefa";
             this.Size = new System.Drawing.Size(360, 184);
+            this.Click += new System.EventHandler(this.uc_CardTarefa_Click);
             ((System.ComponentModel.ISupportInitialize)(this.pnlFundo)).EndInit();
             this.pnlFundo.ResumeLayout(false);
             this.pnlFundo.PerformLayout();

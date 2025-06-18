@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Net.Http;
+using WindowsForms.Core;
 using WindowsForms.Forms;
 using WindowsForms.Interface;
 using WindowsForms.Service;
@@ -15,19 +16,7 @@ namespace WindowsForms
         {
             var services = new ServiceCollection();
 
-            // Configuração do HttpClient (única para todos os ambientes)
-            services.AddScoped(provider =>
-            {
-                var client = new HttpClient();
-
-#if DEBUG
-                client.BaseAddress = new Uri("https://localhost:7091/");
-#else
-                client.BaseAddress = new Uri("https://blazor-api.onrender.com");
-#endif
-
-                return client;
-            });
+            HttpClientConfig.AddHttpClient(services);
 
             //Service
             services.AddScoped<ITarefaService, TarefaService>();

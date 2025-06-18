@@ -87,9 +87,9 @@
             this.labelControl8.Appearance.Options.UseForeColor = true;
             this.labelControl8.Location = new System.Drawing.Point(83, 458);
             this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(152, 15);
+            this.labelControl8.Size = new System.Drawing.Size(155, 15);
             this.labelControl8.TabIndex = 19;
-            this.labelControl8.Text = "Prazo e descrição detalhados";
+            this.labelControl8.Text = "Prazo e descrição detalhados.";
             // 
             // labelControl7
             // 
@@ -99,9 +99,9 @@
             this.labelControl7.Appearance.Options.UseForeColor = true;
             this.labelControl7.Location = new System.Drawing.Point(83, 415);
             this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(131, 15);
+            this.labelControl7.Size = new System.Drawing.Size(134, 15);
             this.labelControl7.TabIndex = 18;
-            this.labelControl7.Text = "Prioridade e status claros";
+            this.labelControl7.Text = "Prioridade e status claros.";
             // 
             // svgImageBox5
             // 
@@ -141,9 +141,9 @@
             this.labelControl6.Appearance.Options.UseForeColor = true;
             this.labelControl6.Location = new System.Drawing.Point(79, 373);
             this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(153, 15);
+            this.labelControl6.Size = new System.Drawing.Size(156, 15);
             this.labelControl6.TabIndex = 14;
-            this.labelControl6.Text = "Detalhes completos da tarefa";
+            this.labelControl6.Text = "Detalhes completos da tarefa.";
             // 
             // labelControl5
             // 
@@ -232,9 +232,9 @@
             this.labelControl10.Appearance.Options.UseFont = true;
             this.labelControl10.Location = new System.Drawing.Point(190, 76);
             this.labelControl10.Name = "labelControl10";
-            this.labelControl10.Size = new System.Drawing.Size(63, 15);
+            this.labelControl10.Size = new System.Drawing.Size(66, 15);
             this.labelControl10.TabIndex = 39;
-            this.labelControl10.Text = "Prazo (dias)";
+            this.labelControl10.Text = "Prazo (dias):";
             // 
             // labelControl9
             // 
@@ -244,9 +244,9 @@
             this.labelControl9.Appearance.Options.UseFont = true;
             this.labelControl9.Location = new System.Drawing.Point(12, 271);
             this.labelControl9.Name = "labelControl9";
-            this.labelControl9.Size = new System.Drawing.Size(35, 15);
+            this.labelControl9.Size = new System.Drawing.Size(38, 15);
             this.labelControl9.TabIndex = 37;
-            this.labelControl9.Text = "Status";
+            this.labelControl9.Text = "Status:";
             // 
             // btnVoltar
             // 
@@ -274,9 +274,9 @@
             this.labelControl1.Appearance.Options.UseFont = true;
             this.labelControl1.Location = new System.Drawing.Point(12, 136);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(54, 15);
+            this.labelControl1.Size = new System.Drawing.Size(57, 15);
             this.labelControl1.TabIndex = 36;
-            this.labelControl1.Text = "Descrição";
+            this.labelControl1.Text = "Descrição:";
             // 
             // labelControl2
             // 
@@ -286,9 +286,9 @@
             this.labelControl2.Appearance.Options.UseFont = true;
             this.labelControl2.Location = new System.Drawing.Point(12, 19);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(32, 15);
+            this.labelControl2.Size = new System.Drawing.Size(35, 15);
             this.labelControl2.TabIndex = 32;
-            this.labelControl2.Text = "Título";
+            this.labelControl2.Text = "Título:";
             // 
             // txtTitulo
             // 
@@ -322,9 +322,9 @@
             this.labelControl3.Appearance.Options.UseFont = true;
             this.labelControl3.Location = new System.Drawing.Point(12, 76);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(57, 15);
+            this.labelControl3.Size = new System.Drawing.Size(60, 15);
             this.labelControl3.TabIndex = 33;
-            this.labelControl3.Text = "Prioridade";
+            this.labelControl3.Text = "Prioridade:";
             // 
             // uc_VisualizarTarefa
             // 

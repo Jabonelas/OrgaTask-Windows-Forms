@@ -2,29 +2,20 @@
 <ArrayOfArrayOfArrayOfString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ArrayOfArrayOfString>
     <ArrayOfString>
-      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\UserControl\Tarefa\uc_CardTarefa.cs</string>
-      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\UserControl\Tarefa\uc_CardTarefa.cs</string>
-    </ArrayOfString>
-    <ArrayOfString>
-      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\UserControl\Tarefa\uc_ExibirTarefas.cs</string>
-      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\UserControl\Tarefa\uc_ExibirTarefas.cs</string>
-    </ArrayOfString>
-    <ArrayOfString>
-      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\WindowsForms.csproj</string>
-    </ArrayOfString>
-    <ArrayOfString>
       <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\UserControl\Usuario\uc_Login.cs</string>
       <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\UserControl\Usuario\uc_Login.cs</string>
     </ArrayOfString>
     <ArrayOfString>
-      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Program.cs</string>
+      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\UserControl\Usuario\uc_CadastroUsuario.cs</string>
+      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\UserControl\Usuario\uc_CadastroUsuario.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\UserControl\Tarefa\uc_CadastrarTarefa.cs</string>
+      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\UserControl\Tarefa\uc_CadastrarTarefa.cs</string>
     </ArrayOfString>
     <ArrayOfString>
       <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Forms\frmHome.cs</string>
       <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Forms\frmHome.cs</string>
-    </ArrayOfString>
-    <ArrayOfString>
-      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Extensions\InjecaoDependencia.cs</string>
     </ArrayOfString>
   </ArrayOfArrayOfString>
 </ArrayOfArrayOfArrayOfString>

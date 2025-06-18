@@ -81,9 +81,9 @@
             this.labelControl2.Appearance.Options.UseFont = true;
             this.labelControl2.Location = new System.Drawing.Point(605, 271);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(42, 15);
-            this.labelControl2.TabIndex = 3;
-            this.labelControl2.Text = "Usuário";
+            this.labelControl2.Size = new System.Drawing.Size(45, 15);
+            this.labelControl2.TabIndex = 39;
+            this.labelControl2.Text = "Usuário:";
             // 
             // labelControl3
             // 
@@ -93,9 +93,9 @@
             this.labelControl3.Appearance.Options.UseFont = true;
             this.labelControl3.Location = new System.Drawing.Point(605, 334);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(34, 15);
-            this.labelControl3.TabIndex = 4;
-            this.labelControl3.Text = "Senha";
+            this.labelControl3.Size = new System.Drawing.Size(37, 15);
+            this.labelControl3.TabIndex = 49;
+            this.labelControl3.Text = "Senha:";
             // 
             // btnEntrar
             // 
@@ -109,7 +109,7 @@
             this.btnEntrar.Location = new System.Drawing.Point(605, 402);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(297, 34);
-            this.btnEntrar.TabIndex = 4;
+            this.btnEntrar.TabIndex = 5;
             this.btnEntrar.Text = "Entrar";
             this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
             // 
@@ -127,7 +127,7 @@
             this.btnCriarConta.Location = new System.Drawing.Point(605, 449);
             this.btnCriarConta.Name = "btnCriarConta";
             this.btnCriarConta.Size = new System.Drawing.Size(297, 34);
-            this.btnCriarConta.TabIndex = 5;
+            this.btnCriarConta.TabIndex = 6;
             this.btnCriarConta.Text = "Criar uma conta";
             this.btnCriarConta.Click += new System.EventHandler(this.btnCriarConta_Click);
             // 
@@ -165,9 +165,9 @@
             this.labelControl8.Appearance.Options.UseForeColor = true;
             this.labelControl8.Location = new System.Drawing.Point(148, 461);
             this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(174, 15);
+            this.labelControl8.Size = new System.Drawing.Size(177, 15);
             this.labelControl8.TabIndex = 19;
-            this.labelControl8.Text = "Acompanhe seu progresso diário";
+            this.labelControl8.Text = "Acompanhe seu progresso diário.";
             // 
             // labelControl7
             // 
@@ -177,9 +177,9 @@
             this.labelControl7.Appearance.Options.UseForeColor = true;
             this.labelControl7.Location = new System.Drawing.Point(148, 416);
             this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(176, 15);
+            this.labelControl7.Size = new System.Drawing.Size(179, 15);
             this.labelControl7.TabIndex = 18;
-            this.labelControl7.Text = "Organize por prioridades e prazos";
+            this.labelControl7.Text = "Organize por prioridades e prazos.";
             // 
             // svgImageBox5
             // 
@@ -219,9 +219,9 @@
             this.labelControl6.Appearance.Options.UseForeColor = true;
             this.labelControl6.Location = new System.Drawing.Point(148, 373);
             this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(209, 15);
+            this.labelControl6.Size = new System.Drawing.Size(212, 15);
             this.labelControl6.TabIndex = 14;
-            this.labelControl6.Text = "Controle suas tarefas de forma eficiente";
+            this.labelControl6.Text = "Controle suas tarefas de forma eficiente.";
             // 
             // labelControl5
             // 
@@ -271,7 +271,7 @@
             this.btnExibirSenha.Location = new System.Drawing.Point(280, 158);
             this.btnExibirSenha.Name = "btnExibirSenha";
             this.btnExibirSenha.Size = new System.Drawing.Size(29, 32);
-            this.btnExibirSenha.TabIndex = 3;
+            this.btnExibirSenha.TabIndex = 4;
             this.btnExibirSenha.Click += new System.EventHandler(this.btnExibirSenha_Click);
             // 
             // txtSenha

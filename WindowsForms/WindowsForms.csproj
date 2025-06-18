@@ -135,10 +135,11 @@
     <Reference Include="DevExpress.Printing.v23.2.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Core\LogErros.cs" />
-    <Compile Include="Core\MensagensAlertaSistema.cs" />
-    <Compile Include="Core\ResultadoOperacao.cs" />
-    <Compile Include="Core\TelaCarregamento.cs" />
+    <Compile Include="Config\HttpClientConfig.cs" />
+    <Compile Include="Helpers\LogErros.cs" />
+    <Compile Include="Helpers\MensagensAlertaSistema.cs" />
+    <Compile Include="Helpers\ResultadoOperacao.cs" />
+    <Compile Include="Helpers\TelaCarregamento.cs" />
     <Compile Include="DTOs\ErrorResponse.cs" />
     <Compile Include="DTOs\Tarefa\TarefaAlterarDTO.cs" />
     <Compile Include="DTOs\Tarefa\TarefaConsultaDTO.cs" />
@@ -311,24 +312,6 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\alerta.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\alerta %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\alerta.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\aviso.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\atencao.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\download.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\marca.png" />
   </ItemGroup>
   <ItemGroup>
@@ -344,22 +327,11 @@
     <None Include="Resources\relogio.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\atualizar.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\baixar.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\download %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ponto-de-exclamacao.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\seta-para-baixo.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\girar.png" />
+    <None Include="Resources\ponto-de-interrogacao.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

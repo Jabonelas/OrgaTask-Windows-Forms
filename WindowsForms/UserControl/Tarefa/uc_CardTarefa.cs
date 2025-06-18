@@ -204,6 +204,45 @@ namespace WindowsForms.Forms
             await ExibirTelaDetalhesTarefaAsync();
         }
 
+        private async void pnlFundo_Click(object sender, EventArgs e)
+        {
+            await ExibirTelaDetalhesTarefaAsync();
+        }
+
+        private async void lblPrioridade_Click(object sender, EventArgs e)
+        {
+            await ExibirTelaDetalhesTarefaAsync();
+        }
+
+        private async void lblStatus_Click(object sender, EventArgs e)
+        {
+            await ExibirTelaDetalhesTarefaAsync();
+        }
+
+        private async void uc_CardTarefa_Click(object sender, EventArgs e)
+        {
+            await ExibirTelaDetalhesTarefaAsync();
+        }
+
+        private async void lblPrazo_Click(object sender, EventArgs e)
+        {
+            await ExibirTelaDetalhesTarefaAsync();
+        }
+
+        private async void lblDataCriacao_Click(object sender, EventArgs e)
+        {
+            await ExibirTelaDetalhesTarefaAsync();
+        }
+
+        private async void lblDescricao_Click(object sender, EventArgs e)
+        {
+            await ExibirTelaDetalhesTarefaAsync();
+        }
+
+        private async void lblTitulo_Click(object sender, EventArgs e)
+        {
+            await ExibirTelaDetalhesTarefaAsync();
+        }
 
 
         private async Task ExibirTelaDetalhesTarefaAsync()
@@ -289,5 +328,7 @@ namespace WindowsForms.Forms
             frmHome.pnlTelaPrincipal.Controls.Clear();
             frmHome.pnlTelaPrincipal.Controls.Add(ucExibirTarefas);
         }
+
+
     }
 }

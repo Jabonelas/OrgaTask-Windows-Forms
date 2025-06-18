@@ -190,7 +190,7 @@ namespace WindowsForms.Forms
                     return Resources.verificado;
 
                 case "Em Progresso":
-                    return Resources.girar;
+                    return Resources.ponto_de_interrogacao;
 
                 case "Pendente":
                     return Resources.relogio;
