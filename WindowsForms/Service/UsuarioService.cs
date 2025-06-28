@@ -37,7 +37,7 @@ namespace WindowsForms.Service
 
                     if (response.IsSuccessStatusCode)
                     {
-                        var result = JsonConvert.DeserializeObject<UserToken>(responseContent);
+                        UserToken result = JsonConvert.DeserializeObject<UserToken>(responseContent);
 
                         Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
                         config.AppSettings.Settings["authToken"].Value = result.Token;

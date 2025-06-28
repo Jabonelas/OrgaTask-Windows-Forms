@@ -3,36 +3,51 @@
   "WorkspaceRootPath": "C:\\Users\\israe\\source\\repos\\WindowsForms\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|c:\\users\\israe\\source\\repos\\windowsforms\\windowsforms\\usercontrol\\usuario\\uc_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|solutionrelative:windowsforms\\usercontrol\\usuario\\uc_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|c:\\users\\israe\\source\\repos\\windowsforms\\windowsforms\\usercontrol\\tarefa\\uc_cadastrartarefa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|solutionrelative:windowsforms\\usercontrol\\tarefa\\uc_cadastrartarefa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|c:\\users\\israe\\source\\repos\\windowsforms\\windowsforms\\usercontrol\\tarefa\\uc_cadastrartarefa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|solutionrelative:windowsforms\\usercontrol\\tarefa\\uc_cadastrartarefa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|c:\\users\\israe\\source\\repos\\windowsforms\\windowsforms\\usercontrol\\usuario\\uc_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|solutionrelative:windowsforms\\usercontrol\\usuario\\uc_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|c:\\users\\israe\\source\\repos\\windowsforms\\windowsforms\\forms\\frmhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|solutionrelative:windowsforms\\forms\\frmhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|c:\\users\\israe\\source\\repos\\windowsforms\\windowsforms\\forms\\frmhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|solutionrelative:windowsforms\\forms\\frmhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|c:\\users\\israe\\source\\repos\\windowsforms\\windowsforms\\forms\\frmhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|solutionrelative:windowsforms\\forms\\frmhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|WindowsForms||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|c:\\users\\israe\\source\\repos\\windowsforms\\windowsforms\\usercontrol\\usuario\\uc_cadastrousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|c:\\users\\israe\\source\\repos\\windowsforms\\windowsforms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|solutionrelative:windowsforms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|c:\\users\\israe\\source\\repos\\windowsforms\\windowsforms\\service\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|solutionrelative:windowsforms\\service\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|c:\\users\\israe\\source\\repos\\windowsforms\\windowsforms\\usercontrol\\usuario\\uc_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|solutionrelative:windowsforms\\usercontrol\\usuario\\uc_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|C:\\Users\\israe\\source\\repos\\WindowsForms\\windowsforms\\usercontrol\\tarefa\\uc_cadastrartarefa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|solutionrelative:windowsforms\\usercontrol\\tarefa\\uc_cadastrartarefa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|C:\\Users\\israe\\source\\repos\\WindowsForms\\windowsforms\\usercontrol\\tarefa\\uc_cadastrartarefa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|solutionrelative:windowsforms\\usercontrol\\tarefa\\uc_cadastrartarefa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|C:\\Users\\israe\\source\\repos\\WindowsForms\\windowsforms\\usercontrol\\usuario\\uc_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|solutionrelative:windowsforms\\usercontrol\\usuario\\uc_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|C:\\Users\\israe\\source\\repos\\WindowsForms\\windowsforms\\usercontrol\\usuario\\uc_cadastrousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|solutionrelative:windowsforms\\usercontrol\\usuario\\uc_cadastrousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|c:\\users\\israe\\source\\repos\\windowsforms\\windowsforms\\usercontrol\\usuario\\uc_cadastrousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|C:\\Users\\israe\\source\\repos\\WindowsForms\\windowsforms\\usercontrol\\usuario\\uc_cadastrousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|solutionrelative:windowsforms\\usercontrol\\usuario\\uc_cadastrousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|c:\\users\\israe\\source\\repos\\windowsforms\\windowsforms\\properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|solutionrelative:windowsforms\\properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +57,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,32 +65,70 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "frmHome.cs",
               "DocumentMoniker": "C:\\Users\\israe\\source\\repos\\WindowsForms\\WindowsForms\\Forms\\frmHome.cs",
               "RelativeDocumentMoniker": "WindowsForms\\Forms\\frmHome.cs",
               "ToolTip": "C:\\Users\\israe\\source\\repos\\WindowsForms\\WindowsForms\\Forms\\frmHome.cs",
               "RelativeToolTip": "WindowsForms\\Forms\\frmHome.cs",
-              "ViewState": "AgIAAG0AAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAcwHEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T00:03:53.12Z",
+              "WhenOpened": "2025-06-27T23:39:12.476Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
+              "Title": "WindowsForms",
+              "DocumentMoniker": "C:\\Users\\israe\\source\\repos\\WindowsForms\\WindowsForms\\WindowsForms.csproj",
+              "RelativeDocumentMoniker": "WindowsForms\\WindowsForms.csproj",
+              "ToolTip": "C:\\Users\\israe\\source\\repos\\WindowsForms\\WindowsForms\\WindowsForms.csproj",
+              "RelativeToolTip": "WindowsForms\\WindowsForms.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-27T23:37:04.252Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "frmHome.cs [Design]",
               "DocumentMoniker": "C:\\Users\\israe\\source\\repos\\WindowsForms\\WindowsForms\\Forms\\frmHome.cs",
               "RelativeDocumentMoniker": "WindowsForms\\Forms\\frmHome.cs",
               "ToolTip": "C:\\Users\\israe\\source\\repos\\WindowsForms\\WindowsForms\\Forms\\frmHome.cs [Design]",
               "RelativeToolTip": "WindowsForms\\Forms\\frmHome.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T00:03:39.985Z",
+              "WhenOpened": "2025-06-27T23:35:47.805Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\israe\\source\\repos\\WindowsForms\\WindowsForms\\Program.cs",
+              "RelativeDocumentMoniker": "WindowsForms\\Program.cs",
+              "ToolTip": "C:\\Users\\israe\\source\\repos\\WindowsForms\\WindowsForms\\Program.cs",
+              "RelativeToolTip": "WindowsForms\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T23:17:28.297Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UsuarioService.cs",
+              "DocumentMoniker": "C:\\Users\\israe\\source\\repos\\WindowsForms\\WindowsForms\\Service\\UsuarioService.cs",
+              "RelativeDocumentMoniker": "WindowsForms\\Service\\UsuarioService.cs",
+              "ToolTip": "C:\\Users\\israe\\source\\repos\\WindowsForms\\WindowsForms\\Service\\UsuarioService.cs",
+              "RelativeToolTip": "WindowsForms\\Service\\UsuarioService.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAArwCYAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T22:50:50.468Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "uc_CadastrarTarefa.cs",
               "DocumentMoniker": "C:\\Users\\israe\\source\\repos\\WindowsForms\\WindowsForms\\UserControl\\Tarefa\\uc_CadastrarTarefa.cs",
               "RelativeDocumentMoniker": "WindowsForms\\UserControl\\Tarefa\\uc_CadastrarTarefa.cs",
@@ -88,7 +141,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "uc_CadastrarTarefa.cs [Design]",
               "DocumentMoniker": "C:\\Users\\israe\\source\\repos\\WindowsForms\\WindowsForms\\UserControl\\Tarefa\\uc_CadastrarTarefa.cs",
               "RelativeDocumentMoniker": "WindowsForms\\UserControl\\Tarefa\\uc_CadastrarTarefa.cs",
@@ -100,7 +153,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "uc_CadastroUsuario.cs",
               "DocumentMoniker": "C:\\Users\\israe\\source\\repos\\WindowsForms\\WindowsForms\\UserControl\\Usuario\\uc_CadastroUsuario.cs",
               "RelativeDocumentMoniker": "WindowsForms\\UserControl\\Usuario\\uc_CadastroUsuario.cs",
@@ -108,29 +161,27 @@
               "RelativeToolTip": "WindowsForms\\UserControl\\Usuario\\uc_CadastroUsuario.cs",
               "ViewState": "AgIAAGgAAAAAAAAAAAAQwI8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T23:34:26.37Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-17T23:34:26.37Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "uc_CadastroUsuario.cs [Design]",
               "DocumentMoniker": "C:\\Users\\israe\\source\\repos\\WindowsForms\\WindowsForms\\UserControl\\Usuario\\uc_CadastroUsuario.cs",
               "RelativeDocumentMoniker": "WindowsForms\\UserControl\\Usuario\\uc_CadastroUsuario.cs",
               "ToolTip": "C:\\Users\\israe\\source\\repos\\WindowsForms\\WindowsForms\\UserControl\\Usuario\\uc_CadastroUsuario.cs [Design]",
               "RelativeToolTip": "WindowsForms\\UserControl\\Usuario\\uc_CadastroUsuario.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T23:34:24.315Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-06-17T23:34:24.315Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "uc_Login.cs",
               "DocumentMoniker": "C:\\Users\\israe\\source\\repos\\WindowsForms\\WindowsForms\\UserControl\\Usuario\\uc_Login.cs",
               "RelativeDocumentMoniker": "WindowsForms\\UserControl\\Usuario\\uc_Login.cs",
-              "ToolTip": "C:\\Users\\israe\\source\\repos\\WindowsForms\\WindowsForms\\UserControl\\Usuario\\uc_Login.cs \u2B24",
-              "RelativeToolTip": "WindowsForms\\UserControl\\Usuario\\uc_Login.cs \u2B24",
+              "ToolTip": "C:\\Users\\israe\\source\\repos\\WindowsForms\\WindowsForms\\UserControl\\Usuario\\uc_Login.cs",
+              "RelativeToolTip": "WindowsForms\\UserControl\\Usuario\\uc_Login.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAuwHgAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-17T23:11:42.618Z",
@@ -138,12 +189,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "uc_Login.cs [Design]",
               "DocumentMoniker": "C:\\Users\\israe\\source\\repos\\WindowsForms\\WindowsForms\\UserControl\\Usuario\\uc_Login.cs",
               "RelativeDocumentMoniker": "WindowsForms\\UserControl\\Usuario\\uc_Login.cs",
-              "ToolTip": "C:\\Users\\israe\\source\\repos\\WindowsForms\\WindowsForms\\UserControl\\Usuario\\uc_Login.cs [Design] \u2B24",
-              "RelativeToolTip": "WindowsForms\\UserControl\\Usuario\\uc_Login.cs [Design] \u2B24",
+              "ToolTip": "C:\\Users\\israe\\source\\repos\\WindowsForms\\WindowsForms\\UserControl\\Usuario\\uc_Login.cs [Design]",
+              "RelativeToolTip": "WindowsForms\\UserControl\\Usuario\\uc_Login.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-17T23:11:23.817Z",
               "EditorCaption": " [Design]"

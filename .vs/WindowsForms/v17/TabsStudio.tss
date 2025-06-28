@@ -14,8 +14,17 @@
       <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\UserControl\Tarefa\uc_CadastrarTarefa.cs</string>
     </ArrayOfString>
     <ArrayOfString>
+      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Service\UsuarioService.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Program.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
       <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Forms\frmHome.cs</string>
       <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Forms\frmHome.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\WindowsForms.csproj</string>
     </ArrayOfString>
   </ArrayOfArrayOfString>
 </ArrayOfArrayOfArrayOfString>

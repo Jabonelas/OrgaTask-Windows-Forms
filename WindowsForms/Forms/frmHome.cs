@@ -111,10 +111,7 @@ namespace WindowsForms
             ExibirTelaLogin();
         }
 
-        private void btnSair_Click(object sender, EventArgs e)
-        {
-            FinalizarAplicacao();
-        }
+
 
         private void FinalizarAplicacao()
         {
@@ -138,10 +135,7 @@ namespace WindowsForms
             ConfigurationManager.RefreshSection("appSettings");
         }
 
-        private void btnTrocarUsuario_Click(object sender, EventArgs e)
-        {
-            RealizarTrocaUsuario();
-        }
+  
 
         private void RealizarTrocaUsuario()
         {
@@ -161,6 +155,16 @@ namespace WindowsForms
         private void frmHome_FormClosing(object sender, FormClosingEventArgs e)
         {
             LimparCacheToken();
+        }
+
+        private void btnSair_Click_1(object sender, EventArgs e)
+        {
+            FinalizarAplicacao();
+        }
+
+        private void btnTrocarUsuario_Click_1(object sender, EventArgs e)
+        {
+            RealizarTrocaUsuario();
         }
     }
 }

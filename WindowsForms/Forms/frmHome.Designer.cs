@@ -35,7 +35,6 @@
             this.btnHome = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnCadastrarTarefa = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnTarefas = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.btnLogin = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnTrocarUsuario = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnSair = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.fluentDesignFormControl1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl();
@@ -63,7 +62,8 @@
             this.btnHome,
             this.btnCadastrarTarefa,
             this.btnTarefas,
-            this.btnLogin});
+            this.btnTrocarUsuario,
+            this.btnSair});
             this.BarraMenuLateral.Location = new System.Drawing.Point(0, 31);
             this.BarraMenuLateral.Name = "BarraMenuLateral";
             this.BarraMenuLateral.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Touch;
@@ -76,11 +76,9 @@
             // 
             this.btnHome.Appearance.Default.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHome.Appearance.Default.Options.UseFont = true;
-            this.btnHome.HeaderTemplate.AddRange(new DevExpress.XtraBars.Navigation.HeaderElementInfo[] {
-            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Text),
-            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Image),
-            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.HeaderControl),
-            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.ContextButtons)});
+            this.btnHome.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.ImageOptions.Image")));
+            this.btnHome.ImageOptions.ImageLayoutMode = DevExpress.XtraBars.Navigation.ImageLayoutMode.Stretch;
+            this.btnHome.ImageOptions.SvgImageSize = new System.Drawing.Size(10, 10);
             this.btnHome.Name = "btnHome";
             this.btnHome.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnHome.Text = "Home";
@@ -90,6 +88,8 @@
             // 
             this.btnCadastrarTarefa.Appearance.Default.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastrarTarefa.Appearance.Default.Options.UseFont = true;
+            this.btnCadastrarTarefa.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnCadastrarTarefa.ImageOptions.Image")));
+            this.btnCadastrarTarefa.ImageOptions.ImageLayoutMode = DevExpress.XtraBars.Navigation.ImageLayoutMode.Stretch;
             this.btnCadastrarTarefa.Name = "btnCadastrarTarefa";
             this.btnCadastrarTarefa.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnCadastrarTarefa.Text = "Nova Tarefa";
@@ -100,36 +100,30 @@
             this.btnTarefas.Appearance.Default.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTarefas.Appearance.Default.Options.UseFont = true;
             this.btnTarefas.Expanded = true;
+            this.btnTarefas.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTarefas.ImageOptions.Image")));
+            this.btnTarefas.ImageOptions.ImageLayoutMode = DevExpress.XtraBars.Navigation.ImageLayoutMode.Stretch;
             this.btnTarefas.Name = "btnTarefas";
             this.btnTarefas.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnTarefas.Text = "Tarefas";
             this.btnTarefas.Click += new System.EventHandler(this.btnTarefas_Click);
             // 
-            // btnLogin
-            // 
-            this.btnLogin.Appearance.Default.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.Appearance.Default.Options.UseFont = true;
-            this.btnLogin.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.btnTrocarUsuario,
-            this.btnSair});
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Text = "Login";
-            // 
             // btnTrocarUsuario
             // 
-            this.btnTrocarUsuario.Appearance.Default.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTrocarUsuario.Appearance.Default.Options.UseFont = true;
+            this.btnTrocarUsuario.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTrocarUsuario.ImageOptions.Image")));
+            this.btnTrocarUsuario.ImageOptions.ImageLayoutMode = DevExpress.XtraBars.Navigation.ImageLayoutMode.Stretch;
             this.btnTrocarUsuario.Name = "btnTrocarUsuario";
+            this.btnTrocarUsuario.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnTrocarUsuario.Text = "Trocar usuário";
-            this.btnTrocarUsuario.Click += new System.EventHandler(this.btnTrocarUsuario_Click);
+            this.btnTrocarUsuario.Click += new System.EventHandler(this.btnTrocarUsuario_Click_1);
             // 
             // btnSair
             // 
-            this.btnSair.Appearance.Default.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSair.Appearance.Default.Options.UseFont = true;
+            this.btnSair.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSair.ImageOptions.Image")));
+            this.btnSair.ImageOptions.ImageLayoutMode = DevExpress.XtraBars.Navigation.ImageLayoutMode.Stretch;
             this.btnSair.Name = "btnSair";
+            this.btnSair.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnSair.Text = "Sair";
-            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click_1);
             // 
             // fluentDesignFormControl1
             // 
@@ -200,15 +194,14 @@
         #endregion
         private DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl fluentDesignFormControl1;
         private DevExpress.XtraBars.FluentDesignSystem.FluentFormDefaultManager fluentFormDefaultManager1;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement btnLogin;
         public DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer pnlTelaPrincipal;
         public DevExpress.XtraBars.Navigation.AccordionControl BarraMenuLateral;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnHome;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnCadastrarTarefa;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnTarefas;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement btnTrocarUsuario;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement btnSair;
         public DevExpress.XtraEditors.LabelControl lblUsuario;
         public DevExpress.XtraEditors.LabelControl lblImagemUsuario;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement btnTrocarUsuario;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement btnSair;
     }
 }

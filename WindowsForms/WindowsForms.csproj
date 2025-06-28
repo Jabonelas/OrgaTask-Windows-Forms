@@ -332,6 +332,8 @@
   <ItemGroup>
     <None Include="Resources\ponto-de-interrogacao.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\home-icon-preto.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
