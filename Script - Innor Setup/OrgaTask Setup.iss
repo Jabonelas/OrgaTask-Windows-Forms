@@ -42,7 +42,7 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 [Files]
 Source: "C:\Users\israe\source\repos\WindowsForms\WindowsForms\bin\Release\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
 Source: "C:\Users\israe\source\repos\WindowsForms\WindowsForms\bin\Release\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "C:\Users\israe\Downloads\IconeOrgaTask48.ico"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\israe\source\repos\WindowsForms\WindowsForms\Icon\IconeOrgaTask48.ico"; DestDir: "{app}"; Flags: ignoreversion
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Registry]
