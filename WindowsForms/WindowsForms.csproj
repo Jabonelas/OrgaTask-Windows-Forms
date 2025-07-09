@@ -136,6 +136,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Config\HttpClientConfig.cs" />
+    <Compile Include="DTOs\Tarefa\TarefaCadastrarDTO.cs" />
     <Compile Include="Helpers\LogErros.cs" />
     <Compile Include="Helpers\MensagensAlertaSistema.cs" />
     <Compile Include="Helpers\ResultadoOperacao.cs" />
@@ -153,6 +154,11 @@
     </Compile>
     <Compile Include="Forms\frmHome.Designer.cs">
       <DependentUpon>frmHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="UserControl\Tarefa\uc_CardTarefa.cs">
       <SubType>UserControl</SubType>
@@ -225,11 +231,6 @@
     <Compile Include="Interface\IUsuarioService.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <Compile Include="Service\TarefaService.cs" />
     <Compile Include="Service\UsuarioService.cs" />
     <EmbeddedResource Include="Forms\frmHome.resx">
@@ -315,25 +316,28 @@
     <None Include="Resources\marca.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\reclamar.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\verificado.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\aviso %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\relogio.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\seta-para-baixo.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ponto-de-interrogacao.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\home-icon-preto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\alta.png" />
+    <Content Include="Resources\baixa.png" />
+    <None Include="Resources\check %285%29.png" />
+    <None Include="Resources\refresh.png" />
+    <None Include="Resources\question.png" />
+    <None Include="Resources\warning %286%29.png" />
+    <None Include="Resources\download %283%29.png" />
+    <Content Include="Resources\media.png" />
+    <None Include="Resources\warning %284%29.png" />
+    <None Include="Resources\warning %285%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

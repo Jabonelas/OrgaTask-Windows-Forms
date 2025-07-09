@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Threading.Tasks;
 using WindowsForms.Classes;
 using WindowsForms.DTOs.Tarefa;
@@ -19,6 +20,8 @@ namespace WindowsForms.Forms
             tarefaService = _tarefaService;
 
             InitializeComponent();
+
+            MantendoAparenciaBtnQtdTarefasPrioritarias();
         }
 
         public async Task SetParametroAdicionalAsync(frmHome _frmHome)
@@ -28,6 +31,27 @@ namespace WindowsForms.Forms
             await BuscarQtdStatusTarefasAsync();
 
             await SetandoListaTarefasAsync();
+        }
+
+        private void MantendoAparenciaBtnQtdTarefasPrioritarias()
+        {
+            btnQtdTarefasPrioritarias.AppearanceDisabled.BackColor = btnQtdTarefasPrioritarias.Appearance.BackColor;
+            btnQtdTarefasPrioritarias.AppearanceDisabled.ForeColor = btnQtdTarefasPrioritarias.Appearance.ForeColor;
+            btnQtdTarefasPrioritarias.AppearanceDisabled.BorderColor = btnQtdTarefasPrioritarias.Appearance.BorderColor;
+            btnQtdTarefasPrioritarias.Enabled = false;
+
+            btnQtdTarefasPendentes.LookAndFeel.UseDefaultLookAndFeel = false;
+            btnQtdTarefasPendentes.AppearanceHovered.BackColor = btnQtdTarefasPendentes.Appearance.BackColor;
+            btnQtdTarefasPendentes.AppearanceHovered.ForeColor = btnQtdTarefasPendentes.Appearance.ForeColor;
+
+            btnQtdTarefasEmProgresso.LookAndFeel.UseDefaultLookAndFeel = false;
+            btnQtdTarefasEmProgresso.AppearanceHovered.BackColor = btnQtdTarefasEmProgresso.Appearance.BackColor;
+            btnQtdTarefasEmProgresso.AppearanceHovered.ForeColor = btnQtdTarefasEmProgresso.Appearance.ForeColor;
+
+            btnQtdTarefasConcluida.LookAndFeel.UseDefaultLookAndFeel = false;
+            btnQtdTarefasConcluida.AppearanceHovered.BackColor = btnQtdTarefasConcluida.Appearance.BackColor;
+            btnQtdTarefasConcluida.AppearanceHovered.ForeColor = btnQtdTarefasConcluida.Appearance.ForeColor;
+
         }
 
         private async Task BuscarQtdStatusTarefasAsync()
@@ -116,29 +140,26 @@ namespace WindowsForms.Forms
         {
             (ResultadoOperacao ResultadoOperacao, List<TarefaPrioridadeAltaDTO> ListaTarefaPrioridade) = await tarefaService.BuscarTarefasPrioridadeAltaAsync();
 
-            if (ResultadoOperacao.Sucesso)
+            if (ResultadoOperacao.Sucesso && ListaTarefaPrioridade != null)
             {
                 pnlListaTarefaaPrioritarias.Controls.Clear();
 
+                btnQtdTarefasPrioritarias.Text = $"{ListaTarefaPrioridade.Count} Itens";
+
                 string prazo = "";
 
-                foreach (var item in ListaTarefaPrioridade)
+                foreach (var tarefa in ListaTarefaPrioridade)
                 {
-                    if (item.Prazo > 0)
-                    {
-                        prazo = $"       {item.Prazo} dia(s) restante(s)";
-                    }
-                    else
-                    {
-                        prazo = $"       {item.Prazo.ToString().Replace("-", "")} dia(s) de atraso";
-                    }
+                    prazo = tarefa.Prazo < 0 ? $"       Prazo: {tarefa.Prazo.ToString().Replace("-", "")} dia(s) em atraso." : prazo = $"       Prazo: {tarefa.Prazo} dia(s) restante(s).";
 
                     var card = new uc_CardTarefaPrioridade(frmHome)
                     {
-                        id = item.Id.ToString(),
-                        titulo = item.Titulo,
-                        dataCriacao = $"       Criado:{item.Data}",
+                        id = tarefa.Id.ToString(),
+                        titulo = tarefa.Titulo,
+                        dataCriacao = $"       Criado: {tarefa.Data}",
                         prazo = prazo,
+                        status = tarefa.Status,
+                        corlblStatus = SetarCorStatus(tarefa.Status)
                     };
 
                     pnlListaTarefaaPrioritarias.Controls.Add(card);
@@ -148,6 +169,24 @@ namespace WindowsForms.Forms
             }
 
             MensagensAlertaSistema.MensagemAlertaSistema(ResultadoOperacao);
+        }
+
+
+        private Color SetarCorStatus(string _status)
+        {
+            switch (_status)
+            {
+                case "Concluído":
+                    return Color.FromArgb(102, 187, 106);
+
+                case "Em Progresso":
+                    return Color.FromArgb(251, 192, 45);
+
+                case "Pendente":
+                    return Color.FromArgb(211, 47, 47);
+            }
+
+            return Color.Gray;
         }
     }
 }

@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using Microsoft.Extensions.DependencyInjection;
+using System;
 using System.Net.Http;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.Extensions.DependencyInjection;
 
 namespace WindowsForms.Core
 {
@@ -19,13 +15,12 @@ namespace WindowsForms.Core
 #if DEBUG
                     BaseAddress = new Uri("https://localhost:7091/")
 #else
-                    BaseAddress = new Uri("https://blazor-api.onrender.com/")
+                    BaseAddress = new Uri("https://blazor-api.onrender.com")
 #endif
                 };
 
                 return client;
             });
         }
-
     }
 }

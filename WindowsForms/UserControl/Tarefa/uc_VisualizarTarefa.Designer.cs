@@ -2,15 +2,8 @@
 {
     partial class uc_VisualizarTarefa
     {
-        /// <summary> 
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary> 
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -22,10 +15,6 @@
 
         #region Component Designer generated code
 
-        /// <summary> 
-        /// Required method for Designer support - do not modify 
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(uc_VisualizarTarefa));
@@ -65,7 +54,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(60)))), ((int)(((byte)(151)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(224)))));
             this.panel1.Controls.Add(this.labelControl8);
             this.panel1.Controls.Add(this.labelControl7);
             this.panel1.Controls.Add(this.svgImageBox5);
@@ -82,7 +71,7 @@
             // labelControl8
             // 
             this.labelControl8.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl8.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl8.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(245)))), ((int)(((byte)(252)))));
             this.labelControl8.Appearance.Options.UseFont = true;
             this.labelControl8.Appearance.Options.UseForeColor = true;
             this.labelControl8.Location = new System.Drawing.Point(83, 458);
@@ -94,7 +83,7 @@
             // labelControl7
             // 
             this.labelControl7.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl7.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl7.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(245)))), ((int)(((byte)(252)))));
             this.labelControl7.Appearance.Options.UseFont = true;
             this.labelControl7.Appearance.Options.UseForeColor = true;
             this.labelControl7.Location = new System.Drawing.Point(83, 415);
@@ -136,7 +125,7 @@
             // labelControl6
             // 
             this.labelControl6.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl6.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl6.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(245)))), ((int)(((byte)(252)))));
             this.labelControl6.Appearance.Options.UseFont = true;
             this.labelControl6.Appearance.Options.UseForeColor = true;
             this.labelControl6.Location = new System.Drawing.Point(79, 373);
@@ -173,6 +162,8 @@
             // 
             // panelControl1
             // 
+            this.panelControl1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(249)))), ((int)(((byte)(252)))));
+            this.panelControl1.Appearance.Options.UseBackColor = true;
             this.panelControl1.Controls.Add(this.txtPrioridade);
             this.panelControl1.Controls.Add(this.txtStatus);
             this.panelControl1.Controls.Add(this.txtDescricao);
@@ -194,8 +185,12 @@
             this.txtPrioridade.Enabled = false;
             this.txtPrioridade.Location = new System.Drawing.Point(12, 97);
             this.txtPrioridade.Name = "txtPrioridade";
+            this.txtPrioridade.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.txtPrioridade.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPrioridade.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(44)))), ((int)(((byte)(68)))));
+            this.txtPrioridade.Properties.Appearance.Options.UseBackColor = true;
             this.txtPrioridade.Properties.Appearance.Options.UseFont = true;
+            this.txtPrioridade.Properties.Appearance.Options.UseForeColor = true;
             this.txtPrioridade.Properties.ContextImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
             this.txtPrioridade.Properties.MaskSettings.Set("mask", "\\d{0,5}");
             this.txtPrioridade.Size = new System.Drawing.Size(172, 22);
@@ -206,8 +201,12 @@
             this.txtStatus.Enabled = false;
             this.txtStatus.Location = new System.Drawing.Point(12, 292);
             this.txtStatus.Name = "txtStatus";
+            this.txtStatus.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.txtStatus.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtStatus.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(44)))), ((int)(((byte)(68)))));
+            this.txtStatus.Properties.Appearance.Options.UseBackColor = true;
             this.txtStatus.Properties.Appearance.Options.UseFont = true;
+            this.txtStatus.Properties.Appearance.Options.UseForeColor = true;
             this.txtStatus.Properties.ContextImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
             this.txtStatus.Properties.MaskSettings.Set("mask", "\\d{0,5}");
             this.txtStatus.Size = new System.Drawing.Size(297, 22);
@@ -218,18 +217,22 @@
             this.txtDescricao.Enabled = false;
             this.txtDescricao.Location = new System.Drawing.Point(12, 157);
             this.txtDescricao.Name = "txtDescricao";
+            this.txtDescricao.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.txtDescricao.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDescricao.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(44)))), ((int)(((byte)(68)))));
+            this.txtDescricao.Properties.Appearance.Options.UseBackColor = true;
             this.txtDescricao.Properties.Appearance.Options.UseFont = true;
+            this.txtDescricao.Properties.Appearance.Options.UseForeColor = true;
             this.txtDescricao.Properties.ReadOnly = true;
             this.txtDescricao.Size = new System.Drawing.Size(297, 96);
             this.txtDescricao.TabIndex = 38;
             // 
             // labelControl10
             // 
-            this.labelControl10.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
             this.labelControl10.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl10.Appearance.Options.UseBackColor = true;
+            this.labelControl10.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(44)))), ((int)(((byte)(68)))));
             this.labelControl10.Appearance.Options.UseFont = true;
+            this.labelControl10.Appearance.Options.UseForeColor = true;
             this.labelControl10.Location = new System.Drawing.Point(190, 76);
             this.labelControl10.Name = "labelControl10";
             this.labelControl10.Size = new System.Drawing.Size(66, 15);
@@ -238,10 +241,10 @@
             // 
             // labelControl9
             // 
-            this.labelControl9.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
             this.labelControl9.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl9.Appearance.Options.UseBackColor = true;
+            this.labelControl9.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(44)))), ((int)(((byte)(68)))));
             this.labelControl9.Appearance.Options.UseFont = true;
+            this.labelControl9.Appearance.Options.UseForeColor = true;
             this.labelControl9.Location = new System.Drawing.Point(12, 271);
             this.labelControl9.Name = "labelControl9";
             this.labelControl9.Size = new System.Drawing.Size(38, 15);
@@ -251,15 +254,17 @@
             // btnVoltar
             // 
             this.btnVoltar.Appearance.BackColor = System.Drawing.Color.White;
+            this.btnVoltar.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(224)))));
             this.btnVoltar.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVoltar.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(109)))), ((int)(((byte)(117)))));
+            this.btnVoltar.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(224)))));
             this.btnVoltar.Appearance.Options.UseBackColor = true;
+            this.btnVoltar.Appearance.Options.UseBorderColor = true;
             this.btnVoltar.Appearance.Options.UseFont = true;
             this.btnVoltar.Appearance.Options.UseForeColor = true;
-            this.btnVoltar.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnVoltar.ImageOptions.SvgImage")));
+            this.btnVoltar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnVoltar.ImageOptions.Image")));
             this.btnVoltar.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
             this.btnVoltar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnVoltar.Location = new System.Drawing.Point(190, 328);
+            this.btnVoltar.Location = new System.Drawing.Point(190, 333);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(119, 34);
             this.btnVoltar.TabIndex = 34;
@@ -268,10 +273,10 @@
             // 
             // labelControl1
             // 
-            this.labelControl1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl1.Appearance.Options.UseBackColor = true;
+            this.labelControl1.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(44)))), ((int)(((byte)(68)))));
             this.labelControl1.Appearance.Options.UseFont = true;
+            this.labelControl1.Appearance.Options.UseForeColor = true;
             this.labelControl1.Location = new System.Drawing.Point(12, 136);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(57, 15);
@@ -280,10 +285,10 @@
             // 
             // labelControl2
             // 
-            this.labelControl2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl2.Appearance.Options.UseBackColor = true;
+            this.labelControl2.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(44)))), ((int)(((byte)(68)))));
             this.labelControl2.Appearance.Options.UseFont = true;
+            this.labelControl2.Appearance.Options.UseForeColor = true;
             this.labelControl2.Location = new System.Drawing.Point(12, 19);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(35, 15);
@@ -295,8 +300,12 @@
             this.txtTitulo.Enabled = false;
             this.txtTitulo.Location = new System.Drawing.Point(12, 40);
             this.txtTitulo.Name = "txtTitulo";
+            this.txtTitulo.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.txtTitulo.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTitulo.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(44)))), ((int)(((byte)(68)))));
+            this.txtTitulo.Properties.Appearance.Options.UseBackColor = true;
             this.txtTitulo.Properties.Appearance.Options.UseFont = true;
+            this.txtTitulo.Properties.Appearance.Options.UseForeColor = true;
             this.txtTitulo.Properties.ContextImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
             this.txtTitulo.Size = new System.Drawing.Size(297, 22);
             this.txtTitulo.TabIndex = 31;
@@ -306,8 +315,12 @@
             this.txtPrazo.Enabled = false;
             this.txtPrazo.Location = new System.Drawing.Point(190, 97);
             this.txtPrazo.Name = "txtPrazo";
+            this.txtPrazo.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.txtPrazo.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPrazo.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(44)))), ((int)(((byte)(68)))));
+            this.txtPrazo.Properties.Appearance.Options.UseBackColor = true;
             this.txtPrazo.Properties.Appearance.Options.UseFont = true;
+            this.txtPrazo.Properties.Appearance.Options.UseForeColor = true;
             this.txtPrazo.Properties.ContextImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
             this.txtPrazo.Properties.MaskSettings.Set("mask", "\\d+");
             this.txtPrazo.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
@@ -316,10 +329,10 @@
             // 
             // labelControl3
             // 
-            this.labelControl3.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl3.Appearance.Options.UseBackColor = true;
+            this.labelControl3.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(44)))), ((int)(((byte)(68)))));
             this.labelControl3.Appearance.Options.UseFont = true;
+            this.labelControl3.Appearance.Options.UseForeColor = true;
             this.labelControl3.Location = new System.Drawing.Point(12, 76);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(60, 15);
@@ -328,6 +341,8 @@
             // 
             // uc_VisualizarTarefa
             // 
+            this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(249)))), ((int)(((byte)(252)))));
+            this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panelControl1);

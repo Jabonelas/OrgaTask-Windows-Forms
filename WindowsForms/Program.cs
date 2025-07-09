@@ -1,7 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Windows.Forms;
-using WindowsForms.Core;
 
 namespace WindowsForms
 {
@@ -21,7 +20,6 @@ namespace WindowsForms
             DevExpress.LookAndFeel.UserLookAndFeel.Default.SetSkinStyle("WXI");
 
             InjecaoDependencia.Configure();
-            
 
             // Resolva o formulário principal através do ServiceProvider
             var formHome = InjecaoDependencia.ServiceProvider.GetService<frmHome>();

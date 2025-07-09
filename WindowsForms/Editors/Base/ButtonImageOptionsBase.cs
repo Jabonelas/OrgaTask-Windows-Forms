@@ -6,17 +6,20 @@ namespace DevExpress.UITemplates.Collection.Editors
 
     public class ButtonImageOptionsBase : ImageCollectionImageOptions, ISkinElementDataProvider
     {
-        object imageListCore;
+        private object imageListCore;
+
         [DefaultValue(null), TypeConverter(typeof(DevExpress.Utils.Design.ImageCollectionImagesConverter))]
         public virtual object ImageList
         {
             get { return imageListCore; }
             set { SetValue(ref imageListCore, value, "ImageList"); }
         }
+
         protected override object GetImageCollection()
         {
             return imageListCore;
         }
+
         [Editor(typeof(DevExpress.Utils.Design.ImageIndexesEditor), typeof(System.Drawing.Design.UITypeEditor))]
         [DevExpress.Utils.ImageList("ImageList")]
         public override int ImageIndex
@@ -24,6 +27,7 @@ namespace DevExpress.UITemplates.Collection.Editors
             get { return base.ImageIndex; }
             set { base.ImageIndex = value; }
         }
+
         protected override void AssignCore(ImageOptions source)
         {
             base.AssignCore(source);
@@ -31,16 +35,19 @@ namespace DevExpress.UITemplates.Collection.Editors
             if (sourceOptions != null)
                 imageListCore = sourceOptions.ImageList;
         }
+
         protected override void ResetCore()
         {
             base.ResetCore();
             imageListCore = null;
         }
+
         //
         SkinProductId ISkinElementDataProvider.ProductId
         {
             get { return SkinProductId.Common; }
         }
+
         string ISkinElementDataProvider.ElementName
         {
             get { return CommonSkins.SkinButton; }

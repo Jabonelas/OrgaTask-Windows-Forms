@@ -29,9 +29,9 @@ namespace WindowsForms.Forms
 
         private void uc_Login_Load(object sender, EventArgs e)
         {
-            txtUsuario.Focus();
-
             PlaceholderCampos();
+
+            txtUsuario.Focus();
         }
 
         private void PlaceholderCampos()
@@ -88,6 +88,9 @@ namespace WindowsForms.Forms
 
         private async void btnEntrar_Click(object sender, System.EventArgs e)
         {
+            txtUsuario.Text = "israel oliveira";
+            txtSenha.Text = "string";
+
             if (!IsCamposPreenchidos())
             {
                 return;

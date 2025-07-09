@@ -57,6 +57,8 @@
             // 
             // BarraMenuLateral
             // 
+            this.BarraMenuLateral.Appearance.AccordionControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(224)))));
+            this.BarraMenuLateral.Appearance.AccordionControl.Options.UseBackColor = true;
             this.BarraMenuLateral.Dock = System.Windows.Forms.DockStyle.Left;
             this.BarraMenuLateral.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.btnHome,
@@ -69,60 +71,73 @@
             this.BarraMenuLateral.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Touch;
             this.BarraMenuLateral.Size = new System.Drawing.Size(250, 672);
             this.BarraMenuLateral.TabIndex = 1;
-            this.BarraMenuLateral.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
             this.BarraMenuLateral.Visible = false;
             // 
             // btnHome
             // 
-            this.btnHome.Appearance.Default.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.Appearance.Default.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.Appearance.Default.ForeColor = System.Drawing.Color.White;
             this.btnHome.Appearance.Default.Options.UseFont = true;
+            this.btnHome.Appearance.Default.Options.UseForeColor = true;
             this.btnHome.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.ImageOptions.Image")));
             this.btnHome.ImageOptions.ImageLayoutMode = DevExpress.XtraBars.Navigation.ImageLayoutMode.Stretch;
             this.btnHome.ImageOptions.SvgImageSize = new System.Drawing.Size(10, 10);
             this.btnHome.Name = "btnHome";
             this.btnHome.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.btnHome.Text = "Home";
+            this.btnHome.Text = " Home";
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // btnCadastrarTarefa
             // 
-            this.btnCadastrarTarefa.Appearance.Default.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadastrarTarefa.Appearance.Default.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadastrarTarefa.Appearance.Default.ForeColor = System.Drawing.Color.White;
             this.btnCadastrarTarefa.Appearance.Default.Options.UseFont = true;
+            this.btnCadastrarTarefa.Appearance.Default.Options.UseForeColor = true;
             this.btnCadastrarTarefa.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnCadastrarTarefa.ImageOptions.Image")));
             this.btnCadastrarTarefa.ImageOptions.ImageLayoutMode = DevExpress.XtraBars.Navigation.ImageLayoutMode.Stretch;
             this.btnCadastrarTarefa.Name = "btnCadastrarTarefa";
             this.btnCadastrarTarefa.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.btnCadastrarTarefa.Text = "Nova Tarefa";
+            this.btnCadastrarTarefa.Text = " Nova Tarefa";
             this.btnCadastrarTarefa.Click += new System.EventHandler(this.btnCadastrarTarefa_Click);
             // 
             // btnTarefas
             // 
-            this.btnTarefas.Appearance.Default.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTarefas.Appearance.Default.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTarefas.Appearance.Default.ForeColor = System.Drawing.Color.White;
             this.btnTarefas.Appearance.Default.Options.UseFont = true;
+            this.btnTarefas.Appearance.Default.Options.UseForeColor = true;
             this.btnTarefas.Expanded = true;
             this.btnTarefas.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTarefas.ImageOptions.Image")));
             this.btnTarefas.ImageOptions.ImageLayoutMode = DevExpress.XtraBars.Navigation.ImageLayoutMode.Stretch;
             this.btnTarefas.Name = "btnTarefas";
             this.btnTarefas.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.btnTarefas.Text = "Tarefas";
+            this.btnTarefas.Text = " Tarefas";
             this.btnTarefas.Click += new System.EventHandler(this.btnTarefas_Click);
             // 
             // btnTrocarUsuario
             // 
+            this.btnTrocarUsuario.Appearance.Default.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTrocarUsuario.Appearance.Default.ForeColor = System.Drawing.Color.White;
+            this.btnTrocarUsuario.Appearance.Default.Options.UseFont = true;
+            this.btnTrocarUsuario.Appearance.Default.Options.UseForeColor = true;
             this.btnTrocarUsuario.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTrocarUsuario.ImageOptions.Image")));
             this.btnTrocarUsuario.ImageOptions.ImageLayoutMode = DevExpress.XtraBars.Navigation.ImageLayoutMode.Stretch;
             this.btnTrocarUsuario.Name = "btnTrocarUsuario";
             this.btnTrocarUsuario.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.btnTrocarUsuario.Text = "Trocar usuário";
+            this.btnTrocarUsuario.Text = " Trocar Usuário";
             this.btnTrocarUsuario.Click += new System.EventHandler(this.btnTrocarUsuario_Click_1);
             // 
             // btnSair
             // 
+            this.btnSair.Appearance.Default.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSair.Appearance.Default.ForeColor = System.Drawing.Color.White;
+            this.btnSair.Appearance.Default.Options.UseFont = true;
+            this.btnSair.Appearance.Default.Options.UseForeColor = true;
             this.btnSair.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSair.ImageOptions.Image")));
             this.btnSair.ImageOptions.ImageLayoutMode = DevExpress.XtraBars.Navigation.ImageLayoutMode.Stretch;
             this.btnSair.Name = "btnSair";
             this.btnSair.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.btnSair.Text = "Sair";
+            this.btnSair.Text = " Sair";
             this.btnSair.Click += new System.EventHandler(this.btnSair_Click_1);
             // 
             // fluentDesignFormControl1

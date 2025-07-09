@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace WindowsForms.DTOs.Tarefa
+﻿namespace WindowsForms.DTOs.Tarefa
 {
     public class TarefaAlterarDTO
     {

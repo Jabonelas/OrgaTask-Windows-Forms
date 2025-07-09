@@ -24,15 +24,11 @@ namespace WindowsForms.Forms
         private void uc_CadastrarTarefa_Load(object sender, EventArgs e)
         {
             txtTitulo.Focus();
-
- 
         }
-
 
         private void PlaceholderCampos()
         {
-
-            txtTitulo.Properties.NullText = "Digite o titulo...";
+            txtTitulo.Properties.NullText = "Digite o título...";
             txtTitulo.EditValue = null;
 
             cmbPrioridade.Properties.NullText = "Selecione a prioridade...";
@@ -81,7 +77,7 @@ namespace WindowsForms.Forms
 
         private async Task SalvarTarefaAsync()
         {
-            TarefaAlterarDTO dadosTarefa = PreencherDadosTarefa();
+            TarefaCadastrarDTO dadosTarefa = PreencherDadosTarefa();
 
             ResultadoOperacao resultadoOperacao = await tarefaService.CadastrarTarefaAsync(dadosTarefa);
 
@@ -102,9 +98,9 @@ namespace WindowsForms.Forms
             }
         }
 
-        private TarefaAlterarDTO PreencherDadosTarefa()
+        private TarefaCadastrarDTO PreencherDadosTarefa()
         {
-            TarefaAlterarDTO dadosTarefa = new TarefaAlterarDTO
+            TarefaCadastrarDTO dadosTarefa = new TarefaCadastrarDTO()
             {
                 Titulo = txtTitulo.Text,
                 Prioridade = cmbPrioridade.Text,
@@ -127,7 +123,6 @@ namespace WindowsForms.Forms
 
         private bool IsCamposPreenchidos()
         {
-
             if (txtTitulo.EditValue == null ||
                 cmbPrioridade.EditValue == null ||
                 txtPrazo.EditValue == null ||
@@ -191,6 +186,14 @@ namespace WindowsForms.Forms
 
             frmHome.pnlTelaPrincipal.Controls.Clear();
             frmHome.pnlTelaPrincipal.Controls.Add(ucExibirTarefas);
+        }
+
+        private void txtPrazo_Leave(object sender, EventArgs e)
+        {
+            if (txtPrazo.Text == " _")
+            {
+                txtPrazo.Text = 0.ToString();
+            }
         }
     }
 }

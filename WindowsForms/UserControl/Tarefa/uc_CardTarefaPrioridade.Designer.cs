@@ -34,7 +34,7 @@
             this.lblDataCriacao = new DevExpress.XtraEditors.LabelControl();
             this.lblPrazo = new DevExpress.XtraEditors.LabelControl();
             this.lblTitulo = new DevExpress.XtraEditors.LabelControl();
-            this.lblPendente = new DevExpress.XtraEditors.SimpleButton();
+            this.lblStatus = new DevExpress.XtraEditors.SimpleButton();
             this.lblIdTarefa = new DevExpress.XtraEditors.LabelControl();
             this.SuspendLayout();
             // 
@@ -117,21 +117,21 @@
             this.lblTitulo.Text = "Titulo";
             this.lblTitulo.Click += new System.EventHandler(this.lblTitulo_Click);
             // 
-            // lblPendente
+            // lblStatus
             // 
-            this.lblPendente.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(216)))), ((int)(((byte)(220)))));
-            this.lblPendente.Appearance.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPendente.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(49)))), ((int)(((byte)(68)))));
-            this.lblPendente.Appearance.Options.UseBackColor = true;
-            this.lblPendente.Appearance.Options.UseFont = true;
-            this.lblPendente.Appearance.Options.UseForeColor = true;
-            this.lblPendente.Enabled = false;
-            this.lblPendente.Location = new System.Drawing.Point(578, 18);
-            this.lblPendente.Name = "lblPendente";
-            this.lblPendente.Size = new System.Drawing.Size(75, 23);
-            this.lblPendente.TabIndex = 25;
-            this.lblPendente.Text = "PENDENTE";
-            this.lblPendente.Click += new System.EventHandler(this.lblPendente_Click);
+            this.lblStatus.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(216)))), ((int)(((byte)(220)))));
+            this.lblStatus.Appearance.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStatus.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(49)))), ((int)(((byte)(68)))));
+            this.lblStatus.Appearance.Options.UseBackColor = true;
+            this.lblStatus.Appearance.Options.UseFont = true;
+            this.lblStatus.Appearance.Options.UseForeColor = true;
+            this.lblStatus.Enabled = false;
+            this.lblStatus.Location = new System.Drawing.Point(559, 18);
+            this.lblStatus.Name = "lblStatus";
+            this.lblStatus.Size = new System.Drawing.Size(94, 23);
+            this.lblStatus.TabIndex = 25;
+            this.lblStatus.Text = "PENDENTE";
+            this.lblStatus.Click += new System.EventHandler(this.lblPendente_Click);
             // 
             // lblIdTarefa
             // 
@@ -151,7 +151,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.lblIdTarefa);
-            this.Controls.Add(this.lblPendente);
+            this.Controls.Add(this.lblStatus);
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.lblPrazo);
             this.Controls.Add(this.lblDataCriacao);
@@ -171,7 +171,7 @@
         public DevExpress.XtraEditors.LabelControl lblDataCriacao;
         public DevExpress.XtraEditors.LabelControl lblPrazo;
         public DevExpress.XtraEditors.LabelControl lblTitulo;
-        private DevExpress.XtraEditors.SimpleButton lblPendente;
+        private DevExpress.XtraEditors.SimpleButton lblStatus;
         public DevExpress.XtraEditors.LabelControl lblIdTarefa;
     }
 }

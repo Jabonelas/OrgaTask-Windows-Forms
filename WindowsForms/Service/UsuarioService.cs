@@ -40,8 +40,18 @@ namespace WindowsForms.Service
                         UserToken result = JsonConvert.DeserializeObject<UserToken>(responseContent);
 
                         Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
-                        config.AppSettings.Settings["authToken"].Value = result.Token;
-                        config.AppSettings.Settings["usuarioLogado"].Value = _dadosLogin.Login;
+                        var settings = config.AppSettings.Settings;
+
+                        if (settings["authToken"] == null)
+                            settings.Add("authToken", result.Token);
+                        else
+                            settings["authToken"].Value = result.Token;
+
+                        if (settings["usuarioLogado"] == null)
+                            settings.Add("usuarioLogado", _dadosLogin.Login);
+                        else
+                            settings["usuarioLogado"].Value = _dadosLogin.Login;
+
                         config.Save(ConfigurationSaveMode.Modified);
                         ConfigurationManager.RefreshSection("appSettings");
 

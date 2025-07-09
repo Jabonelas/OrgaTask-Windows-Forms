@@ -15,7 +15,8 @@ namespace DevExpress.UITemplates.Collection.Editors
     [Description("A styled, simple button.")]
     public class Button : ButtonBase, IButtonControl
     {
-        DialogResult dialogResultCore;
+        private DialogResult dialogResultCore;
+
         [System.ComponentModel.Category(XtraEditors.CategoryName.Behavior), DefaultValue(DialogResult.None)]
         public DialogResult DialogResult
         {
@@ -27,6 +28,7 @@ namespace DevExpress.UITemplates.Collection.Editors
                 OnPropertiesChanged();
             }
         }
+
         protected override void OnIconImageOptionsChanged(object sender, ImageOptionsChangedEventArgs args)
         {
             base.OnIconImageOptionsChanged(sender, args);
@@ -34,6 +36,7 @@ namespace DevExpress.UITemplates.Collection.Editors
                 UpdatePartVisibility(icon);
             if (AutoSize) AdjustSize();
         }
+
         protected override void OnButtonSizeChanged(SizeType value)
         {
             base.OnButtonSizeChanged(value);
@@ -41,15 +44,18 @@ namespace DevExpress.UITemplates.Collection.Editors
                 InvalidatePart(button);
             if (AutoSize) AdjustSize();
         }
+
         protected override void SetButtonElementSize(SizeType value)
         {
             if (!isSimpleButton && buttonElement != null)
                 buttonElement.ClassName = buttonClassNameOriginal + " " + value.ToString().ToLowerInvariant();
         }
-        bool isSimpleButton;
-        protected readonly static object button = new object();
-        string buttonClassNameOriginal;
-        DxHtmlElement buttonElement;
+
+        private bool isSimpleButton;
+        protected static readonly object button = new object();
+        private string buttonClassNameOriginal;
+        private DxHtmlElement buttonElement;
+
         protected override void FindParts(Dictionary<object, DxHtmlElement> parts, DxHtmlRootElement root)
         {
             base.FindParts(parts, root);
@@ -61,35 +67,42 @@ namespace DevExpress.UITemplates.Collection.Editors
                 buttonClassNameOriginal = buttonElement.ClassName;
             SetButtonElementSize(ButtonSize);
         }
+
         protected override void CalcPartsVisibility(Dictionary<object, DxHtmlElement> parts)
         {
             if (!isSimpleButton)
                 base.CalcPartsVisibility(parts);
         }
+
         protected override bool OnGotFocus(Dictionary<object, DxHtmlElement> parts, DxHtmlRootElement root)
         {
             if (buttonElement != null)
                 buttonElement.Focus(true);
             return (buttonElement != null);
         }
+
         protected override bool OnLostFocus(Dictionary<object, DxHtmlElement> parts, DxHtmlRootElement root)
         {
             if (buttonElement != null)
                 buttonElement.Focus(false);
             return (buttonElement != null);
         }
+
         protected override bool IsIconVisible()
         {
             return !isSimpleButton && IconImageOptions.HasImage;
         }
+
         public void NotifyDefault(bool value)
         {
             // TODO
         }
+
         public void PerformClick()
         {
             PerformClickCore();
         }
+
         protected override void OnClick(System.EventArgs e)
         {
             Form form = FindForm();
@@ -102,20 +115,26 @@ namespace DevExpress.UITemplates.Collection.Editors
             }
             base.OnClick(e);
         }
+
         #region Theme
+
         protected override string LoadDefaultTemplate()
         {
             return ButtonHtmlCssAsset.Default.Html;
         }
+
         protected override string LoadDefaultStyles()
         {
             return ButtonHtmlCssAsset.Default.Css;
         }
-        sealed class ButtonHtmlCssAsset : HtmlCssAsset
+
+        private sealed class ButtonHtmlCssAsset : HtmlCssAsset
         {
             public static readonly HtmlCssAsset Default = new ButtonHtmlCssAsset();
         }
+
         #endregion Theme
+
         protected override ICustomDxHtmlPreview CreateHtmlEditorPreview()
         {
             var previewControl = new Button();

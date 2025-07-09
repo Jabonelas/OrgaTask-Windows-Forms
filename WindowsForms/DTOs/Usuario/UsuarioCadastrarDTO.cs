@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace WindowsForms.DTOs.Usuario
+﻿namespace WindowsForms.DTOs.Usuario
 {
     public class UsuarioCadastrarDTO
     {
@@ -9,7 +7,6 @@ namespace WindowsForms.DTOs.Usuario
         public string Login { get; set; }
 
         public string Senha { get; set; }
-
 
         public string ConfirmarSenha { get; set; }
     }

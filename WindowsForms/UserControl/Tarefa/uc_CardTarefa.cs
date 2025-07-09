@@ -1,5 +1,4 @@
 ﻿using DevExpress.XtraEditors;
-using DevExpress.XtraEditors.Controls;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Drawing;
@@ -8,7 +7,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsForms.Classes;
 using WindowsForms.Interface;
-using WindowsForms.Properties;
 
 namespace WindowsForms.Forms
 {
@@ -21,13 +19,13 @@ namespace WindowsForms.Forms
         public string status { get => lblStatus.Text; set => lblStatus.Text = value; }
         public string data { get => lblDataCriacao.Text; set => lblDataCriacao.Text = value; }
         public string prazo { get => lblPrazo.Text; set => lblPrazo.Text = value; }
-        
+
         public string statusPassado = "";
         public Color corlblPrioridade { get => lblPrioridade.Appearance.BackColor; set => lblPrioridade.Appearance.BackColor = value; }
         public Image imagemlblPrioridade { get => lblPrioridade.ImageOptions.Image; set => lblPrioridade.ImageOptions.Image = value; }
         public Color corlblStatus { get => lblStatus.Appearance.BackColor; set => lblStatus.Appearance.BackColor = value; }
         public Image imagemlblStatus { get => lblStatus.ImageOptions.Image; set => lblStatus.ImageOptions.Image = value; }
-   
+
 
 
 
@@ -40,20 +38,26 @@ namespace WindowsForms.Forms
             tarefaService = _tarefaService;
 
             InitializeComponent();
-            
+
             btnVisualizarTarefa.Paint += btnVisualizarTarefa_Paint;
 
             btnEditarTarefa.Paint += btnEditarTarefa_Paint;
 
             btnExcluirTarefa.Paint += btnExcluirTarefa_Paint;
-            
+
+
+            lblStatus.Appearance.Options.UseForeColor = true;
+            lblStatus.ForeColor = Color.White;
+            lblStatus.Appearance.ForeColor = Color.White;
+
+
         }
 
 
         protected override void OnResize(EventArgs e)
         {
             base.OnResize(e);
-            this.Invalidate(); 
+            this.Invalidate();
         }
 
 
@@ -107,8 +111,8 @@ namespace WindowsForms.Forms
         private void btnEditarTarefa_Paint(object sender, PaintEventArgs e)
         {
             SimpleButton btn = sender as SimpleButton;
-            int borderRadius = 8; 
-           Color borderColor = Color.FromArgb(242, 157, 74);
+            int borderRadius = 8;
+            Color borderColor = Color.FromArgb(242, 157, 74);
 
             int borderSize = 1;
 
@@ -161,7 +165,7 @@ namespace WindowsForms.Forms
 
         private void btnVisualizarTarefa_Paint(object sender, PaintEventArgs e)
         {
-            
+
 
             SimpleButton btn = sender as SimpleButton;
             int borderRadius = 8;
@@ -320,10 +324,10 @@ namespace WindowsForms.Forms
             }
         }
 
-        private async Task ExibirTelaExibirTarefasAsync(string _status)
+        private async Task ExibirTelaExibirTarefasAsync(string _statusTarefa)
         {
             var ucExibirTarefas = InjecaoDependencia.ServiceProvider.GetService<uc_ExibirTarefas>();
-            await ucExibirTarefas.SetParametroAdicionalAsync(frmHome, _status);
+            await ucExibirTarefas.SetParametroAdicionalAsync(frmHome, _statusTarefa);
 
             frmHome.pnlTelaPrincipal.Controls.Clear();
             frmHome.pnlTelaPrincipal.Controls.Add(ucExibirTarefas);

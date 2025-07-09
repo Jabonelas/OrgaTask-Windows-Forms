@@ -38,7 +38,7 @@ namespace WindowsForms.Forms
             txtNomeCompleto.Properties.NullText = "Digite o nome completo...";
             txtNomeCompleto.EditValue = null;
 
-            txtLogin.Properties.NullText = "Digite a senha...";
+            txtLogin.Properties.NullText = "Digite o usuário...";
             txtLogin.EditValue = null;
         }
 
@@ -58,13 +58,35 @@ namespace WindowsForms.Forms
 
         private void btnCancelar_Click_1(object sender, EventArgs e)
         {
-            Cancelar();
+            if (IsCamposVazios())
+            {
+                ExibirTelaLogin();
+            }
+            else
+            {
+                var dialogResult = MensagensAlertaSistema.MensagemAtencaoYesNo("Tem certeza que deseja cancelar o cadastro deste usuário?");
+
+                if (dialogResult == DialogResult.Yes)
+                {
+                    ExibirTelaLogin();
+                }
+            }
+
         }
 
         private async void btnCadastarUsuario_Click_1(object sender, EventArgs e)
         {
             if (!IsCamposPreenchidos())
             {
+
+                ResultadoOperacao mensagem = new ResultadoOperacao()
+                {
+                    TipoErro = TipoErro.Validacao,
+                    Mensagem = "Alguns campos não foram preenchidos ou contêm informações inválidas"
+                };
+
+                MensagensAlertaSistema.MensagemAlertaSistema(mensagem);
+
                 return;
             }
 
@@ -128,14 +150,19 @@ namespace WindowsForms.Forms
                 txtSenha.EditValue == null ||
                 txtConfirmaSenha.EditValue == null)
             {
-                ResultadoOperacao mensagem = new ResultadoOperacao()
-                {
-                    TipoErro = TipoErro.Validacao,
-                    Mensagem = "Alguns campos não foram preenchidos ou contêm informações inválidas"
-                };
+                return false;
+            }
 
-                MensagensAlertaSistema.MensagemAlertaSistema(mensagem);
+            return true;
+        }
 
+        private bool IsCamposVazios()
+        {
+            if (txtNomeCompleto.EditValue != null ||
+                txtLogin.EditValue != null ||
+                txtSenha.EditValue != null ||
+                txtConfirmaSenha.EditValue != null)
+            {
                 return false;
             }
 
@@ -160,15 +187,7 @@ namespace WindowsForms.Forms
             return true;
         }
 
-        private void Cancelar()
-        {
-            var dialogResult = MensagensAlertaSistema.MensagemAtencaoYesNo("Tem certeza que deseja cancelar o cadastro de usuário?");
 
-            if (dialogResult == DialogResult.Yes)
-            {
-                ExibirTelaLogin();
-            }
-        }
 
         private void ExibirTelaLogin()
         {

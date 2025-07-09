@@ -5,18 +5,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsForms.Classes;
 using WindowsForms.Forms;
-using WindowsForms.Interface;
 
 namespace WindowsForms
 {
     public partial class frmHome : DevExpress.XtraBars.FluentDesignSystem.FluentDesignForm
     {
-     
-
         public frmHome()
         {
-
-
             InitializeComponent();
         }
 
@@ -89,16 +84,17 @@ namespace WindowsForms
             ExibirTelaDashboardTarefas();
         }
 
-        private void ExibirTelaDashboardTarefas()
+        private async Task ExibirTelaDashboardTarefas()
         {
             try
             {
                 TelaCarregamento.ExibirCarregamentoForm(this);
 
-                var ucExibirTarefas = InjecaoDependencia.ServiceProvider.GetService<uc_DashboardTarefas>();
+                var ucDashboardTarefas = InjecaoDependencia.ServiceProvider.GetService<uc_DashboardTarefas>();
+                await ucDashboardTarefas.SetParametroAdicionalAsync(this);
 
                 pnlTelaPrincipal.Controls.Clear();
-                pnlTelaPrincipal.Controls.Add(ucExibirTarefas);
+                pnlTelaPrincipal.Controls.Add(ucDashboardTarefas);
             }
             finally
             {
@@ -110,8 +106,6 @@ namespace WindowsForms
         {
             ExibirTelaLogin();
         }
-
-
 
         private void FinalizarAplicacao()
         {
@@ -134,8 +128,6 @@ namespace WindowsForms
             config.Save(ConfigurationSaveMode.Modified);
             ConfigurationManager.RefreshSection("appSettings");
         }
-
-  
 
         private void RealizarTrocaUsuario()
         {

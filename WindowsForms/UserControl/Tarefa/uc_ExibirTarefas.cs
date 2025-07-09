@@ -1,5 +1,4 @@
-﻿using DevExpress.Utils;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -17,7 +16,7 @@ namespace WindowsForms.Forms
         private int numeroPagina = 1;
         private int qtdItensPagina = 6;
 
-        private string tarefas = "";
+        private string statusTarefa = "";
 
         private frmHome frmHome = null;
 
@@ -33,13 +32,24 @@ namespace WindowsForms.Forms
         private void uc_ExibirTarefas_Load(object sender, EventArgs e)
         {
             btnProximo.Focus();
+
+            DesabilitarPassagemPagina();
         }
 
-        public async Task SetParametroAdicionalAsync(frmHome _frmHome, string _tarefas)
+        private void DesabilitarPassagemPagina()
+        {
+            if (qtdTotalTarefas <= 6)
+            {
+                btnAnteriro.Enabled = false;
+                btnProximo.Enabled = false;
+            }
+        }
+
+        public async Task SetParametroAdicionalAsync(frmHome _frmHome, string _statusTarefa)
         {
             frmHome = _frmHome;
 
-            tarefas = _tarefas;
+            statusTarefa = _statusTarefa;
 
             SetandoTitulo();
 
@@ -48,7 +58,7 @@ namespace WindowsForms.Forms
 
         private void SetandoTitulo()
         {
-            switch (tarefas)
+            switch (statusTarefa)
             {
                 case "todas":
                     lblTitulo.Text = "Todas as Minhas Tarefas";
@@ -70,7 +80,7 @@ namespace WindowsForms.Forms
 
         private async Task SetandoListaTarefasAsync()
         {
-            (ResultadoOperacao ResultadoOperacao, List<TarefaConsultaDTO> ListaTarefa, int TotalCount) = await tarefaService.ObterTarefasPaginadasAsync(numeroPagina, qtdItensPagina, tarefas);
+            (ResultadoOperacao ResultadoOperacao, List<TarefaConsultaDTO> ListaTarefa, int TotalCount) = await tarefaService.ObterTarefasPaginadasAsync(numeroPagina, qtdItensPagina, statusTarefa);
 
             if (ResultadoOperacao.Sucesso == false)
             {
@@ -106,23 +116,27 @@ namespace WindowsForms.Forms
         {
             pnlListaTarefas.Controls.Clear();
 
-            foreach (var item in _listaTarefas)
+            string prazo = "";
+
+            foreach (var tarefa in _listaTarefas)
             {
                 var card = ActivatorUtilities.CreateInstance<uc_CardTarefa>(InjecaoDependencia.ServiceProvider);
 
-                card.SetParametroAdicional(frmHome, tarefas);
+                prazo = tarefa.Prazo < 0 ? $"       Prazo:\n       {tarefa.Prazo.ToString().Replace("-", "")} dia(s) em atraso." : prazo = $"       Prazo:\n       {tarefa.Prazo} dia(s) restante(s).";
 
-                card.id = item.Id.ToString();
-                card.titulo = item.Titulo;
-                card.descricao = item.Descricao;
-                card.corlblPrioridade = SetarCorPrioridade(item.Prioridade);
-                card.imagemlblPrioridade = SetarImagemPrioridade(item.Prioridade);
-                card.prioridade = item.Prioridade;
-                card.corlblStatus = SetarCorStatus(item.Status);
-                card.imagemlblStatus = SetarImagemStatus(item.Status);
-                card.status = item.Status;
-                card.data = $"       Criado:{(item.Data)}";
-                card.prazo = $"       Prazo estipulado: {item.Prazo} dia(s)";
+                card.SetParametroAdicional(frmHome, statusTarefa);
+
+                card.id = tarefa.Id.ToString();
+                card.titulo = tarefa.Titulo;
+                card.descricao = tarefa.Descricao;
+                card.corlblPrioridade = SetarCorPrioridade(tarefa.Prioridade);
+                card.imagemlblPrioridade = SetarImagemPrioridade(tarefa.Prioridade);
+                card.prioridade = $"Prioridade: {tarefa.Prioridade}";
+                card.corlblStatus = SetarCorStatus(tarefa.Status);
+                card.imagemlblStatus = SetarImagemStatus(tarefa.Status);
+                card.status = $"Status: {tarefa.Status}";
+                card.data = $"       Criado:\n       {tarefa.DataCriacao}";
+                card.prazo = prazo;
 
                 pnlListaTarefas.Controls.Add(card);
             }
@@ -133,13 +147,13 @@ namespace WindowsForms.Forms
             switch (_prioridade)
             {
                 case "Baixa":
-                    return Color.FromArgb(40, 167, 69);
+                    return Color.FromArgb(67, 160, 71);
 
                 case "Média":
-                    return Color.FromArgb(253, 126, 20);
+                    return Color.FromArgb(251, 140, 0);
 
                 case "Alta":
-                    return Color.FromArgb(209, 36, 52);
+                    return Color.FromArgb(229, 57, 53);
             }
 
             return Color.Gray;
@@ -151,17 +165,18 @@ namespace WindowsForms.Forms
             switch (_status)
             {
                 case "Concluído":
-                    return Color.FromArgb(40, 167, 69);
+                    return Color.FromArgb(102, 187, 106);
 
                 case "Em Progresso":
-                    return Color.FromArgb(9, 140, 204);
+                    return Color.FromArgb(251, 192, 45);
 
                 case "Pendente":
-                    return Color.FromArgb(108, 117, 125);
+                    return Color.FromArgb(211, 47, 47);
             }
 
             return Color.Gray;
         }
+
 
 
         private Image SetarImagemPrioridade(string _prioridade)
@@ -169,13 +184,13 @@ namespace WindowsForms.Forms
             switch (_prioridade)
             {
                 case "Baixa":
-                    return Resources.seta_para_baixo;
+                    return Resources.baixa;
 
                 case "Média":
-                    return Resources.reclamar;
+                    return Resources.media;
 
                 case "Alta":
-                    return Resources.aviso__1_;
+                    return Resources.alta;
             }
 
             return null;
@@ -187,13 +202,13 @@ namespace WindowsForms.Forms
             switch (_status)
             {
                 case "Concluído":
-                    return Resources.verificado;
+                    return Resources.check__5_;
 
                 case "Em Progresso":
-                    return Resources.ponto_de_interrogacao;
+                    return Resources.refresh;
 
                 case "Pendente":
-                    return Resources.relogio;
+                    return Resources.question;
             }
 
             return null;
@@ -247,6 +262,7 @@ namespace WindowsForms.Forms
         private async Task ProximaPaginaAsync()
         {
             decimal qdtItensPagina = 9m;
+
             decimal qtdPaginas = qtdTotalTarefas / qdtItensPagina;
 
             if (qtdPaginas >= numeroPagina)

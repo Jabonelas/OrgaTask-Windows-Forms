@@ -41,6 +41,7 @@
             // 
             // pnlListaTarefas
             // 
+            this.pnlListaTarefas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(249)))), ((int)(((byte)(252)))));
             this.pnlListaTarefas.Location = new System.Drawing.Point(3, 49);
             this.pnlListaTarefas.Name = "pnlListaTarefas";
             this.pnlListaTarefas.Size = new System.Drawing.Size(732, 571);
@@ -48,7 +49,13 @@
             // 
             // btnAnteriro
             // 
-            this.btnAnteriro.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnAnteriro.ImageOptions.SvgImage")));
+            this.btnAnteriro.Appearance.BackColor = System.Drawing.Color.White;
+            this.btnAnteriro.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(224)))));
+            this.btnAnteriro.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(224)))));
+            this.btnAnteriro.Appearance.Options.UseBackColor = true;
+            this.btnAnteriro.Appearance.Options.UseBorderColor = true;
+            this.btnAnteriro.Appearance.Options.UseForeColor = true;
+            this.btnAnteriro.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnAnteriro.ImageOptions.Image")));
             this.btnAnteriro.ImageOptions.SvgImageSize = new System.Drawing.Size(10, 10);
             this.btnAnteriro.Location = new System.Drawing.Point(260, 626);
             this.btnAnteriro.Name = "btnAnteriro";
@@ -59,12 +66,14 @@
             // 
             // btnProximo
             // 
-            this.btnProximo.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(110)))), ((int)(((byte)(194)))));
+            this.btnProximo.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(224)))));
             this.btnProximo.Appearance.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProximo.Appearance.ForeColor = System.Drawing.Color.White;
             this.btnProximo.Appearance.Options.UseBackColor = true;
             this.btnProximo.Appearance.Options.UseFont = true;
+            this.btnProximo.Appearance.Options.UseForeColor = true;
+            this.btnProximo.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnProximo.ImageOptions.Image")));
             this.btnProximo.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleRight;
-            this.btnProximo.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnProximo.ImageOptions.SvgImage")));
             this.btnProximo.ImageOptions.SvgImageSize = new System.Drawing.Size(10, 10);
             this.btnProximo.Location = new System.Drawing.Point(396, 626);
             this.btnProximo.Name = "btnProximo";
@@ -75,16 +84,20 @@
             // 
             // lblNumeroPagina
             // 
+            this.lblNumeroPagina.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumeroPagina.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(44)))), ((int)(((byte)(68)))));
+            this.lblNumeroPagina.Appearance.Options.UseFont = true;
+            this.lblNumeroPagina.Appearance.Options.UseForeColor = true;
             this.lblNumeroPagina.Location = new System.Drawing.Point(364, 632);
             this.lblNumeroPagina.Name = "lblNumeroPagina";
-            this.lblNumeroPagina.Size = new System.Drawing.Size(6, 13);
+            this.lblNumeroPagina.Size = new System.Drawing.Size(6, 15);
             this.lblNumeroPagina.TabIndex = 3;
             this.lblNumeroPagina.Text = "1";
             // 
             // lblTitulo
             // 
             this.lblTitulo.Appearance.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(110)))), ((int)(((byte)(194)))));
+            this.lblTitulo.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(224)))));
             this.lblTitulo.Appearance.Options.UseFont = true;
             this.lblTitulo.Appearance.Options.UseForeColor = true;
             this.lblTitulo.ImageOptions.Alignment = System.Drawing.ContentAlignment.TopLeft;
@@ -96,10 +109,12 @@
             // 
             // btnNovaTarefa
             // 
-            this.btnNovaTarefa.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(110)))), ((int)(((byte)(194)))));
+            this.btnNovaTarefa.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(224)))));
             this.btnNovaTarefa.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNovaTarefa.Appearance.ForeColor = System.Drawing.Color.White;
             this.btnNovaTarefa.Appearance.Options.UseBackColor = true;
             this.btnNovaTarefa.Appearance.Options.UseFont = true;
+            this.btnNovaTarefa.Appearance.Options.UseForeColor = true;
             this.btnNovaTarefa.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnNovaTarefa.ImageOptions.SvgImage")));
             this.btnNovaTarefa.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
             this.btnNovaTarefa.ImeMode = System.Windows.Forms.ImeMode.NoControl;
@@ -112,10 +127,12 @@
             // 
             // btnCriarTarefa
             // 
-            this.btnCriarTarefa.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(110)))), ((int)(((byte)(194)))));
+            this.btnCriarTarefa.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(224)))));
             this.btnCriarTarefa.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCriarTarefa.Appearance.ForeColor = System.Drawing.Color.White;
             this.btnCriarTarefa.Appearance.Options.UseBackColor = true;
             this.btnCriarTarefa.Appearance.Options.UseFont = true;
+            this.btnCriarTarefa.Appearance.Options.UseForeColor = true;
             this.btnCriarTarefa.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
             this.btnCriarTarefa.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnCriarTarefa.Location = new System.Drawing.Point(292, 254);
@@ -128,7 +145,7 @@
             // lblNenhumaTarefa
             // 
             this.lblNenhumaTarefa.Appearance.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNenhumaTarefa.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.lblNenhumaTarefa.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(44)))), ((int)(((byte)(68)))));
             this.lblNenhumaTarefa.Appearance.Options.UseFont = true;
             this.lblNenhumaTarefa.Appearance.Options.UseForeColor = true;
             this.lblNenhumaTarefa.ImageOptions.Alignment = System.Drawing.ContentAlignment.TopCenter;
@@ -141,6 +158,8 @@
             // 
             // uc_ExibirTarefas
             // 
+            this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(249)))), ((int)(((byte)(252)))));
+            this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.lblNenhumaTarefa);

@@ -56,7 +56,7 @@
             this.btnExcluirTarefa.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnExcluirTarefa.ImageOptions.SvgImage")));
             this.btnExcluirTarefa.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
             this.btnExcluirTarefa.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnExcluirTarefa.Location = new System.Drawing.Point(309, 146);
+            this.btnExcluirTarefa.Location = new System.Drawing.Point(309, 150);
             this.btnExcluirTarefa.Name = "btnExcluirTarefa";
             this.btnExcluirTarefa.Size = new System.Drawing.Size(43, 29);
             this.btnExcluirTarefa.TabIndex = 22;
@@ -74,7 +74,7 @@
             this.btnEditarTarefa.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnEditarTarefa.ImageOptions.SvgImage")));
             this.btnEditarTarefa.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
             this.btnEditarTarefa.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnEditarTarefa.Location = new System.Drawing.Point(260, 146);
+            this.btnEditarTarefa.Location = new System.Drawing.Point(260, 150);
             this.btnEditarTarefa.Name = "btnEditarTarefa";
             this.btnEditarTarefa.Size = new System.Drawing.Size(43, 29);
             this.btnEditarTarefa.TabIndex = 23;
@@ -96,7 +96,7 @@
             this.btnVisualizarTarefa.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnVisualizarTarefa.ImageOptions.SvgImage")));
             this.btnVisualizarTarefa.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
             this.btnVisualizarTarefa.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnVisualizarTarefa.Location = new System.Drawing.Point(211, 146);
+            this.btnVisualizarTarefa.Location = new System.Drawing.Point(211, 150);
             this.btnVisualizarTarefa.Name = "btnVisualizarTarefa";
             this.btnVisualizarTarefa.Size = new System.Drawing.Size(43, 29);
             this.btnVisualizarTarefa.TabIndex = 24;
@@ -114,13 +114,15 @@
             this.lblPrioridade.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.lblPrioridade.Location = new System.Drawing.Point(5, 5);
             this.lblPrioridade.Name = "lblPrioridade";
-            this.lblPrioridade.Size = new System.Drawing.Size(91, 29);
+            this.lblPrioridade.Size = new System.Drawing.Size(120, 29);
             this.lblPrioridade.TabIndex = 18;
             this.lblPrioridade.Text = "Prioridade";
             this.lblPrioridade.Click += new System.EventHandler(this.lblPrioridade_Click);
             // 
             // pnlFundo
             // 
+            this.pnlFundo.Appearance.BackColor = System.Drawing.Color.White;
+            this.pnlFundo.Appearance.Options.UseBackColor = true;
             this.pnlFundo.Controls.Add(this.lblPrioridade);
             this.pnlFundo.Controls.Add(this.lblPrazo);
             this.pnlFundo.Controls.Add(this.lblStatus);
@@ -130,7 +132,7 @@
             this.pnlFundo.Controls.Add(this.lblTitulo);
             this.pnlFundo.Location = new System.Drawing.Point(7, 8);
             this.pnlFundo.Name = "pnlFundo";
-            this.pnlFundo.Size = new System.Drawing.Size(345, 130);
+            this.pnlFundo.Size = new System.Drawing.Size(345, 136);
             this.pnlFundo.TabIndex = 24;
             this.pnlFundo.Click += new System.EventHandler(this.pnlFundo_Click);
             // 
@@ -141,7 +143,7 @@
             this.lblPrazo.ImageOptions.Alignment = System.Drawing.ContentAlignment.MiddleLeft;
             this.lblPrazo.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("lblPrazo.ImageOptions.SvgImage")));
             this.lblPrazo.ImageOptions.SvgImageSize = new System.Drawing.Size(15, 15);
-            this.lblPrazo.Location = new System.Drawing.Point(187, 111);
+            this.lblPrazo.Location = new System.Drawing.Point(198, 104);
             this.lblPrazo.Name = "lblPrazo";
             this.lblPrazo.Size = new System.Drawing.Size(49, 15);
             this.lblPrazo.TabIndex = 26;
@@ -152,13 +154,15 @@
             // 
             this.lblStatus.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(110)))), ((int)(((byte)(194)))));
             this.lblStatus.Appearance.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStatus.Appearance.ForeColor = System.Drawing.Color.White;
             this.lblStatus.Appearance.Options.UseBackColor = true;
             this.lblStatus.Appearance.Options.UseFont = true;
+            this.lblStatus.Appearance.Options.UseForeColor = true;
             this.lblStatus.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
             this.lblStatus.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblStatus.Location = new System.Drawing.Point(220, 5);
+            this.lblStatus.Location = new System.Drawing.Point(193, 5);
             this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(119, 29);
+            this.lblStatus.Size = new System.Drawing.Size(146, 29);
             this.lblStatus.TabIndex = 25;
             this.lblStatus.Text = "Status";
             this.lblStatus.Click += new System.EventHandler(this.lblStatus_Click);
@@ -167,7 +171,7 @@
             // 
             this.lblIdTarefa.Appearance.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblIdTarefa.Appearance.Options.UseFont = true;
-            this.lblIdTarefa.Location = new System.Drawing.Point(144, 9);
+            this.lblIdTarefa.Location = new System.Drawing.Point(134, 9);
             this.lblIdTarefa.Name = "lblIdTarefa";
             this.lblIdTarefa.Size = new System.Drawing.Size(51, 17);
             this.lblIdTarefa.TabIndex = 28;
@@ -181,7 +185,7 @@
             this.lblDataCriacao.ImageOptions.Alignment = System.Drawing.ContentAlignment.MiddleLeft;
             this.lblDataCriacao.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("lblDataCriacao.ImageOptions.SvgImage")));
             this.lblDataCriacao.ImageOptions.SvgImageSize = new System.Drawing.Size(15, 15);
-            this.lblDataCriacao.Location = new System.Drawing.Point(5, 111);
+            this.lblDataCriacao.Location = new System.Drawing.Point(5, 104);
             this.lblDataCriacao.Name = "lblDataCriacao";
             this.lblDataCriacao.Size = new System.Drawing.Size(86, 15);
             this.lblDataCriacao.TabIndex = 27;
@@ -192,7 +196,7 @@
             // 
             this.lblDescricao.Appearance.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDescricao.Appearance.Options.UseFont = true;
-            this.lblDescricao.Location = new System.Drawing.Point(10, 79);
+            this.lblDescricao.Location = new System.Drawing.Point(10, 69);
             this.lblDescricao.Name = "lblDescricao";
             this.lblDescricao.Size = new System.Drawing.Size(49, 13);
             this.lblDescricao.TabIndex = 23;
@@ -203,7 +207,7 @@
             // 
             this.lblTitulo.Appearance.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.Appearance.Options.UseFont = true;
-            this.lblTitulo.Location = new System.Drawing.Point(10, 45);
+            this.lblTitulo.Location = new System.Drawing.Point(10, 42);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(37, 17);
             this.lblTitulo.TabIndex = 24;
@@ -212,7 +216,7 @@
             // 
             // uc_CardTarefa
             // 
-            this.Appearance.BackColor = System.Drawing.Color.White;
+            this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;

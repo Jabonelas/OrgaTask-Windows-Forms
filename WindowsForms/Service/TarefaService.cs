@@ -17,11 +17,11 @@ namespace WindowsForms.Service
 {
     public class TarefaService : ITarefaService
     {
-        private readonly HttpClient _httpClient;
+        private readonly HttpClient httpClient;
 
-        public TarefaService(HttpClient httpClient)
+        public TarefaService(HttpClient _httpClient)
         {
-            _httpClient = httpClient;
+            httpClient = _httpClient;
         }
 
         public class PagedResult<T>
@@ -30,7 +30,7 @@ namespace WindowsForms.Service
             public int TotalCount { get; set; }
         }
 
-        public async Task<ResultadoOperacao> CadastrarTarefaAsync(TarefaAlterarDTO _dadosTarefa)
+        public async Task<ResultadoOperacao> CadastrarTarefaAsync(TarefaCadastrarDTO _dadosTarefa)
         {
             try
             {
@@ -52,7 +52,7 @@ namespace WindowsForms.Service
                     request.Content = content;
                     request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", dadosToken.Token);
 
-                    var response = await _httpClient.SendAsync(request);
+                    var response = await httpClient.SendAsync(request);
 
                     TipoErro tipoErro = SelecionarTipoErro(response);
 
@@ -100,14 +100,14 @@ namespace WindowsForms.Service
                     return (ResultadoOperacao.Falha("Token de autenticação inválido", TipoErro.Autenticacao), null, 0);
                 }
 
-                var endpoint = SetandoEndPoint($"api/tarefas/paginado/{_status}?pageNumber={_pageNumber}&pageSize={_pageSize}");
+                var endpoint = SetandoEndPoint($"api/tarefas/paginado/{_status.Replace(" ", "_")}?pageNumber={_pageNumber}&pageSize={_pageSize}");
 
                 // Criação do HttpClient com o header de autenticação
                 using (var request = new HttpRequestMessage(HttpMethod.Get, endpoint))
                 {
                     request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", dadosToken.Token);
 
-                    var response = await _httpClient.SendAsync(request);
+                    var response = await httpClient.SendAsync(request);
 
                     TipoErro tipoErro = SelecionarTipoErro(response);
 
@@ -144,7 +144,7 @@ namespace WindowsForms.Service
             }
         }
 
-        public async Task<(ResultadoOperacao ResultadoOperacao, TarefaAlterarDTO Tarefa)> BuscarTarefaAsync(int _idTarefa)
+        public async Task<(ResultadoOperacao ResultadoOperacao, TarefaAlterarDTO TarefaAlterarDTO)> BuscarTarefaAsync(int _idTarefa)
         {
             try
             {
@@ -162,7 +162,7 @@ namespace WindowsForms.Service
                 {
                     request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", dadosToken.Token);
 
-                    var response = await _httpClient.SendAsync(request);
+                    var response = await httpClient.SendAsync(request);
 
                     TipoErro tipoErro = SelecionarTipoErro(response);
 
@@ -221,7 +221,7 @@ namespace WindowsForms.Service
                     request.Content = content;
                     request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", dadosToken.Token);
 
-                    var response = await _httpClient.SendAsync(request);
+                    var response = await httpClient.SendAsync(request);
 
                     TipoErro tipoErro = SelecionarTipoErro(response);
 
@@ -273,7 +273,7 @@ namespace WindowsForms.Service
                 {
                     request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", dadosToken.Token);
 
-                    var response = await _httpClient.SendAsync(request);
+                    var response = await httpClient.SendAsync(request);
 
                     TipoErro tipoErro = SelecionarTipoErro(response);
 
@@ -325,7 +325,7 @@ namespace WindowsForms.Service
                 {
                     request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", dadosToken.Token);
 
-                    var response = await _httpClient.SendAsync(request);
+                    var response = await httpClient.SendAsync(request);
 
                     TipoErro tipoErro = SelecionarTipoErro(response);
 
@@ -362,7 +362,7 @@ namespace WindowsForms.Service
             }
         }
 
-        public async Task<(ResultadoOperacao ResultadoOperacao, List<TarefaPrioridadeAltaDTO> ListaTarefaPrioridade)> BuscarTarefasPrioridadeAltaAsync()
+        public async Task<(ResultadoOperacao ResultadoOperacao, List<TarefaPrioridadeAltaDTO> ListaTarefaPrioridadeAltaDTO)> BuscarTarefasPrioridadeAltaAsync()
         {
             try
             {
@@ -380,7 +380,7 @@ namespace WindowsForms.Service
                 {
                     request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", dadosToken.Token);
 
-                    var response = await _httpClient.SendAsync(request);
+                    var response = await httpClient.SendAsync(request);
 
                     TipoErro tipoErro = SelecionarTipoErro(response);
 

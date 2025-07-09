@@ -2,29 +2,40 @@
 <ArrayOfArrayOfArrayOfString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ArrayOfArrayOfString>
     <ArrayOfString>
-      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\UserControl\Usuario\uc_Login.cs</string>
-      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\UserControl\Usuario\uc_Login.cs</string>
+      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\UserControl\Tarefa\uc_DashboardTarefas.cs</string>
+      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\UserControl\Tarefa\uc_DashboardTarefas.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\UserControl\Tarefa\uc_CardTarefaPrioridade.cs</string>
+      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\UserControl\Tarefa\uc_CardTarefaPrioridade.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\UserControl\Tarefa\uc_CardTarefa.cs</string>
+      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\UserControl\Tarefa\uc_CardTarefa.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Interface\ITarefaService.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Service\TarefaService.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\UserControl\Tarefa\uc_VisualizarTarefa.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\UserControl\Tarefa\uc_ExibirTarefas.cs</string>
+      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\UserControl\Tarefa\uc_ExibirTarefas.cs</string>
     </ArrayOfString>
     <ArrayOfString>
       <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\UserControl\Usuario\uc_CadastroUsuario.cs</string>
       <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\UserControl\Usuario\uc_CadastroUsuario.cs</string>
     </ArrayOfString>
     <ArrayOfString>
-      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\UserControl\Tarefa\uc_CadastrarTarefa.cs</string>
-      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\UserControl\Tarefa\uc_CadastrarTarefa.cs</string>
-    </ArrayOfString>
-    <ArrayOfString>
-      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Service\UsuarioService.cs</string>
-    </ArrayOfString>
-    <ArrayOfString>
-      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Program.cs</string>
-    </ArrayOfString>
-    <ArrayOfString>
-      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Forms\frmHome.cs</string>
       <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Forms\frmHome.cs</string>
     </ArrayOfString>
     <ArrayOfString>
-      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\WindowsForms.csproj</string>
+      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\UserControl\Usuario\uc_Login.cs</string>
+      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\UserControl\Usuario\uc_Login.cs</string>
     </ArrayOfString>
   </ArrayOfArrayOfString>
 </ArrayOfArrayOfArrayOfString>
