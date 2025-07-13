@@ -69,23 +69,16 @@ Capturas de Tela
 
 <p><em>Interface Dashboard</em></p>
 
-![image](https://github.com/user-attachments/assets/db77203f-87c6-455a-a88a-0339de7f9f90)
-> Painel visual com acompanhamento do progresso e status de todas as atividades
+<img width="983" height="699" alt="image" src="https://github.com/user-attachments/assets/45230d69-22ef-4db4-85fd-ee4ada8b6ba8" />
+Painel visual com acompanhamento do progresso e status de todas as atividades
+
 
 <p><em>Interface Tarefas</em></p>
 
-![image](https://github.com/user-attachments/assets/5a61757d-d567-482a-aa1c-f6c96c358e7b)
-> Visualização integrada de todas as tarefas registradas
+<img width="986" height="699" alt="image" src="https://github.com/user-attachments/assets/a249f2fd-576c-4e16-9bf9-e5e3761faa91" />
+Visualização integrada de todas as tarefas registradas
 
 
-
-
-
-
-
-
-
-
-Contribuições
+Contribuições:
 
 Sinta-se à vontade para abrir issues ou enviar pull requests. Sugestões de melhorias são sempre bem-vindas!
