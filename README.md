@@ -75,7 +75,7 @@ Painel visual com acompanhamento do progresso e status de todas as atividades
 
 <p><em>Interface Tarefas</em></p>
 
-<img width="986" height="699" alt="image" src="https://github.com/user-attachments/assets/a249f2fd-576c-4e16-9bf9-e5e3761faa91" />
+<img width="985" height="698" alt="image" src="https://github.com/user-attachments/assets/593a7e4b-9fdf-499d-ae27-8f55d486fe56" />
 Visualização integrada de todas as tarefas registradas
 
 
