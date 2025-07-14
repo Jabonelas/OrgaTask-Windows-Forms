@@ -27,6 +27,7 @@ OrgaTask Windows Forms é uma aplicação desktop que consome a OrgaTask API par
 - Gerenciamento de tarefas (listar, criar, editar, excluir)
 - Interface rica com controles DevExpress
 - Sistema de logging para rastreamento de erros
+- Sincronização com API: Atualização em tempo real com a OrgaTask API.
 
 ## Pré-requisitos
 
