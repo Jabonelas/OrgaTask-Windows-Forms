@@ -77,7 +77,8 @@ Capturas de Tela
 
 <p><em>Interface Tarefas</em></p>
 
-<img width="985" height="698" alt="image" src="https://github.com/user-attachments/assets/593a7e4b-9fdf-499d-ae27-8f55d486fe56" />
+
+<img width="985" height="699" alt="image" src="https://github.com/user-attachments/assets/52d7ff45-aac0-4b35-a455-cd2777168009" />
 
 > Visualização integrada de todas as tarefas registradas
 
