@@ -71,13 +71,15 @@ Capturas de Tela
 <p><em>Interface Dashboard</em></p>
 
 <img width="983" height="699" alt="image" src="https://github.com/user-attachments/assets/45230d69-22ef-4db4-85fd-ee4ada8b6ba8" />
-Painel visual com acompanhamento do progresso e status de todas as atividades
+
+> Painel visual com acompanhamento do progresso e status de todas as atividades
 
 
 <p><em>Interface Tarefas</em></p>
 
 <img width="985" height="698" alt="image" src="https://github.com/user-attachments/assets/593a7e4b-9fdf-499d-ae27-8f55d486fe56" />
-Visualização integrada de todas as tarefas registradas
+
+> Visualização integrada de todas as tarefas registradas
 
 
 Contribuições:
