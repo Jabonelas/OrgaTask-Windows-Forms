@@ -27,6 +27,7 @@ OrgaTask Windows Forms é uma aplicação desktop que consome a OrgaTask API par
 - Gerenciamento de tarefas (listar, criar, editar, excluir)
 - Interface rica com controles DevExpress
 - Sistema de logging para rastreamento de erros
+- Sincronização com API: Atualização em tempo real com a OrgaTask API.
 
 ## Pré-requisitos
 
@@ -69,23 +70,19 @@ Capturas de Tela
 
 <p><em>Interface Dashboard</em></p>
 
-![image](https://github.com/user-attachments/assets/db77203f-87c6-455a-a88a-0339de7f9f90)
+<img width="983" height="699" alt="image" src="https://github.com/user-attachments/assets/45230d69-22ef-4db4-85fd-ee4ada8b6ba8" />
+
 > Painel visual com acompanhamento do progresso e status de todas as atividades
+
 
 <p><em>Interface Tarefas</em></p>
 
-![image](https://github.com/user-attachments/assets/5a61757d-d567-482a-aa1c-f6c96c358e7b)
+
+<img width="985" height="699" alt="image" src="https://github.com/user-attachments/assets/52d7ff45-aac0-4b35-a455-cd2777168009" />
+
 > Visualização integrada de todas as tarefas registradas
 
 
-
-
-
-
-
-
-
-
-Contribuições
+Contribuições:
 
 Sinta-se à vontade para abrir issues ou enviar pull requests. Sugestões de melhorias são sempre bem-vindas!
