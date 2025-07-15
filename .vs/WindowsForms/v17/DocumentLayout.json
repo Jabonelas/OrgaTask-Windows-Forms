@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\israe\\source\\repos\\WindowsForms\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|C:\\Users\\israe\\source\\repos\\WindowsForms\\windowsforms\\forms\\frmhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|solutionrelative:windowsforms\\forms\\frmhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|C:\\Users\\israe\\source\\repos\\WindowsForms\\windowsforms\\usercontrol\\usuario\\uc_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|solutionrelative:windowsforms\\usercontrol\\usuario\\uc_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|C:\\Users\\israe\\source\\repos\\WindowsForms\\windowsforms\\service\\tarefaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,40 +15,51 @@
       "RelativeMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|solutionrelative:windowsforms\\interface\\itarefaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|C:\\Users\\israe\\source\\repos\\WindowsForms\\windowsforms\\usercontrol\\usuario\\uc_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|solutionrelative:windowsforms\\usercontrol\\usuario\\uc_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|C:\\Users\\israe\\source\\repos\\WindowsForms\\windowsforms\\forms\\frmhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|solutionrelative:windowsforms\\forms\\frmhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|C:\\Users\\israe\\source\\repos\\WindowsForms\\windowsforms\\usercontrol\\tarefa\\uc_dashboardtarefas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|solutionrelative:windowsforms\\usercontrol\\tarefa\\uc_dashboardtarefas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|c:\\users\\israe\\source\\repos\\windowsforms\\windowsforms\\usercontrol\\tarefa\\uc_cardtarefa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|solutionrelative:windowsforms\\usercontrol\\tarefa\\uc_cardtarefa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|C:\\Users\\israe\\source\\repos\\WindowsForms\\windowsforms\\usercontrol\\tarefa\\uc_cardtarefa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|solutionrelative:windowsforms\\usercontrol\\tarefa\\uc_cardtarefa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|C:\\Users\\israe\\source\\repos\\WindowsForms\\windowsforms\\usercontrol\\tarefa\\uc_cardtarefaprioridade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|solutionrelative:windowsforms\\usercontrol\\tarefa\\uc_cardtarefaprioridade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|C:\\Users\\israe\\source\\repos\\WindowsForms\\windowsforms\\usercontrol\\tarefa\\uc_dashboardtarefas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|solutionrelative:windowsforms\\usercontrol\\tarefa\\uc_dashboardtarefas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|C:\\Users\\israe\\source\\repos\\WindowsForms\\windowsforms\\usercontrol\\usuario\\uc_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|solutionrelative:windowsforms\\usercontrol\\usuario\\uc_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|C:\\Users\\israe\\source\\repos\\WindowsForms\\windowsforms\\usercontrol\\tarefa\\uc_visualizartarefa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|solutionrelative:windowsforms\\usercontrol\\tarefa\\uc_visualizartarefa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|C:\\Users\\israe\\source\\repos\\WindowsForms\\windowsforms\\usercontrol\\tarefa\\uc_exibirtarefas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|solutionrelative:windowsforms\\usercontrol\\tarefa\\uc_exibirtarefas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|C:\\Users\\israe\\source\\repos\\WindowsForms\\windowsforms\\usercontrol\\tarefa\\uc_cardtarefa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|solutionrelative:windowsforms\\usercontrol\\tarefa\\uc_cardtarefa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|WindowsForms||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|C:\\Users\\israe\\source\\repos\\WindowsForms\\windowsforms\\usercontrol\\tarefa\\uc_visualizartarefa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|solutionrelative:windowsforms\\usercontrol\\tarefa\\uc_visualizartarefa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|C:\\Users\\israe\\source\\repos\\WindowsForms\\windowsforms\\usercontrol\\tarefa\\uc_exibirtarefas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|solutionrelative:windowsforms\\usercontrol\\tarefa\\uc_exibirtarefas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|C:\\Users\\israe\\source\\repos\\WindowsForms\\windowsforms\\usercontrol\\tarefa\\uc_cardtarefa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|solutionrelative:windowsforms\\usercontrol\\tarefa\\uc_cardtarefa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|C:\\Users\\israe\\source\\repos\\WindowsForms\\windowsforms\\usercontrol\\tarefa\\uc_cardtarefaprioridade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|solutionrelative:windowsforms\\usercontrol\\tarefa\\uc_cardtarefaprioridade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|C:\\Users\\israe\\source\\repos\\WindowsForms\\windowsforms\\usercontrol\\tarefa\\uc_cardtarefaprioridade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|solutionrelative:windowsforms\\usercontrol\\tarefa\\uc_cardtarefaprioridade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|C:\\Users\\israe\\source\\repos\\WindowsForms\\windowsforms\\usercontrol\\tarefa\\uc_dashboardtarefas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|solutionrelative:windowsforms\\usercontrol\\tarefa\\uc_dashboardtarefas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|C:\\Users\\israe\\source\\repos\\WindowsForms\\windowsforms\\usercontrol\\tarefa\\uc_dashboardtarefas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|solutionrelative:windowsforms\\usercontrol\\tarefa\\uc_dashboardtarefas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|C:\\Users\\israe\\source\\repos\\WindowsForms\\windowsforms\\usercontrol\\tarefa\\uc_cadastrartarefa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|solutionrelative:windowsforms\\usercontrol\\tarefa\\uc_cadastrartarefa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|C:\\Users\\israe\\source\\repos\\WindowsForms\\windowsforms\\usercontrol\\usuario\\uc_cadastrousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -57,14 +68,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|C:\\Users\\israe\\source\\repos\\WindowsForms\\windowsforms\\usercontrol\\usuario\\uc_cadastrousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|solutionrelative:windowsforms\\usercontrol\\usuario\\uc_cadastrousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|C:\\Users\\israe\\source\\repos\\WindowsForms\\windowsforms\\usercontrol\\tarefa\\uc_exibirtarefas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|solutionrelative:windowsforms\\usercontrol\\tarefa\\uc_exibirtarefas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|C:\\Users\\israe\\source\\repos\\WindowsForms\\windowsforms\\usercontrol\\tarefa\\uc_cardtarefaprioridade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5CCD3521-C867-433E-8978-84A2ED6DC744}|WindowsForms\\WindowsForms.csproj|solutionrelative:windowsforms\\usercontrol\\tarefa\\uc_cardtarefaprioridade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -82,13 +85,36 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
+              "Title": "WindowsForms",
+              "DocumentMoniker": "C:\\Users\\israe\\source\\repos\\WindowsForms\\WindowsForms\\WindowsForms.csproj",
+              "RelativeDocumentMoniker": "WindowsForms\\WindowsForms.csproj",
+              "ToolTip": "C:\\Users\\israe\\source\\repos\\WindowsForms\\WindowsForms\\WindowsForms.csproj",
+              "RelativeToolTip": "WindowsForms\\WindowsForms.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-07-14T23:24:06.112Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "uc_CadastrarTarefa.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\israe\\source\\repos\\WindowsForms\\WindowsForms\\UserControl\\Tarefa\\uc_CadastrarTarefa.cs",
+              "RelativeDocumentMoniker": "WindowsForms\\UserControl\\Tarefa\\uc_CadastrarTarefa.cs",
+              "ToolTip": "C:\\Users\\israe\\source\\repos\\WindowsForms\\WindowsForms\\UserControl\\Tarefa\\uc_CadastrarTarefa.cs [Design]",
+              "RelativeToolTip": "WindowsForms\\UserControl\\Tarefa\\uc_CadastrarTarefa.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-13T18:04:31.117Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "uc_Login.cs",
               "DocumentMoniker": "C:\\Users\\israe\\source\\repos\\WindowsForms\\WindowsForms\\UserControl\\Usuario\\uc_Login.cs",
               "RelativeDocumentMoniker": "WindowsForms\\UserControl\\Usuario\\uc_Login.cs",
               "ToolTip": "C:\\Users\\israe\\source\\repos\\WindowsForms\\WindowsForms\\UserControl\\Usuario\\uc_Login.cs",
               "RelativeToolTip": "WindowsForms\\UserControl\\Usuario\\uc_Login.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAswFsAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAswFoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-07T23:07:11.056Z",
               "EditorCaption": ""
@@ -96,18 +122,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "uc_Login.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\israe\\source\\repos\\WindowsForms\\WindowsForms\\UserControl\\Usuario\\uc_Login.cs",
-              "RelativeDocumentMoniker": "WindowsForms\\UserControl\\Usuario\\uc_Login.cs",
-              "ToolTip": "C:\\Users\\israe\\source\\repos\\WindowsForms\\WindowsForms\\UserControl\\Usuario\\uc_Login.cs [Design]",
-              "RelativeToolTip": "WindowsForms\\UserControl\\Usuario\\uc_Login.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-07T23:07:09.5Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "frmHome.cs",
               "DocumentMoniker": "C:\\Users\\israe\\source\\repos\\WindowsForms\\WindowsForms\\Forms\\frmHome.cs",
               "RelativeDocumentMoniker": "WindowsForms\\Forms\\frmHome.cs",
@@ -120,7 +134,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "uc_CadastroUsuario.cs",
               "DocumentMoniker": "C:\\Users\\israe\\source\\repos\\WindowsForms\\WindowsForms\\UserControl\\Usuario\\uc_CadastroUsuario.cs",
               "RelativeDocumentMoniker": "WindowsForms\\UserControl\\Usuario\\uc_CadastroUsuario.cs",
@@ -133,7 +147,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "uc_CadastroUsuario.cs [Design]",
               "DocumentMoniker": "C:\\Users\\israe\\source\\repos\\WindowsForms\\WindowsForms\\UserControl\\Usuario\\uc_CadastroUsuario.cs",
               "RelativeDocumentMoniker": "WindowsForms\\UserControl\\Usuario\\uc_CadastroUsuario.cs",
@@ -145,33 +159,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 4,
               "Title": "uc_CardTarefa.cs",
               "DocumentMoniker": "C:\\Users\\israe\\source\\repos\\WindowsForms\\WindowsForms\\UserControl\\Tarefa\\uc_CardTarefa.cs",
               "RelativeDocumentMoniker": "WindowsForms\\UserControl\\Tarefa\\uc_CardTarefa.cs",
               "ToolTip": "C:\\Users\\israe\\source\\repos\\WindowsForms\\WindowsForms\\UserControl\\Tarefa\\uc_CardTarefa.cs",
               "RelativeToolTip": "WindowsForms\\UserControl\\Tarefa\\uc_CardTarefa.cs",
-              "ViewState": "AgIAACwAAAAAAAAAACBjwDQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAiwE4AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-07T21:45:50.83Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 6,
               "Title": "uc_ExibirTarefas.cs",
               "DocumentMoniker": "C:\\Users\\israe\\source\\repos\\WindowsForms\\WindowsForms\\UserControl\\Tarefa\\uc_ExibirTarefas.cs",
               "RelativeDocumentMoniker": "WindowsForms\\UserControl\\Tarefa\\uc_ExibirTarefas.cs",
               "ToolTip": "C:\\Users\\israe\\source\\repos\\WindowsForms\\WindowsForms\\UserControl\\Tarefa\\uc_ExibirTarefas.cs",
               "RelativeToolTip": "WindowsForms\\UserControl\\Tarefa\\uc_ExibirTarefas.cs",
-              "ViewState": "AgIAAHMAAAAAAAAAAIA1wIwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-07T21:16:01.864Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 8,
               "Title": "uc_ExibirTarefas.cs [Design]",
               "DocumentMoniker": "C:\\Users\\israe\\source\\repos\\WindowsForms\\WindowsForms\\UserControl\\Tarefa\\uc_ExibirTarefas.cs",
               "RelativeDocumentMoniker": "WindowsForms\\UserControl\\Tarefa\\uc_ExibirTarefas.cs",
@@ -183,7 +197,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 5,
               "Title": "uc_VisualizarTarefa.cs [Design]",
               "DocumentMoniker": "C:\\Users\\israe\\source\\repos\\WindowsForms\\WindowsForms\\UserControl\\Tarefa\\uc_VisualizarTarefa.cs",
               "RelativeDocumentMoniker": "WindowsForms\\UserControl\\Tarefa\\uc_VisualizarTarefa.cs",
@@ -201,7 +215,7 @@
               "RelativeDocumentMoniker": "WindowsForms\\Service\\TarefaService.cs",
               "ToolTip": "C:\\Users\\israe\\source\\repos\\WindowsForms\\WindowsForms\\Service\\TarefaService.cs",
               "RelativeToolTip": "WindowsForms\\Service\\TarefaService.cs",
-              "ViewState": "AgIAAHMBAAAAAAAAAAAAAHMBAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAGkBAAAAAAAAAAAAAGkBAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-07T18:28:27.88Z",
               "EditorCaption": ""
@@ -221,32 +235,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "uc_CardTarefa.cs [Design]",
               "DocumentMoniker": "C:\\Users\\israe\\source\\repos\\WindowsForms\\WindowsForms\\UserControl\\Tarefa\\uc_CardTarefa.cs",
               "RelativeDocumentMoniker": "WindowsForms\\UserControl\\Tarefa\\uc_CardTarefa.cs",
               "ToolTip": "C:\\Users\\israe\\source\\repos\\WindowsForms\\WindowsForms\\UserControl\\Tarefa\\uc_CardTarefa.cs [Design]",
               "RelativeToolTip": "WindowsForms\\UserControl\\Tarefa\\uc_CardTarefa.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-07T20:57:42.617Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-07-07T20:57:42.617Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 10,
               "Title": "uc_CardTarefaPrioridade.cs",
               "DocumentMoniker": "C:\\Users\\israe\\source\\repos\\WindowsForms\\WindowsForms\\UserControl\\Tarefa\\uc_CardTarefaPrioridade.cs",
               "RelativeDocumentMoniker": "WindowsForms\\UserControl\\Tarefa\\uc_CardTarefaPrioridade.cs",
               "ToolTip": "C:\\Users\\israe\\source\\repos\\WindowsForms\\WindowsForms\\UserControl\\Tarefa\\uc_CardTarefaPrioridade.cs",
               "RelativeToolTip": "WindowsForms\\UserControl\\Tarefa\\uc_CardTarefaPrioridade.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAwwCUAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-07T20:40:33.848Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "uc_CardTarefaPrioridade.cs [Design]",
               "DocumentMoniker": "C:\\Users\\israe\\source\\repos\\WindowsForms\\WindowsForms\\UserControl\\Tarefa\\uc_CardTarefaPrioridade.cs",
               "RelativeDocumentMoniker": "WindowsForms\\UserControl\\Tarefa\\uc_CardTarefaPrioridade.cs",
@@ -258,20 +271,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "uc_DashboardTarefas.cs",
               "DocumentMoniker": "C:\\Users\\israe\\source\\repos\\WindowsForms\\WindowsForms\\UserControl\\Tarefa\\uc_DashboardTarefas.cs",
               "RelativeDocumentMoniker": "WindowsForms\\UserControl\\Tarefa\\uc_DashboardTarefas.cs",
               "ToolTip": "C:\\Users\\israe\\source\\repos\\WindowsForms\\WindowsForms\\UserControl\\Tarefa\\uc_DashboardTarefas.cs",
               "RelativeToolTip": "WindowsForms\\UserControl\\Tarefa\\uc_DashboardTarefas.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAqwDQAAABXAAAAAAAAAA==",
+              "ViewState": "AgIAAKUAAAAAAAAAAAAkwLYAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-07T20:03:52.63Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 12,
               "Title": "uc_DashboardTarefas.cs [Design]",
               "DocumentMoniker": "C:\\Users\\israe\\source\\repos\\WindowsForms\\WindowsForms\\UserControl\\Tarefa\\uc_DashboardTarefas.cs",
               "RelativeDocumentMoniker": "WindowsForms\\UserControl\\Tarefa\\uc_DashboardTarefas.cs",

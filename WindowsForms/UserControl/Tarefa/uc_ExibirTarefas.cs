@@ -130,10 +130,10 @@ namespace WindowsForms.Forms
                 card.titulo = tarefa.Titulo;
                 card.descricao = tarefa.Descricao;
                 card.corlblPrioridade = SetarCorPrioridade(tarefa.Prioridade);
-                card.imagemlblPrioridade = SetarImagemPrioridade(tarefa.Prioridade);
+                card.imagemlblPrioridade = SetarIconePrioridade(tarefa.Prioridade);
                 card.prioridade = $"Prioridade: {tarefa.Prioridade}";
                 card.corlblStatus = SetarCorStatus(tarefa.Status);
-                card.imagemlblStatus = SetarImagemStatus(tarefa.Status);
+                card.imagemlblStatus = SetarIconeStatus(tarefa.Status);
                 card.status = $"Status: {tarefa.Status}";
                 card.data = $"       Criado:\n       {tarefa.DataCriacao}";
                 card.prazo = prazo;
@@ -179,36 +179,36 @@ namespace WindowsForms.Forms
 
 
 
-        private Image SetarImagemPrioridade(string _prioridade)
+        private Image SetarIconePrioridade(string _prioridade)
         {
             switch (_prioridade)
             {
                 case "Baixa":
-                    return Resources.baixa;
+                    return Resources.prioridade_baixa;
 
                 case "Média":
-                    return Resources.media;
+                    return Resources.prioridade_media;
 
                 case "Alta":
-                    return Resources.alta;
+                    return Resources.prioridade_alta;
             }
 
             return null;
         }
 
 
-        private Image SetarImagemStatus(string _status)
+        private Image SetarIconeStatus(string _status)
         {
             switch (_status)
             {
                 case "Concluído":
-                    return Resources.check__5_;
+                    return Resources.status_concluido;
 
                 case "Em Progresso":
-                    return Resources.refresh;
+                    return Resources.status_em_progresso;
 
                 case "Pendente":
-                    return Resources.question;
+                    return Resources.status_pendente;
             }
 
             return null;

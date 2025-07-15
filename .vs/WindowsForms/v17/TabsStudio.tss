@@ -35,7 +35,12 @@
     </ArrayOfString>
     <ArrayOfString>
       <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\UserControl\Usuario\uc_Login.cs</string>
-      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\UserControl\Usuario\uc_Login.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\UserControl\Tarefa\uc_CadastrarTarefa.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\WindowsForms.csproj</string>
     </ArrayOfString>
   </ArrayOfArrayOfString>
 </ArrayOfArrayOfArrayOfString>

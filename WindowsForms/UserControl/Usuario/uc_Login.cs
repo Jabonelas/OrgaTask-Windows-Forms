@@ -88,8 +88,6 @@ namespace WindowsForms.Forms
 
         private async void btnEntrar_Click(object sender, System.EventArgs e)
         {
-            txtUsuario.Text = "israel oliveira";
-            txtSenha.Text = "string";
 
             if (!IsCamposPreenchidos())
             {

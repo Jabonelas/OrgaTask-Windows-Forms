@@ -26,9 +26,6 @@ namespace WindowsForms.Forms
         public Color corlblStatus { get => lblStatus.Appearance.BackColor; set => lblStatus.Appearance.BackColor = value; }
         public Image imagemlblStatus { get => lblStatus.ImageOptions.Image; set => lblStatus.ImageOptions.Image = value; }
 
-
-
-
         private frmHome frmHome = null;
 
         private readonly ITarefaService tarefaService;
@@ -45,14 +42,26 @@ namespace WindowsForms.Forms
 
             btnExcluirTarefa.Paint += btnExcluirTarefa_Paint;
 
-
-            lblStatus.Appearance.Options.UseForeColor = true;
-            lblStatus.ForeColor = Color.White;
-            lblStatus.Appearance.ForeColor = Color.White;
-
-
+            MantendoAparenciaLblPrioridadeStatus();
         }
 
+
+        private void MantendoAparenciaLblPrioridadeStatus()
+        {
+
+            lblPrioridade.ForeColor = Color.White;
+            lblPrioridade.AppearanceDisabled.BackColor = lblPrioridade.Appearance.BackColor;
+            lblPrioridade.AppearanceDisabled.ForeColor = lblPrioridade.Appearance.ForeColor;
+            lblPrioridade.AppearanceDisabled.BorderColor = lblPrioridade.Appearance.BorderColor;
+            lblPrioridade.Enabled = false;
+
+            lblStatus.ForeColor = Color.White;
+            lblStatus.AppearanceDisabled.BackColor = lblStatus.Appearance.BackColor;
+            lblStatus.AppearanceDisabled.ForeColor = lblStatus.Appearance.ForeColor;
+            lblStatus.AppearanceDisabled.BorderColor = lblStatus.Appearance.BorderColor;
+            lblStatus.Enabled = false;
+
+        }
 
         protected override void OnResize(EventArgs e)
         {
@@ -61,6 +70,8 @@ namespace WindowsForms.Forms
         }
 
 
+
+        //Setando a borda do panel onde esta as informacoes
         protected override void OnPaint(PaintEventArgs e)
         {
             base.OnPaint(e);
@@ -105,8 +116,6 @@ namespace WindowsForms.Forms
                 }
             }
         }
-
-
 
         private void btnEditarTarefa_Paint(object sender, PaintEventArgs e)
         {
@@ -162,7 +171,6 @@ namespace WindowsForms.Forms
             }
         }
 
-
         private void btnVisualizarTarefa_Paint(object sender, PaintEventArgs e)
         {
 
@@ -191,8 +199,6 @@ namespace WindowsForms.Forms
                 }
             }
         }
-
-
 
         public void SetParametroAdicional(frmHome _frmHome, string _statusPassado)
         {
@@ -247,7 +253,6 @@ namespace WindowsForms.Forms
         {
             await ExibirTelaDetalhesTarefaAsync();
         }
-
 
         private async Task ExibirTelaDetalhesTarefaAsync()
         {
@@ -332,7 +337,5 @@ namespace WindowsForms.Forms
             frmHome.pnlTelaPrincipal.Controls.Clear();
             frmHome.pnlTelaPrincipal.Controls.Add(ucExibirTarefas);
         }
-
-
     }
 }

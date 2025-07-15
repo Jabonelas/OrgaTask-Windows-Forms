@@ -114,7 +114,7 @@
             this.lblPrioridade.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.lblPrioridade.Location = new System.Drawing.Point(5, 5);
             this.lblPrioridade.Name = "lblPrioridade";
-            this.lblPrioridade.Size = new System.Drawing.Size(120, 29);
+            this.lblPrioridade.Size = new System.Drawing.Size(146, 29);
             this.lblPrioridade.TabIndex = 18;
             this.lblPrioridade.Text = "Prioridade";
             this.lblPrioridade.Click += new System.EventHandler(this.lblPrioridade_Click);

@@ -313,31 +313,23 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\marca.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\verificado.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\relogio.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ponto-de-interrogacao.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\home-icon-preto.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\alta.png" />
-    <Content Include="Resources\baixa.png" />
-    <None Include="Resources\check %285%29.png" />
-    <None Include="Resources\refresh.png" />
-    <None Include="Resources\question.png" />
     <None Include="Resources\warning %286%29.png" />
-    <None Include="Resources\download %283%29.png" />
-    <Content Include="Resources\media.png" />
-    <None Include="Resources\warning %284%29.png" />
     <None Include="Resources\warning %285%29.png" />
+    <None Include="Resources\warning %284%29.png" />
+    <None Include="Resources\refresh.png" />
+    <None Include="Resources\check %285%29.png" />
+    <None Include="Resources\download %282%29.png" />
+    <None Include="Resources\prioridade_baixa.png" />
+    <None Include="Resources\download %283%29.png" />
+    <Content Include="Resources\status_concluido.png" />
+    <Content Include="Resources\prioridade_alta.png" />
+    <Content Include="Resources\status_em_progresso.png" />
+    <None Include="Resources\status_pendente.png" />
+    <Content Include="Resources\prioridade_media.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
