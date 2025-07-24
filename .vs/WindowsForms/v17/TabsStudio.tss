@@ -14,12 +14,6 @@
       <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\UserControl\Tarefa\uc_CardTarefa.cs</string>
     </ArrayOfString>
     <ArrayOfString>
-      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Interface\Tarefa\ITarefaService.cs</string>
-    </ArrayOfString>
-    <ArrayOfString>
-      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Service\Tarefa\TarefaService.cs</string>
-    </ArrayOfString>
-    <ArrayOfString>
       <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\UserControl\Tarefa\uc_VisualizarTarefa.cs</string>
       <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\UserControl\Tarefa\uc_VisualizarTarefa.cs</string>
     </ArrayOfString>
@@ -32,46 +26,26 @@
       <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\UserControl\Usuario\uc_CadastroUsuario.cs</string>
     </ArrayOfString>
     <ArrayOfString>
-      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Forms\frmHome.cs</string>
-    </ArrayOfString>
-    <ArrayOfString>
       <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\UserControl\Usuario\uc_Login.cs</string>
       <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\UserControl\Usuario\uc_Login.cs</string>
-    </ArrayOfString>
-    <ArrayOfString>
-      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\UserControl\Tarefa\uc_CadastrarTarefa.cs</string>
-      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\UserControl\Tarefa\uc_CadastrarTarefa.cs</string>
     </ArrayOfString>
     <ArrayOfString>
       <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\WindowsForms.csproj</string>
     </ArrayOfString>
     <ArrayOfString>
       <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\UserControl\Tarefa\uc_EditarTarefa.cs</string>
-      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\UserControl\Tarefa\uc_EditarTarefa.cs</string>
-    </ArrayOfString>
-    <ArrayOfString>
-      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Interface\Usuario\IUsuarioService.cs</string>
-    </ArrayOfString>
-    <ArrayOfString>
-      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Service\Usuario\UsuarioService.cs</string>
-    </ArrayOfString>
-    <ArrayOfString>
-      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Helpers\ResultadoOperacao.cs</string>
     </ArrayOfString>
     <ArrayOfString>
       <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\DTOs\Tarefa\TarefaCadastrarDTO.cs</string>
     </ArrayOfString>
     <ArrayOfString>
-      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\DTOs\Tarefa\TarefaAlterarDTO.cs</string>
-    </ArrayOfString>
-    <ArrayOfString>
-      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\DTOs\Tarefa\TarefaConsultaDTO.cs</string>
-    </ArrayOfString>
-    <ArrayOfString>
       <string>C:\Users\israe\AppData\Local\Temp\.vsdbgsrc\394ea766eb5f2305915cfb6b54d1bfa6768c18e1de1e70dcd443a17762750e16\Task.cs</string>
     </ArrayOfString>
     <ArrayOfString>
-      <string>C:\Users\israe\AppData\Local\Temp\.vsdbgsrc\98730f1e537aecff730842eb396dda9db8e8bf4192a1ced4cecbd673edbc5ce5\TaskAwaiter.cs</string>
+      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Service\UsuarioService.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\Users\israe\source\repos\WindowsForms\WindowsForms\Interface\IUsuarioService.cs</string>
     </ArrayOfString>
   </ArrayOfArrayOfString>
 </ArrayOfArrayOfArrayOfString>

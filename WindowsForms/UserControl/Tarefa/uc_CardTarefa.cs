@@ -45,10 +45,8 @@ namespace WindowsForms.Forms
             MantendoAparenciaLblPrioridadeStatus();
         }
 
-
         private void MantendoAparenciaLblPrioridadeStatus()
         {
-
             lblPrioridade.ForeColor = Color.White;
             lblPrioridade.AppearanceDisabled.BackColor = lblPrioridade.Appearance.BackColor;
             lblPrioridade.AppearanceDisabled.ForeColor = lblPrioridade.Appearance.ForeColor;
@@ -60,7 +58,6 @@ namespace WindowsForms.Forms
             lblStatus.AppearanceDisabled.ForeColor = lblStatus.Appearance.ForeColor;
             lblStatus.AppearanceDisabled.BorderColor = lblStatus.Appearance.BorderColor;
             lblStatus.Enabled = false;
-
         }
 
         protected override void OnResize(EventArgs e)
@@ -68,8 +65,6 @@ namespace WindowsForms.Forms
             base.OnResize(e);
             this.Invalidate();
         }
-
-
 
         //Setando a borda do panel onde esta as informacoes
         protected override void OnPaint(PaintEventArgs e)
@@ -173,8 +168,6 @@ namespace WindowsForms.Forms
 
         private void btnVisualizarTarefa_Paint(object sender, PaintEventArgs e)
         {
-
-
             SimpleButton btn = sender as SimpleButton;
             int borderRadius = 8;
             Color borderColor = Color.FromArgb(108, 109, 117);

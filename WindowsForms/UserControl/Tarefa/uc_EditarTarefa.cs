@@ -115,9 +115,14 @@ namespace WindowsForms.Forms
 
             try
             {
-                TelaCarregamento.ExibirCarregamentoForm(frmHome);
+                var dialogResult = MensagensAlertaSistema.MensagemAtencaoYesNo("Tem certeza que deseja alterar essa tarefa?");
 
-                await SalvarAlteracaoAsync();
+                if (dialogResult == DialogResult.Yes)
+                {
+                    TelaCarregamento.ExibirCarregamentoForm(frmHome);
+
+                    await SalvarAlteracaoAsync();
+                }
             }
             finally
             {

@@ -25,7 +25,6 @@
 
         public int Prazo { get; set; }
 
-
         public static implicit operator TarefaAlterarDTOAPI(TarefaAlterarDTO _tarefa)
         {
             return new TarefaAlterarDTOAPI()

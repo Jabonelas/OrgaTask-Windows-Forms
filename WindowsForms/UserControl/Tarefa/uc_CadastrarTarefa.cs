@@ -53,7 +53,6 @@ namespace WindowsForms.Forms
 
         private async void btnCancelar_Click(object sender, EventArgs e)
         {
-
             await CancelarCadastroTarefaAsync();
         }
 
@@ -75,8 +74,6 @@ namespace WindowsForms.Forms
                 TelaCarregamento.EsconderCarregamento();
             }
         }
-
-
 
         private async Task SalvarTarefaAsync()
         {
@@ -211,7 +208,5 @@ namespace WindowsForms.Forms
                 txtPrazo.Text = 0.ToString();
             }
         }
-
-
     }
 }

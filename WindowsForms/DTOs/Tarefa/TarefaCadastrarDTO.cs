@@ -19,9 +19,7 @@
 
         public string Descricao { get; set; }
 
-
         public int Prazo { get; set; }
-
 
         public static implicit operator TarefaCadastrarDTOAPI(TarefaCadastrarDTO _tarefa)
         {
