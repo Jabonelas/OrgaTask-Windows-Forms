@@ -290,6 +290,7 @@
             this.btnSalvarTarefa.Size = new System.Drawing.Size(120, 40);
             this.btnSalvarTarefa.TabIndex = 45;
             this.btnSalvarTarefa.Text = "Salvar";
+            this.btnSalvarTarefa.Click += new System.EventHandler(this.btnSalvarTarefa_Click);
             // 
             // btnCancelar
             // 
@@ -310,6 +311,7 @@
             this.btnCancelar.Size = new System.Drawing.Size(120, 40);
             this.btnCancelar.TabIndex = 46;
             this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // labelControl1
             // 
@@ -363,7 +365,7 @@
             this.txtPrazo.Properties.ContextImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
             this.txtPrazo.Properties.MaskSettings.Set("mask", "\\d+");
             this.txtPrazo.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
-            this.txtPrazo.Properties.MaxLength = 4;
+            this.txtPrazo.Properties.MaxLength = 3;
             this.txtPrazo.Size = new System.Drawing.Size(120, 22);
             this.txtPrazo.TabIndex = 42;
             // 

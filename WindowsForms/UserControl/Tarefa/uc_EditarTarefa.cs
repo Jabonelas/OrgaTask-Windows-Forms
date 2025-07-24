@@ -52,7 +52,7 @@ namespace WindowsForms.Forms
 
         private async Task BuscarTarefaAsync()
         {
-            (ResultadoOperacao ResultadoOperacao, TarefaAlterarDTO Tarefa) = await tarefaService.BuscarTarefaAsync(idTarefa);
+            (ResultadoOperacao ResultadoOperacao, TarefaConsultaDTO Tarefa) = await tarefaService.BuscarTarefaAsync(idTarefa);
 
             if (ResultadoOperacao.Mensagem != null)
             {
@@ -64,12 +64,12 @@ namespace WindowsForms.Forms
             }
         }
 
-        private void PreencherCampos(TarefaAlterarDTO Tarefa)
+        private void PreencherCampos(TarefaConsultaDTO Tarefa)
         {
             txtTitulo.Text = Tarefa.Titulo;
-            cmbPrioridade.Text = Tarefa.Prioridade;
             txtPrazo.Text = Tarefa.Prazo.ToString();
             txtDescricao.Text = Tarefa.Descricao;
+            cmbPrioridade.Text = Tarefa.Prioridade;
             cmbStatus.Text = Tarefa.Status;
         }
 
@@ -129,6 +129,7 @@ namespace WindowsForms.Forms
         {
             TarefaAlterarDTO dadosTarefa = PreencherDadosTarefa();
 
+
             ResultadoOperacao resultadoOperacao = await tarefaService.AlterarTarefaAsync(dadosTarefa);
 
             if (resultadoOperacao.Sucesso)
@@ -154,10 +155,11 @@ namespace WindowsForms.Forms
             {
                 Id = idTarefa,
                 Titulo = txtTitulo.Text,
-                Prioridade = cmbPrioridade.Text,
                 Prazo = Convert.ToInt16(txtPrazo.Text),
                 Descricao = txtDescricao.Text,
+                Prioridade = cmbPrioridade.Text,
                 Status = cmbStatus.Text
+
             };
 
             return dadosTarefa;

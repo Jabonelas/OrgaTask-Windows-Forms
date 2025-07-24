@@ -1,2 +1,23 @@
 <?xml version="1.0"?>
-<ArrayOfTabHighlightState xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+<ArrayOfTabHighlightState xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <TabHighlightState>
+    <extensions>
+      <string>WindowsForms\UserControl\Tarefa\uc_EditarTarefa.cs</string>
+      <string>WindowsForms\UserControl\Tarefa\uc_EditarTarefa.cs</string>
+    </extensions>
+    <highlightIndex>1</highlightIndex>
+  </TabHighlightState>
+  <TabHighlightState>
+    <extensions>
+      <string>WindowsForms\Interface\ITarefaService.cs</string>
+    </extensions>
+    <highlightIndex>1</highlightIndex>
+  </TabHighlightState>
+  <TabHighlightState>
+    <extensions>
+      <string>WindowsForms\UserControl\Tarefa\uc_VisualizarTarefa.cs</string>
+      <string>WindowsForms\UserControl\Tarefa\uc_VisualizarTarefa.cs</string>
+    </extensions>
+    <highlightIndex>1</highlightIndex>
+  </TabHighlightState>
+</ArrayOfTabHighlightState>

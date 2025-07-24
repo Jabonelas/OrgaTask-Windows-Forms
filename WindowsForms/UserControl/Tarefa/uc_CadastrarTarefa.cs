@@ -51,12 +51,13 @@ namespace WindowsForms.Forms
             PlaceholderCampos();
         }
 
-        private async void btnCancelar_Click_1(object sender, EventArgs e)
+        private async void btnCancelar_Click(object sender, EventArgs e)
         {
+
             await CancelarCadastroTarefaAsync();
         }
 
-        private async void btnSalvarTarefa_Click_1(object sender, EventArgs e)
+        private async void btnSalvarTarefa_Click(object sender, EventArgs e)
         {
             if (!IsCamposPreenchidos())
             {
@@ -75,6 +76,8 @@ namespace WindowsForms.Forms
             }
         }
 
+
+
         private async Task SalvarTarefaAsync()
         {
             TarefaCadastrarDTO dadosTarefa = PreencherDadosTarefa();
@@ -85,7 +88,11 @@ namespace WindowsForms.Forms
             {
                 uc_MensagemConfirmacao mensagemConfirmacaoCantoInferiorDireito = new uc_MensagemConfirmacao(frmHome.pnlTelaPrincipal);
 
-                await ExibirTelaExibirTarefasAsync();
+                //await ExibirTelaExibirTarefasAsync();
+
+                LimparCampos();
+
+                PlaceholderCampos();
             }
             else
             {
@@ -98,15 +105,24 @@ namespace WindowsForms.Forms
             }
         }
 
+        private void LimparCampos()
+        {
+            txtTitulo.Text = string.Empty;
+            cmbPrioridade.EditValue = string.Empty;
+            txtPrazo.Text = string.Empty;
+            txtDescricao.Text = string.Empty;
+            cmbStatus.EditValue = string.Empty;
+        }
+
         private TarefaCadastrarDTO PreencherDadosTarefa()
         {
             TarefaCadastrarDTO dadosTarefa = new TarefaCadastrarDTO()
             {
                 Titulo = txtTitulo.Text,
+                Descricao = txtDescricao.Text,
                 Prioridade = cmbPrioridade.Text,
                 Prazo = Convert.ToInt16(txtPrazo.Text),
-                Descricao = txtDescricao.Text,
-                Status = cmbStatus.Text
+                Status = cmbStatus.Text,
             };
 
             return dadosTarefa;
@@ -195,5 +211,7 @@ namespace WindowsForms.Forms
                 txtPrazo.Text = 0.ToString();
             }
         }
+
+
     }
 }

@@ -51,7 +51,7 @@ namespace WindowsForms.Forms
 
         private async Task BuscarTarefaAsync()
         {
-            (ResultadoOperacao ResultadoOperacao, TarefaAlterarDTO Tarefa) = await tarefaService.BuscarTarefaAsync(idTarefa);
+            (ResultadoOperacao ResultadoOperacao, TarefaConsultaDTO Tarefa) = await tarefaService.BuscarTarefaAsync(idTarefa);
 
             if (ResultadoOperacao.Mensagem != null)
             {
@@ -63,7 +63,7 @@ namespace WindowsForms.Forms
             }
         }
 
-        private void PreencherCampos(TarefaAlterarDTO Tarefa)
+        private void PreencherCampos(TarefaConsultaDTO Tarefa)
         {
             txtTitulo.Text = Tarefa.Titulo;
             txtPrioridade.Text = Tarefa.Prioridade;

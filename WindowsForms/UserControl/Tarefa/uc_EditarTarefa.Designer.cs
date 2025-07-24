@@ -374,7 +374,7 @@
             this.txtPrazo.Properties.ContextImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
             this.txtPrazo.Properties.MaskSettings.Set("mask", "\\d+");
             this.txtPrazo.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
-            this.txtPrazo.Properties.MaxLength = 4;
+            this.txtPrazo.Properties.MaxLength = 3;
             this.txtPrazo.Size = new System.Drawing.Size(119, 22);
             this.txtPrazo.TabIndex = 3;
             // 
